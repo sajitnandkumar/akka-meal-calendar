@@ -1,7 +1,7 @@
 {
   "meta": {
     "generatedFor": "Week of 14 Sep 2026",
-    "generatedAt": "2026-09-18T18:16:10+05:30",
+    "generatedAt": "2026-09-18T18:18:05+05:30",
     "targets": "S ~2,300 kcal · 210g protein — V ~1,500 kcal · 70g protein"
   },
   "fixed": {
@@ -27,16 +27,16 @@
     },
     "evening": {
       "s": {
-        "en": "Milk + 1.5 scoop whey shake (no sugar)",
-        "hi": "दूध + 1.5 स्कूप व्हे शेक (बिना चीनी)",
-        "kn": "ಹಾಲು + 1.5 ಸ್ಕೂಪ್ ವೇ ಶೇಕ್ (ಸಕ್ಕರೆ ಇಲ್ಲದೆ)",
-        "te": "పాలు + 1.5 స్కూప్ వే షేక్ (చక్కెర లేకుండా)"
+        "en": "250ml low-fat (double-toned) milk + 1.5 scoop whey shake (no sugar)",
+        "hi": "250ml लो-फैट (डबल-टोंड) दूध + 1.5 स्कूप व्हे शेक (बिना चीनी)",
+        "kn": "250ml ಲೋ-ಫ್ಯಾಟ್ (ಡಬಲ್-ಟೋನ್ಡ್) ಹಾಲು + 1.5 ಸ್ಕೂಪ್ ವೇ ಶೇಕ್ (ಸಕ್ಕರೆ ಇಲ್ಲದೆ)",
+        "te": "250ml లో-ఫ్యాట్ (డబుల్-టోన్డ్) పాలు + 1.5 స్కూప్ వే షేక్ (చక్కెర లేకుండా)"
       },
       "v": {
-        "en": "Milk + 0.5 scoop whey shake (no sugar)",
-        "hi": "दूध + 0.5 स्कूप व्हे शेक (बिना चीनी)",
-        "kn": "ಹಾಲು + 0.5 ಸ್ಕೂಪ್ ವೇ ಶೇಕ್ (ಸಕ್ಕರೆ ಇಲ್ಲದೆ)",
-        "te": "పాలు + 0.5 స్కూప్ వే షేక్ (చక్కెర లేకుండా)"
+        "en": "200ml low-fat (double-toned) milk + 0.5 scoop whey shake (no sugar)",
+        "hi": "200ml लो-फैट (डबल-टोंड) दूध + 0.5 स्कूप व्हे शेक (बिना चीनी)",
+        "kn": "200ml ಲೋ-ಫ್ಯಾಟ್ (ಡಬಲ್-ಟೋನ್ಡ್) ಹಾಲು + 0.5 ಸ್ಕೂಪ್ ವೇ ಶೇಕ್ (ಸಕ್ಕರೆ ಇಲ್ಲದೆ)",
+        "te": "200ml లో-ఫ్యాట్ (డబుల్-టోన్డ్) పాలు + 0.5 స్కూప్ వే షేక్ (చక్కెర లేకుండా)"
       }
     }
   },
@@ -458,7 +458,7 @@
       "Rawas / Indian salmon (270g)",
       "Hung curd (1.4kg)",
       "Greek yogurt (700g)",
-      "Milk (4.5L)",
+      "Milk — low-fat/double-toned (4.5L)",
       "Whey protein (~17 scoops for the week, both)",
       "Kala chana (220g dry)",
       "Rajma (220g dry)",

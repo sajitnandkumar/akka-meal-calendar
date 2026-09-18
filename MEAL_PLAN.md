@@ -62,7 +62,9 @@ which change weekly):
   ONE fruit + chia water + that day's nut. Walnuts go on exactly 3 non-adjacent
   days; almonds on the rest. The per-day fruit assignments spread the week's
   3-4 fruits so no fruit runs 3+ days straight.
-- evening: Milk + 1.5 scoop whey shake (no sugar)
+- evening: 250ml low-fat (double-toned or skim) milk + 1.5 scoop whey shake for
+  "s"; 200ml + 0.5 scoop for "v" (no sugar). Never full-cream milk — saturated
+  fat. The overnight-oats breakfast uses the same low-fat milk.
 
 CONTENT RULES (every meal):
 - Daily total ~2,300 kcal, ~210g protein.
