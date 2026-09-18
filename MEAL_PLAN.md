@@ -64,10 +64,9 @@ CONTENT RULES (every meal):
   NO brown bread.
 - URIC-ACID SAFE: NO organ meat, prawns, shellfish, sardines, mackerel, surmai,
   anchovies, tuna, true (Atlantic) salmon, barracuda/sheela.
-  Across the week: MAX 3 chicken meals + MAX 2 fish meals.
+  Across the week: MAX 3 chicken meals + MAX 1 fish meal.
   Fish must be seabass, red snapper, rawas (Indian salmon), or white pomfret
-  ONLY, steamed, ~180-200g. No basa (too little protein). Space the two fish
-  meals at least 2 days apart.
+  ONLY, steamed, ~180-200g. No basa (too little protein).
   Dairy and plant protein freely.
 - Low sodium. No pickle, no papad, no packaged/processed food.
 - VEGETABLES: build lunch and dinner around these - palak, methi, cabbage,
@@ -106,7 +105,7 @@ VARIETY:
   (never on consecutive days, and not with only one day between).
 - Must differ meaningfully from the previous week's plan (Step 1).
 - Rotate the main protein across the week: eggs, paneer, tofu, curd, whey, chana,
-  moong, soya, sattu, chicken; fish max 2.
+  moong, soya, sattu, chicken; fish max 1.
 - Vary formats: chillas, bowls, parathas, stir-fries, curries, steamed dishes,
   slow-cooked dishes.
 - FRUIT: choose 3-4 for the week from guava, apple, pear, plum, peach, apricot,
@@ -130,7 +129,7 @@ failure rather than committing a bad file. Check all of:
 - every meal and fixed item has all four of en, hi, kn, te, none empty
 - grocery has exactly the keys Proteins, Veg & Greens, Grains, Fruit, Pantry
 - "Veg & Greens" has at most 11 lines (the week's 5 vegetables + staples)
-- chicken meals <= 3; fish meals <= 2; the two fish meals are >= 2 days apart
+- chicken meals <= 3; fish meals <= 1
 - no meal repeats within 2 days of its previous use
 - no meal appears in the previous week's plan
 - every breakfast contains 150g hung curd or 150g Greek yogurt

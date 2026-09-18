@@ -1,7 +1,7 @@
 {
   "meta": {
     "generatedFor": "Week of 14 Sep 2026",
-    "generatedAt": "2026-09-18T17:50:05+05:30",
+    "generatedAt": "2026-09-18T17:55:18+05:30",
     "targets": "~2,300 kcal · ~210g protein"
   },
   "fixed": {
@@ -53,10 +53,10 @@
     },
     "tue": {
       "breakfast": {
-        "en": "Egg bhurji (3 eggs + 3 whites) with onion-tomato + 1 slice whole-grain sourdough + 150g hung curd",
-        "hi": "अंडा भुर्जी (3 अंडे + 3 सफ़ेदी) प्याज़-टमाटर के साथ + 1 स्लाइस होल-ग्रेन सोरडो ब्रेड + 150g हंग कर्ड",
-        "kn": "ಎಗ್ ಭುರ್ಜಿ (3 ಮೊಟ್ಟೆ + 3 ಬಿಳಿಭಾಗ) ಈರುಳ್ಳಿ-ಟೊಮೇಟೊ ಜೊತೆ + 1 ಸ್ಲೈಸ್ ಹೋಲ್-ಗ್ರೇನ್ ಸೋರ್ಡೋ ಬ್ರೆಡ್ + 150g ಹಂಗ್ ಕರ್ಡ್",
-        "te": "ఎగ్ భుర్జీ (3 గుడ్లు + 3 తెల్లసొన) ఉల్లిపాయ-టమోటాతో + 1 స్లైస్ హోల్-గ్రెయిన్ సోర్డో బ్రెడ్ + 150g హంగ్ కర్డ్"
+        "en": "Overnight oats (40g rolled oats) soaked in milk + 150g Greek yogurt + 1 scoop whey + chia (no sugar)",
+        "hi": "ओवरनाइट ओट्स (40g रोल्ड ओट्स) दूध में भिगोए + 150g ग्रीक योगर्ट + 1 स्कूप व्हे + चिया (बिना चीनी)",
+        "kn": "ಓವರ್‌ನೈಟ್ ಓಟ್ಸ್ (40g ರೋಲ್ಡ್ ಓಟ್ಸ್) ಹಾಲಿನಲ್ಲಿ ನೆನೆಸಿ + 150g ಗ್ರೀಕ್ ಯೋಗರ್ಟ್ + 1 ಸ್ಕೂಪ್ ವೇ + ಚಿಯಾ (ಸಕ್ಕರೆ ಇಲ್ಲದೆ)",
+        "te": "ఓవర్‌నైట్ ఓట్స్ (40g రోల్డ్ ఓట్స్) పాలలో నానబెట్టి + 150g గ్రీక్ యోగర్ట్ + 1 స్కూప్ వే + చియా (చక్కెర లేకుండా)"
       },
       "midmorning": {
         "en": "Papaya + chia water + 8 almonds",
@@ -65,10 +65,10 @@
         "te": "బొప్పాయి + చియా నీళ్లు + 8 బాదం"
       },
       "lunch": {
-        "en": "Steamed seabass (200g) with ginger-garlic + palak-moong dal + green salad (no grain)",
-        "hi": "स्टीम्ड सीबास (200g) अदरक-लहसुन के साथ + पालक-मूंग दाल + हरा सलाद (बिना अनाज)",
-        "kn": "ಸ್ಟೀಮ್ಡ್ ಸೀಬಾಸ್ (200g) ಶುಂಠಿ-ಬೆಳ್ಳುಳ್ಳಿ ಜೊತೆ + ಪಾಲಕ್-ಮೂಂಗ್ ದಾಲ್ + ಹಸಿರು ಸಲಾಡ್ (ಧಾನ್ಯ ಇಲ್ಲ)",
-        "te": "స్టీమ్డ్ సీబాస్ (200g) అల్లం-వెల్లుల్లితో + పాలకూర-పెసరపప్పు + గ్రీన్ సలాడ్ (ధాన్యం లేదు)"
+        "en": "Sprouted moong & paneer bowl (200g moong + 100g paneer) with cucumber & capsicum (no grain)",
+        "hi": "अंकुरित मूंग-पनीर बाउल (200g मूंग + 100g पनीर) खीरा-शिमला मिर्च के साथ (बिना अनाज)",
+        "kn": "ಮೊಳಕೆ ಮೂಂಗ್-ಪನೀರ್ ಬೌಲ್ (200g ಮೂಂಗ್ + 100g ಪನೀರ್) ಸೌತೆ-ದೊಣ್ಣೆ ಮೆಣಸು ಜೊತೆ (ಧಾನ್ಯ ಇಲ್ಲ)",
+        "te": "మొలకెత్తిన పెసలు-పనీర్ బౌల్ (200g పెసలు + 100g పనీర్) దోసకాయ-క్యాప్సికంతో (ధాన్యం లేదు)"
       },
       "dinner": {
         "en": "Soya chunk & methi curry (180g) + cabbage sabzi + 1 bajra roti",
@@ -131,10 +131,10 @@
     },
     "fri": {
       "breakfast": {
-        "en": "Tofu bhurji (200g) with capsicum-onion + 1 slice whole-grain sourdough + 150g Greek yogurt",
-        "hi": "टोफू भुर्जी (200g) शिमला मिर्च-प्याज़ के साथ + 1 स्लाइस होल-ग्रेन सोरडो ब्रेड + 150g ग्रीक योगर्ट",
-        "kn": "ಟೋಫು ಭುರ್ಜಿ (200g) ದೊಣ್ಣೆ ಮೆಣಸು-ಈರುಳ್ಳಿ ಜೊತೆ + 1 ಸ್ಲೈಸ್ ಹೋಲ್-ಗ್ರೇನ್ ಸೋರ್ಡೋ ಬ್ರೆಡ್ + 150g ಗ್ರೀಕ್ ಯೋಗರ್ಟ್",
-        "te": "టోఫు భుర్జీ (200g) క్యాప్సికం-ఉల్లిపాయతో + 1 స్లైస్ హోల్-గ్రెయిన్ సోర్డో బ్రెడ్ + 150g గ్రీక్ యోగర్ట్"
+        "en": "Egg bhurji (3 eggs + 3 whites) with onion-tomato + 1 slice whole-grain sourdough + 150g hung curd",
+        "hi": "अंडा भुर्जी (3 अंडे + 3 सफ़ेदी) प्याज़-टमाटर के साथ + 1 स्लाइस होल-ग्रेन सोरडो ब्रेड + 150g हंग कर्ड",
+        "kn": "ಎಗ್ ಭುರ್ಜಿ (3 ಮೊಟ್ಟೆ + 3 ಬಿಳಿಭಾಗ) ಈರುಳ್ಳಿ-ಟೊಮೇಟೊ ಜೊತೆ + 1 ಸ್ಲೈಸ್ ಹೋಲ್-ಗ್ರೇನ್ ಸೋರ್ಡೋ ಬ್ರೆಡ್ + 150g ಹಂಗ್ ಕರ್ಡ್",
+        "te": "ఎగ్ భుర్జీ (3 గుడ్లు + 3 తెల్లసొన) ఉల్లిపాయ-టమోటాతో + 1 స్లైస్ హోల్-గ్రెయిన్ సోర్డో బ్రెడ్ + 150g హంగ్ కర్డ్"
       },
       "midmorning": {
         "en": "Guava + chia water + 2–3 walnut halves",
@@ -183,10 +183,10 @@
     },
     "sun": {
       "breakfast": {
-        "en": "Ragi dosa (2) with egg bhurji (2 eggs + 2 whites) + 150g hung curd",
-        "hi": "रागी डोसा (2) अंडा भुर्जी (2 अंडे + 2 सफ़ेदी) के साथ + 150g हंग कर्ड",
-        "kn": "ರಾಗಿ ದೋಸೆ (2) ಎಗ್ ಭುರ್ಜಿ (2 ಮೊಟ್ಟೆ + 2 ಬಿಳಿಭಾಗ) ಜೊತೆ + 150g ಹಂಗ್ ಕರ್ಡ್",
-        "te": "రాగి దోశ (2) ఎగ్ భుర్జీతో (2 గుడ్లు + 2 తెల్లసొన) + 150g హంగ్ కర్డ్"
+        "en": "Overnight oats (40g rolled oats) soaked in milk + 150g Greek yogurt + 1 scoop whey + chia (no sugar)",
+        "hi": "ओवरनाइट ओट्स (40g रोल्ड ओट्स) दूध में भिगोए + 150g ग्रीक योगर्ट + 1 स्कूप व्हे + चिया (बिना चीनी)",
+        "kn": "ಓವರ್‌ನೈಟ್ ಓಟ್ಸ್ (40g ರೋಲ್ಡ್ ಓಟ್ಸ್) ಹಾಲಿನಲ್ಲಿ ನೆನೆಸಿ + 150g ಗ್ರೀಕ್ ಯೋಗರ್ಟ್ + 1 ಸ್ಕೂಪ್ ವೇ + ಚಿಯಾ (ಸಕ್ಕರೆ ಇಲ್ಲದೆ)",
+        "te": "ఓవర్‌నైట్ ఓట్స్ (40g రోల్డ్ ఓట్స్) పాలలో నానబెట్టి + 150g గ్రీక్ యోగర్ట్ + 1 స్కూప్ వే + చియా (చక్కెర లేకుండా)"
       },
       "midmorning": {
         "en": "Kiwi + chia water + 8 almonds",
@@ -210,20 +210,19 @@
   },
   "grocery": {
     "Proteins": [
-      "Eggs (30)",
-      "Paneer (600g)",
-      "Tofu (600g)",
+      "Eggs (20)",
+      "Paneer (700g)",
+      "Tofu (450g)",
       "Soya chunks (250g dry)",
       "Chicken breast/curry cut (550g)",
-      "Seabass (200g)",
       "Rawas / Indian salmon (180g)",
-      "Hung curd (1.2kg)",
+      "Hung curd (900g)",
       "Greek yogurt (450g)",
-      "Milk (2.5L)",
-      "Whey protein (11 scoops for the week)",
+      "Milk (3L)",
+      "Whey protein (12-13 scoops for the week)",
       "Kala chana (150g dry)",
       "Rajma (150g dry)",
-      "Moong dal (400g)",
+      "Whole moong + moong dal (500g)",
       "Sattu (150g)"
     ],
     "Veg & Greens": [
@@ -240,9 +239,10 @@
       "Lemons (4)"
     ],
     "Grains": [
+      "Rolled oats (100g)",
       "Jowar flour (250g)",
-      "Bajra flour (150g)",
-      "Ragi flour (250g)",
+      "Bajra flour (100g)",
+      "Ragi flour (100g)",
       "Quinoa (200g)",
       "Kerala matta rice (150g)",
       "Brown rice (150g)",
