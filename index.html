@@ -114,14 +114,16 @@
   .gcat li.have { color:var(--ink-faint); text-decoration:line-through; }
 
   /* two-person lines */
-  .pline { display:flex; align-items:flex-start; gap:8px; }
-  .pline + .pline { margin-top:6px; }
-  .pname { flex:none; font-size:10px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--pine); background:var(--pine-soft); border-radius:6px; padding:2px 7px; margin-top:3px; }
-  .pline.p2 .pname { color:var(--dn); background:var(--dn-bg); }
-  .card .meal .pline { font-size:16px; }
+  .pline { display:flex; align-items:flex-start; gap:9px; }
+  .pline + .pline { margin-top:7px; padding-top:7px; border-top:1px dashed var(--line); }
+  .pbadge { flex:none; width:21px; height:21px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:800; background:var(--pine-soft); color:var(--pine); margin-top:2px; }
+  .pline.p2 .pbadge, .pbadge.b2 { background:var(--dn-bg); color:var(--dn); }
+  .card .meal .pline { font-size:16px; font-weight:600; }
   .mini .txt .pline { font-size:13.5px; }
   .wday .row .v .pline { font-size:13px; }
-  .wday .row .v .pline .pname { margin-top:2px; }
+  .wday .row .v .pline .pbadge { width:18px; height:18px; font-size:10px; margin-top:1px; }
+  .plegend { display:flex; align-items:center; gap:7px; font-size:12.5px; color:var(--ink-soft); margin:0 0 14px; }
+  .plegend .pbadge { margin-top:0; width:19px; height:19px; font-size:10.5px; }
 
   .meta { text-align:center; font-size:12px; color:var(--ink-faint); margin-top:18px; }
   .hidden { display:none; }
@@ -314,13 +316,15 @@ function render(){
   // A slot may be split per person: {s: {langs}, v: {langs}} -> two labeled lines
   const mb = m => {
     if(!m) return "—";
-    if(m.s) return `<div class="pline"><span class="pname">${t.sajit}</span><span>${pick(m.s)}</span></div>`+
-                   `<div class="pline p2"><span class="pname">${t.valentina}</span><span>${pick(m.v)}</span></div>`;
+    if(m.s) return `<div class="pline"><span class="pbadge">S</span><span>${pick(m.s)}</span></div>`+
+                   `<div class="pline p2"><span class="pbadge">V</span><span>${pick(m.v)}</span></div>`;
     return pick(m);
   };
+  const legend = `<div class="plegend"><span class="pbadge">S</span>${t.sajit}<span class="pbadge b2">V</span>${t.valentina}</div>`;
   const dateStr = now.toLocaleDateString(undefined,{day:"numeric",month:"long"});
   let html = `<div class="datehead">${dateStr}</div><div class="dayname">${t.days[now.getDay()]}</div>`;
   if(day){
+    if(day.breakfast && day.breakfast.s) html += legend;
     html += mealCard("bf", t.breakfast, mb(day.breakfast));
     html += `<div class="mini"><div class="lbl">${t.midmorning}</div><div class="txt">${mb(day.midmorning || f.midmorning)}</div></div>`;
     html += mealCard("ln", t.lunch, mb(day.lunch));
@@ -334,6 +338,8 @@ function render(){
 
   // WEEK
   let w = "";
+  const anySplit = Object.values(DATA.days||{}).some(x=>x.breakfast && x.breakfast.s);
+  if(anySplit) w += legend;
   for(let i=1;i<=7;i++){
     const idx=i%7; const key=DAYKEYS[idx]; const d=(DATA.days||{})[key];
     if(!d) continue;
