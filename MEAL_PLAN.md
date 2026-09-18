@@ -118,6 +118,10 @@ VARIETY:
 - Must differ meaningfully from the previous week's plan (Step 1).
 - Rotate the main protein across the week: eggs, paneer, tofu, curd, whey, chana,
   moong, soya, sattu, chicken; fish max 1.
+- WITHIN A DAY, no protein twice: breakfast, lunch and dinner must each use a
+  DIFFERENT main protein (an egg breakfast rules out an egg dinner; a paneer
+  component at breakfast rules out a paneer lunch). Only the constant dairy
+  base is exempt (hung curd / Greek yogurt / milk / whey shake).
 - Vary formats: chillas, bowls, parathas, stir-fries, curries, steamed dishes,
   slow-cooked dishes.
 - FRUIT: choose 3-4 for the week from guava, apple, pear, plum, peach, apricot,
@@ -146,6 +150,9 @@ failure rather than committing a bad file. Check all of:
 - grocery has exactly the keys Proteins, Veg & Greens, Grains, Fruit, Pantry
 - "Veg & Greens" has at most 11 lines (the week's 5 vegetables + staples)
 - chicken meals <= 3; fish meals <= 1
+- within each day, no protein keyword (egg, paneer, tofu, soya, chicken, fish
+  names, chana, rajma, lobia, moong, sattu) appears in more than one of the
+  day's three meals (curd/yogurt/whey/milk exempt)
 - no meal repeats within 2 days of its previous use
 - no meal appears in the previous week's plan
 - every breakfast contains 150g hung curd or 150g Greek yogurt
