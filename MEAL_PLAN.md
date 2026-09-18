@@ -31,7 +31,7 @@ languages: en, hi (Hindi), kn (Kannada), te (Telugu).
     "evening":    { "en": "...", "hi": "...", "kn": "...", "te": "..." }
   },
   "days": {
-    "mon": { "breakfast": {4 langs}, "lunch": {4 langs}, "dinner": {4 langs} },
+    "mon": { "breakfast": {4 langs}, "midmorning": {4 langs}, "lunch": {4 langs}, "dinner": {4 langs} },
     "tue": {...}, "wed": {...}, "thu": {...}, "fri": {...}, "sat": {...}, "sun": {...}
   },
   "grocery": {
@@ -46,6 +46,10 @@ which change weekly):
 - midmorning: NAME the week's specific fruits in the text (e.g. "Guava, orange or
   kiwi") + chia water + 8 almonds OR 2-3 walnut halves (favour walnuts ~3x/week).
   Never write "1 low-GI fruit" or "rotate" — always name the actual fruits.
+  ADDITIONALLY, every day carries its own "midmorning" (see schema) naming exactly
+  ONE fruit + chia water + that day's nut. Walnuts go on exactly 3 non-adjacent
+  days; almonds on the rest. The per-day fruit assignments spread the week's
+  3-4 fruits so no fruit runs 3+ days straight.
 - evening: Milk + 1.5 scoop whey shake (no sugar)
 
 CONTENT RULES (every meal):
@@ -108,7 +112,10 @@ failure rather than committing a bad file. Check all of:
 - JSON parses; top-level keys are exactly meta, fixed, days, grocery
 - meta.generatedAt is present and parses as an ISO 8601 timestamp (the app shows
   it as "Last generated"); set it with `date -Iseconds` at generation time
-- days has mon,tue,wed,thu,fri,sat,sun in that order, each with breakfast,lunch,dinner
+- days has mon,tue,wed,thu,fri,sat,sun in that order, each with
+  breakfast,midmorning,lunch,dinner in that order
+- each day's midmorning names one fruit and either almonds or walnut halves;
+  walnut days number exactly 3 and are not adjacent
 - every meal and fixed item has all four of en, hi, kn, te, none empty
 - grocery has exactly the keys Proteins, Veg & Greens, Grains, Fruit, Pantry
 - chicken meals <= 3; fish meals <= 2; the two fish meals are >= 2 days apart

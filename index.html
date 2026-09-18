@@ -93,6 +93,7 @@
   .wday .row:last-child { padding-bottom:12px; }
   .wday .row .k { min-width:74px; font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:.03em; padding-top:2px; }
   .wday .row.bf .k { color:var(--bf); } .wday .row.ln .k { color:var(--ln); } .wday .row.dn .k { color:var(--dn); }
+  .wday .row.mm .k { color:var(--accent); } .wday .row.mm .v { color:var(--ink-faint); font-size:12.5px; }
   .wday .row .v { color:var(--ink-soft); flex:1; }
 
   /* grocery */
@@ -275,7 +276,7 @@ function render(){
   let html = `<div class="datehead">${dateStr}</div><div class="dayname">${t.days[now.getDay()]}</div>`;
   if(day){
     html += mealCard("bf", t.breakfast, pick(day.breakfast));
-    html += `<div class="mini"><div class="lbl">${t.midmorning}</div><div class="txt">${pick(f.midmorning)}</div></div>`;
+    html += `<div class="mini"><div class="lbl">${t.midmorning}</div><div class="txt">${pick(day.midmorning || f.midmorning)}</div></div>`;
     html += mealCard("ln", t.lunch, pick(day.lunch));
     html += `<div class="mini"><div class="lbl">${t.evening}</div><div class="txt">${pick(f.evening)}</div></div>`;
     html += mealCard("dn", t.dinner, pick(day.dinner));
@@ -293,6 +294,7 @@ function render(){
     const isToday = idx===now.getDay();
     w += `<div class="wday ${isToday?"today":""}"><h3>${t.days[idx]}</h3>`+
          `<div class="row bf"><span class="k">${t.breakfast}</span><span class="v">${pick(d.breakfast)}</span></div>`+
+         (d.midmorning ? `<div class="row mm"><span class="k">${t.midmorning}</span><span class="v">${pick(d.midmorning)}</span></div>` : "")+
          `<div class="row ln"><span class="k">${t.lunch}</span><span class="v">${pick(d.lunch)}</span></div>`+
          `<div class="row dn"><span class="k">${t.dinner}</span><span class="v">${pick(d.dinner)}</span></div></div>`;
   }
