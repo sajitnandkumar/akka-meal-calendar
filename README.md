@@ -1,35 +1,59 @@
-# Meal Plan — static PWA
+# Akka Meal Calendar 🍲
 
-A today-first meal viewer for the kitchen. Opens to today's three meals, has a full-week tab and a grocery list, and a language toggle (English / Hindi / Kannada / Telugu). Installable to a phone home screen.
+A self-updating weekly meal planner for the kitchen. Every Sunday morning, an
+automated planner writes a fresh seven-day menu for a metabolic-health diet —
+then this little app shows whoever is cooking exactly what's on the stove today,
+in their language.
 
-## How it works
+Open it on a phone and it lands on **today**: breakfast, lunch, dinner, plus the
+fixed daily items (black coffee, a mid-morning fruit-and-nuts break, an evening
+whey shake). Swipe over to the **week** view to see all seven days, or the
+**grocery** tab for the week's shopping list. One tap switches everything
+between **English, हिन्दी, ಕನ್ನಡ, and తెలుగు**.
 
-- `index.html` — the whole app (HTML + CSS + JS). No build step.
-- `week.json` — the week's meals + grocery list. **This is the only file you regenerate each week.**
-- `manifest.json`, `sw.js`, `icon-*.png` — PWA plumbing (install + offline).
+## How the week plans itself
 
-The app reads `week.json` on load. If it can't (e.g. opened as a local file), it uses a copy baked into `index.html` so it still shows something.
+A scheduled Claude Code task runs every **Sunday at 7:00 AM** and follows the
+playbook in [`MEAL_PLAN.md`](MEAL_PLAN.md):
 
-## Deploy on GitHub Pages
+1. **Pull** the repo so it starts from the latest week.
+2. **Read** the outgoing `week.json`, so no dish from last week sneaks straight back in.
+3. **Generate** a new week against the diet rules — ~2,300 kcal and ~210 g
+   protein a day, uric-acid-safe proteins, low-GI grains only, vegetables at the
+   centre of lunch and dinner, everything cooked on a Bangalore stovetop
+   (no oven, no grill, nothing deep-fried).
+4. **Validate** the file with a script: schema, all four languages present,
+   protein caps, meal-spacing rules, and a banned-ingredient sweep. A plan that
+   fails a check gets fixed, not committed.
+5. **Commit and push** `week.json` — and the app everyone's phone points at is
+   already up to date.
 
-1. Create a repo, drop all these files in the root.
-2. Settings → Pages → Source = `main` / root.
-3. Open the URL on the phone → browser menu → **Add to Home screen**.
+If the laptop was asleep on Sunday, the next run catches up and still plans the
+*current* week rather than skipping ahead.
 
-Share that URL with whoever cooks. They open it each morning; it shows today automatically (based on the phone's date).
+## What's in the repo
 
-## Regenerating the week
+| File | Role |
+|---|---|
+| `index.html` | The entire app — HTML, CSS, and JS in one file, no build step |
+| `week.json` | The current week's meals and grocery list (the only file that changes weekly) |
+| `MEAL_PLAN.md` | The full spec the Sunday automation follows — diet rules, schema, validation |
+| `manifest.json`, `sw.js`, `icon-*.png` | PWA plumbing: install to home screen, work offline |
 
-Each meal supports four languages:
+The app fetches `week.json` on load. Opened as a plain local file with no
+network, it falls back to a copy baked into `index.html` so it never shows a
+blank screen.
 
-```json
-"breakfast": { "en": "...", "hi": "...", "kn": "...", "te": "..." }
-```
+## Putting it on a phone
 
-Missing languages fall back to `en`. The sample has Monday in all four; the rest are English only — your weekly generator should fill all four.
+The repo is served with GitHub Pages (`main` branch, root). Open the Pages URL
+on the phone, then **Add to Home screen** from the browser menu — it installs
+like an app, works offline, and always shows the right day based on the phone's
+date. Share the URL with whoever cooks; there's nothing to update manually.
 
-**Option A — Cowork scheduled task (Sunday):** have it output JSON in exactly this schema and commit `week.json` to the repo (GitHub connector or a git command).
+## Changing the diet
 
-**Option B — GitHub Action + Claude API (fully automated):** a scheduled workflow calls the API with your rules, writes `week.json`, commits it. No desktop needed.
-
-Keep the schema identical or the app won't read it.
+Don't hand-edit `week.json` — it gets replaced every Sunday. Instead, change
+the rules in `MEAL_PLAN.md` (allowed fish, banned ingredients, protein targets,
+fruit list…) and the next run will honour them. The JSON schema itself must stay
+exactly as documented there, or the app won't read it.
