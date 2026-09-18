@@ -100,7 +100,18 @@
   .gcat { margin-bottom:16px; }
   .gcat h3 { font-family:'Fraunces',serif; font-weight:600; font-size:17px; color:var(--pine); margin-bottom:8px; }
   .gcat ul { list-style:none; display:flex; flex-wrap:wrap; gap:7px; }
-  .gcat li { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:6px 13px; font-size:13.5px; color:var(--ink-soft); }
+  .gcat li { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:6px 13px; font-size:13.5px; color:var(--ink-soft); cursor:pointer; -webkit-user-select:none; user-select:none; }
+  .gcat li.have { opacity:.45; text-decoration:line-through; }
+  .gcat li.need { background:var(--bf-bg); border-color:var(--bf); color:var(--bf); font-weight:600; }
+  .ghint { font-size:12px; color:var(--ink-faint); margin-bottom:12px; }
+  .gorder { background:var(--card); border:1.5px solid var(--bf); border-radius:12px; padding:12px 14px; margin-bottom:16px; box-shadow:var(--shadow); }
+  .gorder h3 { font-family:'Fraunces',serif; font-weight:600; font-size:16px; color:var(--bf); margin-bottom:8px; }
+  .gorder ul { list-style:none; display:flex; flex-wrap:wrap; gap:7px; margin-bottom:10px; }
+  .gorder li { background:var(--bf-bg); border:1px solid var(--bf); border-radius:20px; padding:5px 12px; font-size:13px; color:var(--bf); font-weight:600; }
+  .gbtns { display:flex; gap:8px; }
+  .gbtns button { font:inherit; font-size:13px; font-weight:600; border:1px solid var(--line); background:var(--paper); color:var(--ink-soft); border-radius:8px; padding:7px 12px; cursor:pointer; }
+  .gbtns #gcopy { background:var(--pine); border-color:var(--pine); color:#fff; }
+  @media (prefers-color-scheme: dark){ .gbtns #gcopy{ color:#10140f; } }
 
   .meta { text-align:center; font-size:12px; color:var(--ink-faint); margin-top:18px; }
   .hidden { display:none; }
@@ -138,24 +149,32 @@ const T = {
        breakfast:"Breakfast", lunch:"Lunch", dinner:"Dinner",
        coffee:"On waking", midmorning:"Mid-morning", evening:"Evening · 4 PM",
        generated:"Last generated",
+       toorder:"To order", copylist:"Copy list", copied:"Copied ✓", clearmarks:"Clear marks",
+       ghint:"Tap an item — ✓ have it · ✗ to order",
        days:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
        dshort:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"] },
   hi:{ brand:"भोजन योजना", today:"आज", week:"सप्ताह", grocery:"सामान",
        breakfast:"नाश्ता", lunch:"दोपहर का खाना", dinner:"रात का खाना",
        coffee:"उठने पर", midmorning:"दोपहर से पहले", evening:"शाम · 4 बजे",
        generated:"अंतिम बार बनाया गया",
+       toorder:"मंगाना है", copylist:"लिस्ट कॉपी करें", copied:"कॉपी हो गया ✓", clearmarks:"निशान हटाएं",
+       ghint:"आइटम दबाएँ — ✓ है · ✗ मंगाना है",
        days:["रविवार","सोमवार","मंगलवार","बुधवार","गुरुवार","शुक्रवार","शनिवार"],
        dshort:["रवि","सोम","मंगल","बुध","गुरु","शुक्र","शनि"] },
   kn:{ brand:"ಊಟದ ಯೋಜನೆ", today:"ಇಂದು", week:"ವಾರ", grocery:"ಸಾಮಾನು",
        breakfast:"ಬೆಳಗಿನ ಉಪಾಹಾರ", lunch:"ಮಧ್ಯಾಹ್ನದ ಊಟ", dinner:"ರಾತ್ರಿ ಊಟ",
        coffee:"ಎದ್ದ ಮೇಲೆ", midmorning:"ಮಧ್ಯಾಹ್ನದ ಮೊದಲು", evening:"ಸಂಜೆ · 4 ಗಂಟೆ",
        generated:"ಕೊನೆಯದಾಗಿ ರಚಿಸಿದ್ದು",
+       toorder:"ತರಿಸಬೇಕು", copylist:"ಪಟ್ಟಿ ನಕಲಿಸಿ", copied:"ನಕಲಾಯಿತು ✓", clearmarks:"ಗುರುತು ಅಳಿಸಿ",
+       ghint:"ಐಟಂ ಒತ್ತಿ — ✓ ಇದೆ · ✗ ತರಿಸಬೇಕು",
        days:["ಭಾನುವಾರ","ಸೋಮವಾರ","ಮಂಗಳವಾರ","ಬುಧವಾರ","ಗುರುವಾರ","ಶುಕ್ರವಾರ","ಶನಿವಾರ"],
        dshort:["ಭಾನು","ಸೋಮ","ಮಂಗಳ","ಬುಧ","ಗುರು","ಶುಕ್ರ","ಶನಿ"] },
   te:{ brand:"భోజన ప్రణాళిక", today:"ఈరోజు", week:"వారం", grocery:"సరుకులు",
        breakfast:"అల్పాహారం", lunch:"మధ్యాహ్న భోజనం", dinner:"రాత్రి భోజనం",
        coffee:"లేచిన తర్వాత", midmorning:"మధ్యాహ్నానికి ముందు", evening:"సాయంత్రం · 4 గం",
        generated:"చివరిగా రూపొందించినది",
+       toorder:"తెప్పించాలి", copylist:"జాబితా కాపీ", copied:"కాపీ అయింది ✓", clearmarks:"గుర్తులు తీసేయి",
+       ghint:"ఐటమ్ నొక్కండి — ✓ ఉంది · ✗ తెప్పించాలి",
        days:["ఆదివారం","సోమవారం","మంగళవారం","బుధవారం","గురువారం","శుక్రవారం","శనివారం"],
        dshort:["ఆది","సోమ","మంగళ","బుధ","గురు","శుక్ర","శని"] }
 };
@@ -249,8 +268,14 @@ const DEFAULT_WEEK = {
 };
 
 let DATA = DEFAULT_WEEK;
-let lang = localStorage.getItem("mealLang") || "en";
+let lang = "en";
+try { lang = localStorage.getItem("mealLang") || "en"; } catch(e){}
 let tab = "today";
+
+// Per-week grocery marks: "" (unmarked) -> "have" -> "need". Device-local only.
+function gkey(){ return "groceryMarks:" + ((DATA.meta && DATA.meta.generatedFor) || ""); }
+function gload(){ try { return JSON.parse(localStorage.getItem(gkey())||"{}"); } catch(e){ return {}; } }
+function gsave(s){ try { localStorage.setItem(gkey(), JSON.stringify(s)); } catch(e){} }
 
 function pick(obj){ if(!obj) return ""; if(typeof obj==="string") return obj; return obj[lang] || obj.en || Object.values(obj)[0] || ""; }
 
@@ -303,10 +328,27 @@ function render(){
   // GROCERY
   let g = "";
   const groc = DATA.grocery||{};
-  for(const cat in groc){
-    g += `<div class="gcat"><h3>${cat}</h3><ul>`+groc[cat].map(x=>`<li>${x}</li>`).join("")+`</ul></div>`;
+  const marks = gload();
+  const need = [];
+  let gbody = "";
+  const gcats = Object.keys(groc);
+  gcats.forEach((cat,ci)=>{
+    gbody += `<div class="gcat"><h3>${cat}</h3><ul>`+groc[cat].map((x,ii)=>{
+      const st = marks[cat+"|"+x]||"";
+      if(st==="need") need.push(x);
+      const mk = st==="have"?"✓ ":st==="need"?"✗ ":"";
+      return `<li class="${st}" data-c="${ci}" data-i="${ii}">${mk}${x}</li>`;
+    }).join("")+`</ul></div>`;
+  });
+  if(gcats.length){
+    g += `<div class="ghint">${t.ghint}</div>`;
+    if(need.length){
+      g += `<div class="gorder"><h3>${t.toorder} (${need.length})</h3><ul>`+
+           need.map(x=>`<li>${x}</li>`).join("")+`</ul>`+
+           `<div class="gbtns"><button id="gcopy">${t.copylist}</button><button id="gclear">${t.clearmarks}</button></div></div>`;
+    }
   }
-  document.getElementById("view-grocery").innerHTML = g || "";
+  document.getElementById("view-grocery").innerHTML = g + gbody;
 
   const meta = DATA.meta || {};
   let metaHtml = [(meta.generatedFor||""), (meta.targets||"")].filter(Boolean).join(" · ");
@@ -331,6 +373,28 @@ document.getElementById("langs").addEventListener("click",e=>{
 });
 document.getElementById("tabs").addEventListener("click",e=>{
   const b=e.target.closest("button"); if(!b) return; tab=b.dataset.t; render();
+});
+document.getElementById("view-grocery").addEventListener("click",e=>{
+  const t = T[lang];
+  const btn = e.target.closest("button");
+  if(btn && btn.id==="gclear"){ gsave({}); render(); return; }
+  if(btn && btn.id==="gcopy"){
+    const marks = gload(); const need = [];
+    for(const cat in (DATA.grocery||{})) DATA.grocery[cat].forEach(x=>{ if(marks[cat+"|"+x]==="need") need.push(x); });
+    const done = ()=>{ btn.textContent = t.copied; setTimeout(render, 1200); };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(need.join("\n")).then(done).catch(()=>{});
+    }
+    return;
+  }
+  const li = e.target.closest("li[data-c]"); if(!li) return;
+  const cats = Object.keys(DATA.grocery||{});
+  const cat = cats[+li.dataset.c]; const item = ((DATA.grocery||{})[cat]||[])[+li.dataset.i];
+  if(!item) return;
+  const marks = gload(); const k = cat+"|"+item;
+  marks[k] = !marks[k] ? "have" : marks[k]==="have" ? "need" : "";
+  if(!marks[k]) delete marks[k];
+  gsave(marks); render();
 });
 
 // Load live week.json if available (GitHub Pages), else keep fallback.
