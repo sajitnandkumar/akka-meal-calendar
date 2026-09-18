@@ -59,7 +59,9 @@ CONTENT RULES (every meal):
   grill or oven, and pancakes are not possible. Stovetop and steaming only
   (tawa, kadai, pressure cooker, steamer).
 - GRAINS: only small portions of millet / brown rice / quinoa / Kerala matta rice /
-  whole-grain sourdough (1-2 slices). NO white rice, NO maida, NO brown bread.
+  whole-grain sourdough (1-2 slices) / rolled or steel-cut oats (~40g dry,
+  breakfast only — NEVER instant or flavoured oats). NO white rice, NO maida,
+  NO brown bread.
 - URIC-ACID SAFE: NO organ meat, prawns, shellfish, sardines, mackerel, surmai,
   anchovies, tuna, true (Atlantic) salmon, barracuda/sheela.
   Across the week: MAX 3 chicken meals + MAX 2 fish meals.
@@ -83,7 +85,9 @@ CONTENT RULES (every meal):
 
 PER SLOT:
 - breakfast ~40g protein, ALWAYS includes 150g hung curd or Greek yogurt
-  (never plain dahi — it has about a third of the protein).
+  (never plain dahi — it has about a third of the protein). High-protein
+  overnight oats (~40g rolled oats soaked in milk + 150g Greek yogurt +
+  0.5-1 scoop whey + chia, no sugar) is a good zero-cook option 1-2x/week.
 - lunch: built around a PROTEIN ANCHOR (below), small or no grain.
 - dinner: built around a PROTEIN ANCHOR, small grain, greens.
 - PROTEIN ANCHOR = 150-200g of paneer / tofu / soya chunks / chicken / allowed
@@ -139,7 +143,7 @@ failure rather than committing a bad file. Check all of:
   tuna, salmon (except rawas/Indian salmon), barracuda, sheela, rohu, basa,
   organ meat, liver, sugar, honey, jaggery, juice, maida, deep-fried, white rice,
   brown bread, pancake, tikka, grill, grilled, bake, baked, pickle, papad, mango,
-  banana, chikoo, lychee, jackfruit, dates
+  banana, chikoo, lychee, jackfruit, dates, instant oats, flavoured oats
 
 STEP 5 - Replace week.json at the repo root with the new file, commit on main, and
 push. Commit message: "Weekly meal plan: <DD Mon> - <DD Mon YYYY>".
