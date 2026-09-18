@@ -97,21 +97,21 @@
   .wday .row .v { color:var(--ink-soft); flex:1; }
 
   /* grocery */
-  .gcat { margin-bottom:16px; }
-  .gcat h3 { font-family:'Fraunces',serif; font-weight:600; font-size:17px; color:var(--pine); margin-bottom:8px; }
-  .gcat ul { list-style:none; display:flex; flex-wrap:wrap; gap:7px; }
-  .gcat li { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:6px 13px; font-size:13.5px; color:var(--ink-soft); cursor:pointer; -webkit-user-select:none; user-select:none; }
-  .gcat li.have { opacity:.45; text-decoration:line-through; }
-  .gcat li.need { background:var(--bf-bg); border-color:var(--bf); color:var(--bf); font-weight:600; }
-  .ghint { font-size:12px; color:var(--ink-faint); margin-bottom:12px; }
-  .gorder { background:var(--card); border:1.5px solid var(--bf); border-radius:12px; padding:12px 14px; margin-bottom:16px; box-shadow:var(--shadow); }
-  .gorder h3 { font-family:'Fraunces',serif; font-weight:600; font-size:16px; color:var(--bf); margin-bottom:8px; }
-  .gorder ul { list-style:none; display:flex; flex-wrap:wrap; gap:7px; margin-bottom:10px; }
-  .gorder li { background:var(--bf-bg); border:1px solid var(--bf); border-radius:20px; padding:5px 12px; font-size:13px; color:var(--bf); font-weight:600; }
-  .gbtns { display:flex; gap:8px; }
-  .gbtns button { font:inherit; font-size:13px; font-weight:600; border:1px solid var(--line); background:var(--paper); color:var(--ink-soft); border-radius:8px; padding:7px 12px; cursor:pointer; }
-  .gbtns #gcopy { background:var(--pine); border-color:var(--pine); color:#fff; }
-  @media (prefers-color-scheme: dark){ .gbtns #gcopy{ color:#10140f; } }
+  .ghint { font-size:12.5px; color:var(--ink-faint); margin-bottom:10px; }
+  .gsum { position:sticky; top:118px; z-index:5; display:flex; align-items:center; gap:8px; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:9px 12px; margin-bottom:14px; box-shadow:var(--shadow); }
+  .gsum .n { font-weight:700; font-size:14px; color:var(--bf); flex:1; }
+  .gsum button { font:inherit; font-size:13px; font-weight:600; border:1px solid var(--line); background:var(--paper); color:var(--ink-soft); border-radius:8px; padding:7px 12px; cursor:pointer; }
+  .gsum #gcopy { background:var(--pine); border-color:var(--pine); color:#fff; }
+  @media (prefers-color-scheme: dark){ .gsum #gcopy{ color:#10140f; } }
+  .gcat { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:2px 14px 4px; margin-bottom:12px; box-shadow:var(--shadow); }
+  .gcat h3 { font-family:'Fraunces',serif; font-weight:600; font-size:16px; color:var(--pine); padding:10px 0 2px; }
+  .gcat ul { list-style:none; }
+  .gcat li { display:flex; align-items:center; gap:11px; padding:9px 0; border-bottom:1px solid var(--line); font-size:14.5px; color:var(--ink); cursor:pointer; -webkit-user-select:none; user-select:none; }
+  .gcat li:last-child { border-bottom:none; }
+  .gcat li .cb { width:22px; height:22px; border-radius:50%; border:2px solid var(--ink-faint); flex:none; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700; color:#fff; }
+  .gcat li.have .cb { background:var(--accent); border-color:var(--accent); }
+  @media (prefers-color-scheme: dark){ .gcat li.have .cb{ color:#10140f; } }
+  .gcat li.have { color:var(--ink-faint); text-decoration:line-through; }
 
   .meta { text-align:center; font-size:12px; color:var(--ink-faint); margin-top:18px; }
   .hidden { display:none; }
@@ -149,32 +149,32 @@ const T = {
        breakfast:"Breakfast", lunch:"Lunch", dinner:"Dinner",
        coffee:"On waking", midmorning:"Mid-morning", evening:"Evening · 4 PM",
        generated:"Last generated",
-       toorder:"To order", copylist:"Copy list", copied:"Copied ✓", clearmarks:"Clear marks",
-       ghint:"Tap an item — ✓ have it · ✗ to order",
+       toorder:"To order", copylist:"Copy list", copied:"Copied ✓", clearmarks:"Reset",
+       ghint:"Tick what is already at home — the rest is the order list",
        days:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
        dshort:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"] },
   hi:{ brand:"भोजन योजना", today:"आज", week:"सप्ताह", grocery:"सामान",
        breakfast:"नाश्ता", lunch:"दोपहर का खाना", dinner:"रात का खाना",
        coffee:"उठने पर", midmorning:"दोपहर से पहले", evening:"शाम · 4 बजे",
        generated:"अंतिम बार बनाया गया",
-       toorder:"मंगाना है", copylist:"लिस्ट कॉपी करें", copied:"कॉपी हो गया ✓", clearmarks:"निशान हटाएं",
-       ghint:"आइटम दबाएँ — ✓ है · ✗ मंगाना है",
+       toorder:"मंगाना है", copylist:"लिस्ट कॉपी करें", copied:"कॉपी हो गया ✓", clearmarks:"रीसेट",
+       ghint:"जो घर में है उसे टिक करें — बाकी ऑर्डर लिस्ट है",
        days:["रविवार","सोमवार","मंगलवार","बुधवार","गुरुवार","शुक्रवार","शनिवार"],
        dshort:["रवि","सोम","मंगल","बुध","गुरु","शुक्र","शनि"] },
   kn:{ brand:"ಊಟದ ಯೋಜನೆ", today:"ಇಂದು", week:"ವಾರ", grocery:"ಸಾಮಾನು",
        breakfast:"ಬೆಳಗಿನ ಉಪಾಹಾರ", lunch:"ಮಧ್ಯಾಹ್ನದ ಊಟ", dinner:"ರಾತ್ರಿ ಊಟ",
        coffee:"ಎದ್ದ ಮೇಲೆ", midmorning:"ಮಧ್ಯಾಹ್ನದ ಮೊದಲು", evening:"ಸಂಜೆ · 4 ಗಂಟೆ",
        generated:"ಕೊನೆಯದಾಗಿ ರಚಿಸಿದ್ದು",
-       toorder:"ತರಿಸಬೇಕು", copylist:"ಪಟ್ಟಿ ನಕಲಿಸಿ", copied:"ನಕಲಾಯಿತು ✓", clearmarks:"ಗುರುತು ಅಳಿಸಿ",
-       ghint:"ಐಟಂ ಒತ್ತಿ — ✓ ಇದೆ · ✗ ತರಿಸಬೇಕು",
+       toorder:"ತರಿಸಬೇಕು", copylist:"ಪಟ್ಟಿ ನಕಲಿಸಿ", copied:"ನಕಲಾಯಿತು ✓", clearmarks:"ರೀಸೆಟ್",
+       ghint:"ಮನೆಯಲ್ಲಿ ಇರುವುದನ್ನು ಟಿಕ್ ಮಾಡಿ — ಉಳಿದವು ಆರ್ಡರ್ ಪಟ್ಟಿ",
        days:["ಭಾನುವಾರ","ಸೋಮವಾರ","ಮಂಗಳವಾರ","ಬುಧವಾರ","ಗುರುವಾರ","ಶುಕ್ರವಾರ","ಶನಿವಾರ"],
        dshort:["ಭಾನು","ಸೋಮ","ಮಂಗಳ","ಬುಧ","ಗುರು","ಶುಕ್ರ","ಶನಿ"] },
   te:{ brand:"భోజన ప్రణాళిక", today:"ఈరోజు", week:"వారం", grocery:"సరుకులు",
        breakfast:"అల్పాహారం", lunch:"మధ్యాహ్న భోజనం", dinner:"రాత్రి భోజనం",
        coffee:"లేచిన తర్వాత", midmorning:"మధ్యాహ్నానికి ముందు", evening:"సాయంత్రం · 4 గం",
        generated:"చివరిగా రూపొందించినది",
-       toorder:"తెప్పించాలి", copylist:"జాబితా కాపీ", copied:"కాపీ అయింది ✓", clearmarks:"గుర్తులు తీసేయి",
-       ghint:"ఐటమ్ నొక్కండి — ✓ ఉంది · ✗ తెప్పించాలి",
+       toorder:"తెప్పించాలి", copylist:"జాబితా కాపీ", copied:"కాపీ అయింది ✓", clearmarks:"రీసెట్",
+       ghint:"ఇంట్లో ఉన్నవి టిక్ చేయండి — మిగతావి ఆర్డర్ జాబితా",
        days:["ఆదివారం","సోమవారం","మంగళవారం","బుధవారం","గురువారం","శుక్రవారం","శనివారం"],
        dshort:["ఆది","సోమ","మంగళ","బుధ","గురు","శుక్ర","శని"] }
 };
@@ -325,28 +325,25 @@ function render(){
   }
   document.getElementById("view-week").innerHTML = w;
 
-  // GROCERY
+  // GROCERY: tick = have it; everything unticked is the order list
   let g = "";
   const groc = DATA.grocery||{};
   const marks = gload();
-  const need = [];
+  let needCount = 0;
   let gbody = "";
   const gcats = Object.keys(groc);
   gcats.forEach((cat,ci)=>{
     gbody += `<div class="gcat"><h3>${cat}</h3><ul>`+groc[cat].map((x,ii)=>{
-      const st = marks[cat+"|"+x]||"";
-      if(st==="need") need.push(x);
-      const mk = st==="have"?"✓ ":st==="need"?"✗ ":"";
-      return `<li class="${st}" data-c="${ci}" data-i="${ii}">${mk}${x}</li>`;
+      const have = marks[cat+"|"+x]==="have";
+      if(!have) needCount++;
+      return `<li class="${have?"have":""}" data-c="${ci}" data-i="${ii}"><span class="cb">${have?"✓":""}</span><span>${x}</span></li>`;
     }).join("")+`</ul></div>`;
   });
   if(gcats.length){
-    g += `<div class="ghint">${t.ghint}</div>`;
-    if(need.length){
-      g += `<div class="gorder"><h3>${t.toorder} (${need.length})</h3><ul>`+
-           need.map(x=>`<li>${x}</li>`).join("")+`</ul>`+
-           `<div class="gbtns"><button id="gcopy">${t.copylist}</button><button id="gclear">${t.clearmarks}</button></div></div>`;
-    }
+    g += `<div class="ghint">${t.ghint}</div>`+
+         `<div class="gsum"><span class="n">${t.toorder}: ${needCount}</span>`+
+         (needCount?`<button id="gcopy">${t.copylist}</button>`:"")+
+         `<button id="gclear">${t.clearmarks}</button></div>`;
   }
   document.getElementById("view-grocery").innerHTML = g + gbody;
 
@@ -380,7 +377,7 @@ document.getElementById("view-grocery").addEventListener("click",e=>{
   if(btn && btn.id==="gclear"){ gsave({}); render(); return; }
   if(btn && btn.id==="gcopy"){
     const marks = gload(); const need = [];
-    for(const cat in (DATA.grocery||{})) DATA.grocery[cat].forEach(x=>{ if(marks[cat+"|"+x]==="need") need.push(x); });
+    for(const cat in (DATA.grocery||{})) DATA.grocery[cat].forEach(x=>{ if(marks[cat+"|"+x]!=="have") need.push(x); });
     const done = ()=>{ btn.textContent = t.copied; setTimeout(render, 1200); };
     if(navigator.clipboard && navigator.clipboard.writeText){
       navigator.clipboard.writeText(need.join("\n")).then(done).catch(()=>{});
@@ -392,8 +389,7 @@ document.getElementById("view-grocery").addEventListener("click",e=>{
   const cat = cats[+li.dataset.c]; const item = ((DATA.grocery||{})[cat]||[])[+li.dataset.i];
   if(!item) return;
   const marks = gload(); const k = cat+"|"+item;
-  marks[k] = !marks[k] ? "have" : marks[k]==="have" ? "need" : "";
-  if(!marks[k]) delete marks[k];
+  if(marks[k]==="have") delete marks[k]; else marks[k] = "have";
   gsave(marks); render();
 });
 
