@@ -60,7 +60,8 @@ CONTENT RULES (every meal):
   anchovies, tuna, true (Atlantic) salmon, barracuda/sheela.
   Across the week: MAX 3 chicken meals + MAX 2 fish meals.
   Fish must be seabass, red snapper, rawas (Indian salmon), or white pomfret
-  ONLY, steamed. Space the two fish meals at least 2 days apart.
+  ONLY, steamed, ~180-200g. No basa (too little protein). Space the two fish
+  meals at least 2 days apart.
   Dairy and plant protein freely.
 - Low sodium. No pickle, no papad, no packaged/processed food.
 - VEGETABLES: build lunch and dinner around these - palak, methi, cabbage,
@@ -70,9 +71,15 @@ CONTENT RULES (every meal):
 - Normal Bangalore-kitchen ingredients; cook time up to ~1 hour is fine.
 
 PER SLOT:
-- breakfast ~40g protein, ALWAYS includes 150g hung curd or Greek yogurt.
-- lunch 150-200g protein, small or no grain.
-- dinner 150-200g protein, small grain, greens.
+- breakfast ~40g protein, ALWAYS includes 150g hung curd or Greek yogurt
+  (never plain dahi — it has about a third of the protein).
+- lunch: built around a PROTEIN ANCHOR (below), small or no grain.
+- dinner: built around a PROTEIN ANCHOR, small grain, greens.
+- PROTEIN ANCHOR = 150-200g of paneer / tofu / soya chunks / chicken / allowed
+  fish, or 3-4 eggs, or ~200g cooked legumes (kala chana, rajma, lobia, whole
+  moong) as the main dish itself. A thin dal, a small khichdi, or dal cooked
+  into a grain dish is a side, NOT an anchor. Every lunch and dinner must name
+  its anchor with a gram (or egg-count) quantity.
 
 VARIETY:
 - A meal MAY repeat within the week, but NOT within 2 days of its previous use
@@ -85,6 +92,7 @@ VARIETY:
 - FRUIT: choose 3-4 for the week from guava, apple, pear, plum, peach, apricot,
   jamun, orange, mosambi, kiwi, papaya, pomegranate, berries — and name them
   explicitly in the fixed midmorning text. Vary the choices from week to week.
+  NEVER use: mango, ripe banana, chikoo, lychee, jackfruit, dates, dried fruit.
 
 TRANSLATION: transliterate dish names (e.g. paneer bhurji -> పనీర్ భుర్జీ), translate
 the connecting words and portions ("no grain", "with", "sautéed"). Keep numbers
@@ -102,11 +110,14 @@ failure rather than committing a bad file. Check all of:
 - no meal repeats within 2 days of its previous use
 - no meal appears in the previous week's plan
 - every breakfast contains 150g hung curd or 150g Greek yogurt
+- every lunch and dinner names a protein anchor with a quantity (a "g" amount or
+  an egg count in its text)
 - the midmorning text names specific fruits and does not contain the word "rotate"
 - no banned item appears: prawn, shellfish, sardine, mackerel, surmai, anchovy,
-  tuna, salmon (except rawas/Indian salmon), barracuda, sheela, rohu, organ meat,
-  liver, sugar, honey, jaggery, juice, maida, deep-fried, white rice, brown bread,
-  pancake, tikka, grill, grilled, bake, baked, pickle, papad
+  tuna, salmon (except rawas/Indian salmon), barracuda, sheela, rohu, basa,
+  organ meat, liver, sugar, honey, jaggery, juice, maida, deep-fried, white rice,
+  brown bread, pancake, tikka, grill, grilled, bake, baked, pickle, papad, mango,
+  banana, chikoo, lychee, jackfruit, dates
 
 STEP 5 - Replace week.json at the repo root with the new file, commit on main, and
 push. Commit message: "Weekly meal plan: <DD Mon> - <DD Mon YYYY>".
