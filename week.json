@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedFor": "Week of 14 Sep 2026",
+    "generatedFor": "Week of 15 Sep 2026",
     "targets": "~2,300 kcal · ~210g protein"
   },
   "fixed": {
@@ -11,10 +11,10 @@
       "te": "బ్లాక్ కాఫీ, చక్కెర లేకుండా"
     },
     "midmorning": {
-      "en": "1 low-GI fruit (rotate: papaya / kiwi / orange / pomegranate / plum / mosambi / peach) + chia water + 8 almonds OR 2-3 walnut halves (walnuts ~3x/week)",
-      "hi": "1 कम-GI फल (बदल-बदल कर: पपीता / कीवी / संतरा / अनार / आलूबुखारा / मौसंबी / आड़ू) + चिया पानी + 8 बादाम या 2-3 अखरोट की गिरी (अखरोट ~3x/सप्ताह)",
-      "kn": "1 ಕಡಿಮೆ-GI ಹಣ್ಣು (ಸರದಿಯಲ್ಲಿ: ಪಪ್ಪಾಯಿ / ಕಿವಿ / ಕಿತ್ತಳೆ / ದಾಳಿಂಬೆ / ಪ್ಲಮ್ / ಮೂಸಂಬಿ / ಪೀಚ್) + ಚಿಯಾ ನೀರು + 8 ಬಾದಾಮಿ ಅಥವಾ 2-3 ವಾಲ್‌ನಟ್ ಅರ್ಧಭಾಗ (ವಾಲ್‌ನಟ್ ~3x/ವಾರ)",
-      "te": "1 తక్కువ-GI పండు (వరుసగా: బొప్పాయి / కివీ / నారింజ / దానిమ్మ / ప్లమ్ / బత్తాయి / పీచ్) + చియా నీరు + 8 బాదం లేదా 2-3 వాల్‌నట్ చెక్కలు (వాల్‌నట్ ~3x/వారం)"
+      "en": "1 low-GI fruit (guava/apple/pear/berries) + chia water + 6 almonds / 2 walnuts",
+      "hi": "1 कम-GI फल (अमरूद/सेब/नाशपाती/बेरी) + चिया पानी + 6 बादाम / 2 अखरोट",
+      "kn": "1 ಕಡಿಮೆ-GI ಹಣ್ಣು (ಸೀಬೆ/ಸೇಬು/ಪೇರಳೆ/ಬೆರ್ರಿ) + ಚಿಯಾ ನೀರು + 6 ಬಾದಾಮಿ / 2 ವಾಲ್‌ನಟ್",
+      "te": "1 తక్కువ-GI పండు (జామ/యాపిల్/బేరి) + చియా నీరు + 6 బాదం / 2 వాల్‌నట్‌లు"
     },
     "evening": {
       "en": "Milk + 1.5 scoop whey shake (no sugar)",
@@ -26,212 +26,60 @@
   "days": {
     "mon": {
       "breakfast": {
-        "en": "Ragi & moong dosa (3) with egg-white masala + 150g hung curd",
-        "hi": "रागी और मूंग डोसा (3) अंडे की सफ़ेदी मसाला के साथ + 150g हंग कर्ड",
-        "kn": "ರಾಗಿ ಮತ್ತು ಹೆಸರು ದೋಸೆ (3) ಮೊಟ್ಟೆಯ ಬಿಳಿ ಭಾಗದ ಮಸಾಲಾ ಜೊತೆ + 150g ಹಂಗ್ ಕರ್ಡ್",
-        "te": "రాగి మరియు పెసర దోస (3) గుడ్డు తెల్లసొన మసాలాతో + 150g హంగ్ కర్డ్"
+        "en": "3-egg + 3-white bhurji with spinach + 150g Greek yogurt",
+        "hi": "3 अंडे + 3 सफ़ेदी की भुर्जी, पालक के साथ + 150g ग्रीक दही",
+        "kn": "3 ಮೊಟ್ಟೆ + 3 ಬಿಳಿ ಭಾಗ ಭುರ್ಜಿ, ಪಾಲಕ್ ಜೊತೆ + 150g ಗ್ರೀಕ್ ಮೊಸರು",
+        "te": "3 గుడ్లు + 3 తెల్లసొన భుర్జీ, పాలకూరతో + 150g గ్రీక్ పెరుగు"
       },
       "lunch": {
-        "en": "Kabuli chana masala (200g) + palak raita + cucumber salad (no grain)",
-        "hi": "काबुली चना मसाला (200g) + पालक रायता + खीरा सलाद (बिना अनाज)",
-        "kn": "ಕಾಬೂಲಿ ಕಡಲೆ ಮಸಾಲಾ (200g) + ಪಾಲಕ್ ರಾಯ್ತಾ + ಸೌತೆಕಾಯಿ ಸಲಾಡ್ (ಧಾನ್ಯ ಇಲ್ಲ)",
-        "te": "కాబూలీ శనగ మసాలా (200g) + పాలకూర రాయతా + దోసకాయ సలాడ్ (ధాన్యం లేకుండా)"
+        "en": "Grilled chicken (180g) + big salad + moong dal (no grain)",
+        "hi": "ग्रिल्ड चिकन (180g) + बड़ा सलाद + मूंग दाल (बिना अनाज)",
+        "kn": "ಗ್ರಿಲ್ಡ್ ಚಿಕನ್ (180g) + ದೊಡ್ಡ ಸಲಾಡ್ + ಹೆಸರು ಬೇಳೆ (ಧಾನ್ಯ ಇಲ್ಲ)",
+        "te": "గ్రిల్డ్ చికెన్ (180g) + పెద్ద సలాడ్ + పెసర పప్పు (ధాన్యం లేకుండా)"
       },
       "dinner": {
-        "en": "Tofu & broccoli stir-fry (200g tofu) + sautéed beans + 1 jowar roti",
-        "hi": "टोफू और ब्रोकली स्टर-फ्राई (200g टोफू) + सॉते की हुई बीन्स + 1 ज्वार रोटी",
-        "kn": "ಟೋಫು ಮತ್ತು ಬ್ರೊಕೊಲಿ ಸ್ಟರ್-ಫ್ರೈ (200g ಟೋಫು) + ಸಾಟೆ ಮಾಡಿದ ಬೀನ್ಸ್ + 1 ಜೋಳದ ರೊಟ್ಟಿ",
-        "te": "టోఫు మరియు బ్రొకోలీ స్టిర్-ఫ్రై (200g టోఫు) + సాటే చేసిన బీన్స్ + 1 జొన్న రొట్టి"
+        "en": "Paneer (180g) + veg stir-fry + 1 millet roti",
+        "hi": "पनीर (180g) + सब्ज़ी स्टर-फ्राई + 1 मिलेट रोटी",
+        "kn": "ಪನೀರ್ (180g) + ತರಕಾರಿ ಸ್ಟರ್-ಫ್ರೈ + 1 ಸಿರಿಧಾನ್ಯ ರೊಟ್ಟಿ",
+        "te": "పనీర్ (180g) + కూరగాయల స్టిర్-ఫ్రై + 1 మిల్లెట్ రొట్టి"
       }
     },
     "tue": {
-      "breakfast": {
-        "en": "Whey & ragi pancake (2, tawa) + 3 boiled egg whites + 150g Greek yogurt",
-        "hi": "व्हे और रागी पैनकेक (2, तवा) + 3 उबली अंडे की सफ़ेदी + 150g ग्रीक दही",
-        "kn": "ವೇ ಮತ್ತು ರಾಗಿ ಪ್ಯಾನ್‌ಕೇಕ್ (2, ತವಾ) + 3 ಬೇಯಿಸಿದ ಮೊಟ್ಟೆಯ ಬಿಳಿ ಭಾಗ + 150g ಗ್ರೀಕ್ ಮೊಸರು",
-        "te": "వే మరియు రాగి ప్యాన్‌కేక్ (2, పెనం) + 3 ఉడికించిన గుడ్డు తెల్లసొనలు + 150g గ్రీక్ పెరుగు"
-      },
-      "lunch": {
-        "en": "Grilled seabass (200g) + ash gourd curry + methi salad (no grain)",
-        "hi": "ग्रिल्ड सी बास (200g) + पेठे की करी + मेथी सलाद (बिना अनाज)",
-        "kn": "ಗ್ರಿಲ್ಡ್ ಸೀ ಬಾಸ್ (200g) + ಬೂದುಗುಂಬಳ ಕರಿ + ಮೆಂತ್ಯ ಸಲಾಡ್ (ಧಾನ್ಯ ಇಲ್ಲ)",
-        "te": "గ్రిల్డ్ సీ బాస్ (200g) + బూడిద గుమ్మడి కరీ + మెంతికూర సలాడ్ (ధాన్యం లేకుండా)"
-      },
-      "dinner": {
-        "en": "Paneer & methi bake (180g) + cluster beans stir-fry + 1 ragi roti",
-        "hi": "पनीर और मेथी बेक (180g) + ग्वार फली स्टर-फ्राई + 1 रागी रोटी",
-        "kn": "ಪನೀರ್ ಮತ್ತು ಮೆಂತ್ಯ ಬೇಕ್ (180g) + ಗೋರಿಕಾಯಿ ಸ್ಟರ್-ಫ್ರೈ + 1 ರಾಗಿ ರೊಟ್ಟಿ",
-        "te": "పనీర్ మరియు మెంతికూర బేక్ (180g) + గోరుచిక్కుడు స్టిర్-ఫ్రై + 1 రాగి రొట్టి"
-      }
+      "breakfast": { "en": "Moong chilla (2) with paneer stuffing + 150g curd" },
+      "lunch": { "en": "Rajma + ⅓ bowl brown rice + cabbage salad" },
+      "dinner": { "en": "Grilled fish (200g) + sautéed methi + clear dal" }
     },
     "wed": {
-      "breakfast": {
-        "en": "Sprouted moong & egg bhurji (3 eggs) + 150g hung curd",
-        "hi": "अंकुरित मूंग और अंडा भुर्जी (3 अंडे) + 150g हंग कर्ड",
-        "kn": "ಮೊಳಕೆ ಹೆಸರು ಮತ್ತು ಮೊಟ್ಟೆ ಭುರ್ಜಿ (3 ಮೊಟ್ಟೆ) + 150g ಹಂಗ್ ಕರ್ಡ್",
-        "te": "మొలకెత్తిన పెసర మరియు గుడ్డు భుర్జీ (3 గుడ్లు) + 150g హంగ్ కర్డ్"
-      },
-      "lunch": {
-        "en": "Chicken kebab bowl (180g) + karela stir-fry + big salad (no grain)",
-        "hi": "चिकन कबाब बाउल (180g) + करेला स्टर-फ्राई + बड़ा सलाद (बिना अनाज)",
-        "kn": "ಚಿಕನ್ ಕಬಾಬ್ ಬೌಲ್ (180g) + ಹಾಗಲಕಾಯಿ ಸ್ಟರ್-ಫ್ರೈ + ದೊಡ್ಡ ಸಲಾಡ್ (ಧಾನ್ಯ ಇಲ್ಲ)",
-        "te": "చికెన్ కబాబ్ బౌల్ (180g) + కాకరకాయ స్టిర్-ఫ్రై + పెద్ద సలాడ్ (ధాన్యం లేకుండా)"
-      },
-      "dinner": {
-        "en": "Masoor dal & palak stew with tofu (150g) + ⅓ bowl Kerala matta rice",
-        "hi": "मसूर दाल और पालक स्ट्यू, टोफू (150g) के साथ + ⅓ कटोरी केरल मट्टा चावल",
-        "kn": "ಮಸೂರ್ ಬೇಳೆ ಮತ್ತು ಪಾಲಕ್ ಸ್ಟ್ಯೂ, ಟೋಫು (150g) ಜೊತೆ + ⅓ ಬೌಲ್ ಕೇರಳ ಮಟ್ಟಾ ಅಕ್ಕಿ",
-        "te": "మసూర్ పప్పు మరియు పాలకూర స్ట్యూ, టోఫు (150g) తో + ⅓ గిన్నె కేరళ మట్టా బియ్యం"
-      }
+      "breakfast": { "en": "Sattu drink (salt) + 2 boiled eggs + 150g curd" },
+      "lunch": { "en": "Paneer tikka (180g) + salad + raita" },
+      "dinner": { "en": "Small quinoa + chicken curry + palak" }
     },
     "thu": {
-      "breakfast": {
-        "en": "Sattu & methi cheela (3) + 2 boiled eggs + 150g hung curd",
-        "hi": "सत्तू और मेथी चीला (3) + 2 उबले अंडे + 150g हंग कर्ड",
-        "kn": "ಸತ್ತು ಮತ್ತು ಮೆಂತ್ಯ ಚೀಲಾ (3) + 2 ಬೇಯಿಸಿದ ಮೊಟ್ಟೆ + 150g ಹಂಗ್ ಕರ್ಡ್",
-        "te": "సత్తు మరియు మెంతికూర చీలా (3) + 2 ఉడికించిన గుడ్లు + 150g హంగ్ కర్డ్"
-      },
-      "lunch": {
-        "en": "Lobia curry (200g) + bottle gourd sabzi + 1 bajra roti",
-        "hi": "लोबिया करी (200g) + लौकी की सब्ज़ी + 1 बाजरा रोटी",
-        "kn": "ಅಲಸಂದೆ ಕರಿ (200g) + ಸೋರೆಕಾಯಿ ಪಲ್ಯ + 1 ಸಜ್ಜೆ ರೊಟ್ಟಿ",
-        "te": "బొబ్బర్ల కరీ (200g) + సొరకాయ కూర + 1 సజ్జ రొట్టి"
-      },
-      "dinner": {
-        "en": "Grilled chicken tikka (200g) + zucchini & capsicum grill + clear moong dal (no grain)",
-        "hi": "ग्रिल्ड चिकन टिक्का (200g) + ज़ुकीनी और शिमला मिर्च ग्रिल + पतली मूंग दाल (बिना अनाज)",
-        "kn": "ಗ್ರಿಲ್ಡ್ ಚಿಕನ್ ಟಿಕ್ಕಾ (200g) + ಜುಕಿನಿ ಮತ್ತು ದೊಣ್ಣೆಮೆಣಸು ಗ್ರಿಲ್ + ತಿಳಿ ಹೆಸರು ಬೇಳೆ (ಧಾನ್ಯ ಇಲ್ಲ)",
-        "te": "గ్రిల్డ్ చికెన్ టిక్కా (200g) + జుకిని మరియు క్యాప్సికం గ్రిల్ + పలచని పెసర పప్పు (ధాన్యం లేకుండా)"
-      }
+      "breakfast": { "en": "Tofu bhurji (150g) + 1 millet roti + 150g curd" },
+      "lunch": { "en": "Moong khichdi (millet + moong) + curd + veg" },
+      "dinner": { "en": "Soya paratha (2, tawa) + curd + cucumber salad" }
     },
     "fri": {
-      "breakfast": {
-        "en": "Whey & 150g Greek yogurt bowl with berries, chia + 3 boiled eggs",
-        "hi": "व्हे और 150g ग्रीक दही बाउल, बेरी और चिया के साथ + 3 उबले अंडे",
-        "kn": "ವೇ ಮತ್ತು 150g ಗ್ರೀಕ್ ಮೊಸರು ಬೌಲ್, ಬೆರ್ರಿ ಮತ್ತು ಚಿಯಾ ಜೊತೆ + 3 ಬೇಯಿಸಿದ ಮೊಟ್ಟೆ",
-        "te": "వే మరియు 150g గ్రీక్ పెరుగు బౌల్, బెర్రీలు మరియు చియాతో + 3 ఉడికించిన గుడ్లు"
-      },
-      "lunch": {
-        "en": "Paneer & palak curry (200g) + cabbage poriyal + ⅓ bowl brown rice",
-        "hi": "पनीर और पालक करी (200g) + पत्तागोभी पोरियल + ⅓ कटोरी ब्राउन राइस",
-        "kn": "ಪನೀರ್ ಮತ್ತು ಪಾಲಕ್ ಕರಿ (200g) + ಎಲೆಕೋಸು ಪೊರಿಯಲ್ + ⅓ ಬೌಲ್ ಬ್ರೌನ್ ರೈಸ್",
-        "te": "పనీర్ మరియు పాలకూర కరీ (200g) + క్యాబేజీ పొరియల్ + ⅓ గిన్నె బ్రౌన్ రైస్"
-      },
-      "dinner": {
-        "en": "Soya chunk keema (180g) + brinjal bharta + 1 jowar roti",
-        "hi": "सोया चंक्स कीमा (180g) + बैंगन भर्ता + 1 ज्वार रोटी",
-        "kn": "ಸೋಯಾ ಚಂಕ್ಸ್ ಕೀಮಾ (180g) + ಬದನೆಕಾಯಿ ಭರ್ತಾ + 1 ಜೋಳದ ರೊಟ್ಟಿ",
-        "te": "సోయా చంక్స్ కీమా (180g) + వంకాయ భర్తా + 1 జొన్న రొట్టి"
-      }
+      "breakfast": { "en": "Besan chilla (2) with paneer + 150g Greek yogurt" },
+      "lunch": { "en": "Paneer (180g) salad bowl + moong dal (no grain)" },
+      "dinner": { "en": "Paneer bhurji (180g) + cabbage thoran + 1 millet roti" }
     },
     "sat": {
-      "breakfast": {
-        "en": "Paneer & spinach omelette (3 eggs + 80g paneer) + 150g hung curd",
-        "hi": "पनीर और पालक ऑमलेट (3 अंडे + 80g पनीर) + 150g हंग कर्ड",
-        "kn": "ಪನೀರ್ ಮತ್ತು ಪಾಲಕ್ ಆಮ್ಲೆಟ್ (3 ಮೊಟ್ಟೆ + 80g ಪನೀರ್) + 150g ಹಂಗ್ ಕರ್ಡ್",
-        "te": "పనీర్ మరియు పాలకూర ఆమ్లెట్ (3 గుడ్లు + 80g పనీర్) + 150g హంగ్ కర్డ్"
-      },
-      "lunch": {
-        "en": "Grilled rohu (200g) + drumstick & bottle gourd curry + cucumber salad (no grain)",
-        "hi": "ग्रिल्ड रोहू (200g) + सहजन और लौकी की करी + खीरा सलाद (बिना अनाज)",
-        "kn": "ಗ್ರಿಲ್ಡ್ ರೋಹು (200g) + ನುಗ್ಗೆಕಾಯಿ ಮತ್ತು ಸೋರೆಕಾಯಿ ಕರಿ + ಸೌತೆಕಾಯಿ ಸಲಾಡ್ (ಧಾನ್ಯ ಇಲ್ಲ)",
-        "te": "గ్రిల్డ్ రోహు (200g) + మునగకాయ మరియు సొరకాయ కరీ + దోసకాయ సలాడ్ (ధాన్యం లేకుండా)"
-      },
-      "dinner": {
-        "en": "Slow-cooked chicken & vegetable curry (180g) + amaranth greens + 1 ragi roti",
-        "hi": "धीमी आंच पर पका चिकन और सब्ज़ी करी (180g) + चौलाई + 1 रागी रोटी",
-        "kn": "ನಿಧಾನವಾಗಿ ಬೇಯಿಸಿದ ಚಿಕನ್ ಮತ್ತು ತರಕಾರಿ ಕರಿ (180g) + ದಂಟಿನ ಸೊಪ್ಪು + 1 ರಾಗಿ ರೊಟ್ಟಿ",
-        "te": "నెమ్మదిగా ఉడికించిన చికెన్ మరియు కూరగాయల కరీ (180g) + తోటకూర + 1 రాగి రొట్టి"
-      }
+      "breakfast": { "en": "Overnight oats + 1 scoop whey + berries + 2 boiled eggs" },
+      "lunch": { "en": "Chole + ⅓ bowl brown rice + methi salad" },
+      "dinner": { "en": "Grilled chicken (200g) + sautéed greens + clear dal (no grain)" }
     },
     "sun": {
-      "breakfast": {
-        "en": "Moong & ragi idli (4) with sambar-style dal + 2 boiled eggs + 150g hung curd",
-        "hi": "मूंग और रागी इडली (4) सांबर-स्टाइल दाल के साथ + 2 उबले अंडे + 150g हंग कर्ड",
-        "kn": "ಹೆಸರು ಮತ್ತು ರಾಗಿ ಇಡ್ಲಿ (4) ಸಾಂಬಾರ್-ಶೈಲಿಯ ಬೇಳೆ ಜೊತೆ + 2 ಬೇಯಿಸಿದ ಮೊಟ್ಟೆ + 150g ಹಂಗ್ ಕರ್ಡ್",
-        "te": "పెసర మరియు రాగి ఇడ్లీ (4) సాంబార్-శైలి పప్పుతో + 2 ఉడికించిన గుడ్లు + 150g హంగ్ కర్డ్"
-      },
-      "lunch": {
-        "en": "Tofu & chana salad bowl (200g) + broccoli + roasted capsicum (no grain)",
-        "hi": "टोफू और चना सलाद बाउल (200g) + ब्रोकली + भुनी शिमला मिर्च (बिना अनाज)",
-        "kn": "ಟೋಫು ಮತ್ತು ಕಡಲೆ ಸಲಾಡ್ ಬೌಲ್ (200g) + ಬ್ರೊಕೊಲಿ + ಹುರಿದ ದೊಣ್ಣೆಮೆಣಸು (ಧಾನ್ಯ ಇಲ್ಲ)",
-        "te": "టోఫు మరియు శనగ సలాడ్ బౌల్ (200g) + బ్రొకోలీ + కాల్చిన క్యాప్సికం (ధాన్యం లేకుండా)"
-      },
-      "dinner": {
-        "en": "Curd-marinated paneer bake (180g) + snake gourd thoran + small quinoa",
-        "hi": "दही में मैरिनेट किया पनीर बेक (180g) + चिचिंडा थोरन + थोड़ा क्विनोआ",
-        "kn": "ಮೊಸರಿನಲ್ಲಿ ಮ್ಯಾರಿನೇಟ್ ಮಾಡಿದ ಪನೀರ್ ಬೇಕ್ (180g) + ಪಡವಲಕಾಯಿ ತೋರನ್ + ಸ್ವಲ್ಪ ಕ್ವಿನೋವಾ",
-        "te": "పెరుగులో మ్యారినేట్ చేసిన పనీర్ బేక్ (180g) + పొట్లకాయ తోరన్ + కొద్దిగా క్వినోవా"
-      }
+      "breakfast": { "en": "Paneer paratha (2, tawa) + 150g curd" },
+      "lunch": { "en": "Soya chunk curry (180g) + 1 millet roti + salad" },
+      "dinner": { "en": "Grilled fish (180g) + veg stir-fry + small quinoa" }
     }
   },
   "grocery": {
-    "Proteins": [
-      "Eggs (2.5 dozen)",
-      "Chicken breast/thigh (560g)",
-      "Seabass fillet (200g)",
-      "Rohu (200g)",
-      "Paneer (660g)",
-      "Tofu (550g)",
-      "Whey protein (tub)",
-      "Hung curd / Greek yogurt (1.5 kg)",
-      "Milk (3-4 L)",
-      "Kabuli chana (300g)",
-      "Lobia / black-eyed beans (250g)",
-      "Soya chunks (200g)",
-      "Sattu (250g)",
-      "Masoor dal (250g)",
-      "Moong (dal + for sprouting, 500g)"
-    ],
-    "Veg & Greens": [
-      "Palak (3 bunches)",
-      "Methi (2 bunches)",
-      "Amaranth greens (1 bunch)",
-      "Cabbage (1)",
-      "Broccoli (2)",
-      "Bottle gourd (2)",
-      "Ash gourd (1 small)",
-      "Snake gourd (1)",
-      "Karela (250g)",
-      "Cluster beans (250g)",
-      "French beans (250g)",
-      "Drumsticks (4)",
-      "Zucchini (2)",
-      "Brinjal (400g)",
-      "Capsicum (4)",
-      "Cucumber (6)",
-      "Tomato (1 kg)",
-      "Onion (1 kg)",
-      "Lemon (6)",
-      "Ginger-garlic"
-    ],
-    "Grains": [
-      "Ragi flour (1 kg)",
-      "Jowar flour (500g)",
-      "Bajra flour (500g)",
-      "Kerala matta rice (500g)",
-      "Brown rice (500g)",
-      "Quinoa (250g)"
-    ],
-    "Fruit": [
-      "Papaya (1)",
-      "Kiwi (4)",
-      "Orange (4)",
-      "Pomegranate (2)",
-      "Plum (4)",
-      "Mosambi (4)",
-      "Peach (2)",
-      "Mixed berries (200g)"
-    ],
-    "Pantry": [
-      "Almonds (250g)",
-      "Walnuts (250g)",
-      "Chia seeds (200g)",
-      "Cold-pressed / olive oil",
-      "Green tea",
-      "Coffee",
-      "Curry leaves & coriander",
-      "Whole spices, turmeric, chilli, cumin"
-    ]
+    "Proteins": ["Eggs (2 dozen)", "Chicken breast (600g)", "Fish (400g)", "Paneer (700g)", "Tofu (150g)", "Whey protein", "Greek/hung curd (1.5 kg)", "Milk (3–4 L)", "Rajma (1 cup)", "Chole (1 cup)", "Soya chunks (200g)", "Sattu (200g)", "Rolled oats (200g)"],
+    "Veg & Greens": ["Palak", "Methi", "Cabbage", "Cucumber", "Tomato", "Onion", "Capsicum", "Beans", "Broccoli", "Carrot", "Lemon", "Ginger-garlic"],
+    "Grains": ["Millet flour (jowar/ragi)", "Brown rice", "Quinoa", "Moong (dal + sprouts)", "Besan (gram flour)"],
+    "Fruit": ["Guava", "Apple", "Pear", "Berries", "Jamun (seasonal)"],
+    "Pantry": ["Almonds", "Walnuts", "Chia seeds", "Cooking/olive oil", "Stevia", "Green tea", "Coffee", "Spices"]
   }
 }
