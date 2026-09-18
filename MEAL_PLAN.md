@@ -62,7 +62,7 @@ CONTENT RULES (every meal):
   Fish must be seabass, red snapper, rawas (Indian salmon), or white pomfret
   ONLY, steamed. Space the two fish meals at least 2 days apart.
   Dairy and plant protein freely.
-- Low sodium.
+- Low sodium. No pickle, no papad, no packaged/processed food.
 - VEGETABLES: build lunch and dinner around these - palak, methi, cabbage,
   bottle/ridge/snake/ash gourd, bitter gourd (karela), cauliflower, broccoli,
   amaranth, drumstick/moringa, bhindi, beans, cluster beans, capsicum, cucumber,
@@ -106,7 +106,7 @@ failure rather than committing a bad file. Check all of:
 - no banned item appears: prawn, shellfish, sardine, mackerel, surmai, anchovy,
   tuna, salmon (except rawas/Indian salmon), barracuda, sheela, rohu, organ meat,
   liver, sugar, honey, jaggery, juice, maida, deep-fried, white rice, brown bread,
-  pancake, tikka, grill, grilled, bake, baked
+  pancake, tikka, grill, grilled, bake, baked, pickle, papad
 
 STEP 5 - Replace week.json at the repo root with the new file, commit on main, and
 push. Commit message: "Weekly meal plan: <DD Mon> - <DD Mon YYYY>".
