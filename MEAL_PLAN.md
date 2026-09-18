@@ -40,21 +40,27 @@ languages: en, hi (Hindi), kn (Kannada), te (Telugu).
   }
 }
 
-Keep the fixed items the same each week:
+Keep the fixed items the same each week (except the named fruits in midmorning,
+which change weekly):
 - coffee: Black coffee, no sugar
-- midmorning: 1 low-GI fruit + chia water + 8 almonds OR 2-3 walnut halves (favour walnuts ~3x/week)
+- midmorning: NAME the week's specific fruits in the text (e.g. "Guava, orange or
+  kiwi") + chia water + 8 almonds OR 2-3 walnut halves (favour walnuts ~3x/week).
+  Never write "1 low-GI fruit" or "rotate" — always name the actual fruits.
 - evening: Milk + 1.5 scoop whey shake (no sugar)
 
 CONTENT RULES (every meal):
 - Daily total ~2,300 kcal, ~210g protein.
 - No added sugar, honey, jaggery, or juice; no maida; nothing deep-fried.
+- NO pancakes, NO tikkas, NO grilled dishes, NO bakes/baked dishes: there is no
+  grill or oven, and pancakes are not possible. Stovetop and steaming only
+  (tawa, kadai, pressure cooker, steamer).
 - GRAINS: only small portions of millet / brown rice / quinoa / Kerala matta rice /
   whole-grain sourdough (1-2 slices). NO white rice, NO maida, NO brown bread.
 - URIC-ACID SAFE: NO organ meat, prawns, shellfish, sardines, mackerel, surmai,
   anchovies, tuna, true (Atlantic) salmon, barracuda/sheela.
   Across the week: MAX 3 chicken meals + MAX 2 fish meals.
-  Fish must be seabass, red snapper, rawas (Indian salmon), white pomfret, or rohu
-  ONLY, grilled or steamed. Space the two fish meals at least 2 days apart.
+  Fish must be seabass, red snapper, rawas (Indian salmon), or white pomfret
+  ONLY, steamed. Space the two fish meals at least 2 days apart.
   Dairy and plant protein freely.
 - Low sodium.
 - VEGETABLES: build lunch and dinner around these - palak, methi, cabbage,
@@ -74,9 +80,11 @@ VARIETY:
 - Must differ meaningfully from the previous week's plan (Step 1).
 - Rotate the main protein across the week: eggs, paneer, tofu, curd, whey, chana,
   moong, soya, sattu, chicken; fish max 2.
-- Vary formats: chillas, bowls, parathas, stir-fries, curries, bakes, slow-cooked dishes.
-- FRUIT (rotate the fixed midmorning across): guava, apple, pear, plum, peach,
-  apricot, jamun, orange, mosambi, kiwi, papaya, pomegranate, berries.
+- Vary formats: chillas, bowls, parathas, stir-fries, curries, steamed dishes,
+  slow-cooked dishes.
+- FRUIT: choose 3-4 for the week from guava, apple, pear, plum, peach, apricot,
+  jamun, orange, mosambi, kiwi, papaya, pomegranate, berries — and name them
+  explicitly in the fixed midmorning text. Vary the choices from week to week.
 
 TRANSLATION: transliterate dish names (e.g. paneer bhurji -> పనీర్ భుర్జీ), translate
 the connecting words and portions ("no grain", "with", "sautéed"). Keep numbers
@@ -92,9 +100,11 @@ failure rather than committing a bad file. Check all of:
 - no meal repeats within 2 days of its previous use
 - no meal appears in the previous week's plan
 - every breakfast contains 150g hung curd or 150g Greek yogurt
+- the midmorning text names specific fruits and does not contain the word "rotate"
 - no banned item appears: prawn, shellfish, sardine, mackerel, surmai, anchovy,
-  tuna, salmon (except rawas/Indian salmon), barracuda, sheela, organ meat, liver,
-  sugar, honey, jaggery, juice, maida, deep-fried, white rice, brown bread
+  tuna, salmon (except rawas/Indian salmon), barracuda, sheela, rohu, organ meat,
+  liver, sugar, honey, jaggery, juice, maida, deep-fried, white rice, brown bread,
+  pancake, tikka, grill, grilled, bake, baked
 
 STEP 5 - Replace week.json at the repo root with the new file, commit on main, and
 push. Commit message: "Weekly meal plan: <DD Mon> - <DD Mon YYYY>".
