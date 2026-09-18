@@ -1,6 +1,7 @@
 {
   "meta": {
     "generatedFor": "Week of 14 Sep 2026",
+    "generatedAt": "2026-09-18T16:32:10+05:30",
     "targets": "~2,300 kcal · ~210g protein"
   },
   "fixed": {
@@ -166,10 +167,69 @@
     }
   },
   "grocery": {
-    "Proteins": ["Eggs (2.5 dozen)", "Chicken breast (600g)", "Seabass fillet (200g)", "White pomfret (250g)", "Paneer (900g)", "Tofu (500g)", "Whey protein", "Greek/hung curd (2 kg)", "Milk (3–4 L)", "Kala chana (1.5 cups)", "Rajma (1 cup)", "Soya chunks (200g)", "Whole moong + moong dal (700g)"],
-    "Veg & Greens": ["Palak", "Methi", "Amaranth greens", "Cabbage", "Bottle gourd", "Ash gourd", "Snake gourd", "Drumstick", "Beans", "Cluster beans", "Bhindi", "Zucchini", "Capsicum", "Cucumber", "Tomato", "Onion", "Lemon", "Ginger-garlic", "Curry leaves", "Coriander"],
-    "Grains": ["Ragi flour", "Jowar flour", "Bajra flour", "Little millet", "Brown rice", "Kerala matta rice", "Quinoa", "Whole-grain sourdough loaf"],
-    "Fruit": ["Papaya", "Pomegranate", "Orange", "Kiwi"],
-    "Pantry": ["Almonds", "Walnuts", "Chia seeds", "Cold-pressed groundnut oil", "Olive oil", "Green tea", "Coffee", "Mustard & cumin seeds", "Turmeric, pepper, garam masala"]
+    "Proteins": [
+      "Eggs (2.5 dozen)",
+      "Chicken breast (600g)",
+      "Seabass fillet (200g)",
+      "White pomfret (250g)",
+      "Paneer (900g)",
+      "Tofu (500g)",
+      "Whey protein",
+      "Greek/hung curd (2 kg)",
+      "Milk (3–4 L)",
+      "Kala chana (1.5 cups)",
+      "Rajma (1 cup)",
+      "Soya chunks (200g)",
+      "Whole moong + moong dal (700g)"
+    ],
+    "Veg & Greens": [
+      "Palak",
+      "Methi",
+      "Amaranth greens",
+      "Cabbage",
+      "Bottle gourd",
+      "Ash gourd",
+      "Snake gourd",
+      "Drumstick",
+      "Beans",
+      "Cluster beans",
+      "Bhindi",
+      "Zucchini",
+      "Capsicum",
+      "Cucumber",
+      "Tomato",
+      "Onion",
+      "Lemon",
+      "Ginger-garlic",
+      "Curry leaves",
+      "Coriander"
+    ],
+    "Grains": [
+      "Ragi flour",
+      "Jowar flour",
+      "Bajra flour",
+      "Little millet",
+      "Brown rice",
+      "Kerala matta rice",
+      "Quinoa",
+      "Whole-grain sourdough loaf"
+    ],
+    "Fruit": [
+      "Papaya",
+      "Pomegranate",
+      "Orange",
+      "Kiwi"
+    ],
+    "Pantry": [
+      "Almonds",
+      "Walnuts",
+      "Chia seeds",
+      "Cold-pressed groundnut oil",
+      "Olive oil",
+      "Green tea",
+      "Coffee",
+      "Mustard & cumin seeds",
+      "Turmeric, pepper, garam masala"
+    ]
   }
 }

@@ -136,21 +136,25 @@ const T = {
   en:{ brand:"Meal Plan", today:"Today", week:"Week", grocery:"Grocery",
        breakfast:"Breakfast", lunch:"Lunch", dinner:"Dinner",
        coffee:"On waking", midmorning:"Mid-morning", evening:"Evening · 4 PM",
+       generated:"Last generated",
        days:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
        dshort:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"] },
   hi:{ brand:"भोजन योजना", today:"आज", week:"सप्ताह", grocery:"सामान",
        breakfast:"नाश्ता", lunch:"दोपहर का खाना", dinner:"रात का खाना",
        coffee:"उठने पर", midmorning:"दोपहर से पहले", evening:"शाम · 4 बजे",
+       generated:"अंतिम बार बनाया गया",
        days:["रविवार","सोमवार","मंगलवार","बुधवार","गुरुवार","शुक्रवार","शनिवार"],
        dshort:["रवि","सोम","मंगल","बुध","गुरु","शुक्र","शनि"] },
   kn:{ brand:"ಊಟದ ಯೋಜನೆ", today:"ಇಂದು", week:"ವಾರ", grocery:"ಸಾಮಾನು",
        breakfast:"ಬೆಳಗಿನ ಉಪಾಹಾರ", lunch:"ಮಧ್ಯಾಹ್ನದ ಊಟ", dinner:"ರಾತ್ರಿ ಊಟ",
        coffee:"ಎದ್ದ ಮೇಲೆ", midmorning:"ಮಧ್ಯಾಹ್ನದ ಮೊದಲು", evening:"ಸಂಜೆ · 4 ಗಂಟೆ",
+       generated:"ಕೊನೆಯದಾಗಿ ರಚಿಸಿದ್ದು",
        days:["ಭಾನುವಾರ","ಸೋಮವಾರ","ಮಂಗಳವಾರ","ಬುಧವಾರ","ಗುರುವಾರ","ಶುಕ್ರವಾರ","ಶನಿವಾರ"],
        dshort:["ಭಾನು","ಸೋಮ","ಮಂಗಳ","ಬುಧ","ಗುರು","ಶುಕ್ರ","ಶನಿ"] },
   te:{ brand:"భోజన ప్రణాళిక", today:"ఈరోజు", week:"వారం", grocery:"సరుకులు",
        breakfast:"అల్పాహారం", lunch:"మధ్యాహ్న భోజనం", dinner:"రాత్రి భోజనం",
        coffee:"లేచిన తర్వాత", midmorning:"మధ్యాహ్నానికి ముందు", evening:"సాయంత్రం · 4 గం",
+       generated:"చివరిగా రూపొందించినది",
        days:["ఆదివారం","సోమవారం","మంగళవారం","బుధవారం","గురువారం","శుక్రవారం","శనివారం"],
        dshort:["ఆది","సోమ","మంగళ","బుధ","గురు","శుక్ర","శని"] }
 };
@@ -302,7 +306,17 @@ function render(){
   }
   document.getElementById("view-grocery").innerHTML = g || "";
 
-  document.getElementById("meta").textContent = (DATA.meta && DATA.meta.generatedFor ? DATA.meta.generatedFor+" · " : "") + (DATA.meta && DATA.meta.targets ? DATA.meta.targets : "");
+  const meta = DATA.meta || {};
+  let metaHtml = [(meta.generatedFor||""), (meta.targets||"")].filter(Boolean).join(" · ");
+  if(meta.generatedAt){
+    const dt = new Date(meta.generatedAt);
+    if(!isNaN(dt)){
+      const loc = {en:"en-IN",hi:"hi-IN",kn:"kn-IN",te:"te-IN"}[lang] || "en-IN";
+      const stamp = dt.toLocaleString(loc,{day:"numeric",month:"short",year:"numeric",hour:"numeric",minute:"2-digit"});
+      metaHtml += (metaHtml?"<br>":"") + t.generated + ": " + stamp;
+    }
+  }
+  document.getElementById("meta").innerHTML = metaHtml;
 }
 
 function mealCard(cls,label,text){

@@ -24,7 +24,7 @@ keys, same nesting). Every meal and every fixed item is an object with all four
 languages: en, hi (Hindi), kn (Kannada), te (Telugu).
 
 {
-  "meta": { "generatedFor": "Week of <DD Mon YYYY>", "targets": "~2,300 kcal · ~210g protein" },
+  "meta": { "generatedFor": "Week of <DD Mon YYYY>", "generatedAt": "<ISO 8601 timestamp with offset, from `date -Iseconds`>", "targets": "~2,300 kcal · ~210g protein" },
   "fixed": {
     "coffee":     { "en": "...", "hi": "...", "kn": "...", "te": "..." },
     "midmorning": { "en": "...", "hi": "...", "kn": "...", "te": "..." },
@@ -93,6 +93,8 @@ and units (180g, 1/3 bowl) as-is.
 STEP 4 - Before committing, validate the generated file with a script and fix any
 failure rather than committing a bad file. Check all of:
 - JSON parses; top-level keys are exactly meta, fixed, days, grocery
+- meta.generatedAt is present and parses as an ISO 8601 timestamp (the app shows
+  it as "Last generated"); set it with `date -Iseconds` at generation time
 - days has mon,tue,wed,thu,fri,sat,sun in that order, each with breakfast,lunch,dinner
 - every meal and fixed item has all four of en, hi, kn, te, none empty
 - grocery has exactly the keys Proteins, Veg & Greens, Grains, Fruit, Pantry
