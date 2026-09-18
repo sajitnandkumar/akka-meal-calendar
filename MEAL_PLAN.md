@@ -72,12 +72,13 @@ CONTENT RULES (every meal):
   bottle/ridge/snake/ash gourd, bitter gourd (karela), cauliflower, broccoli,
   amaranth, drumstick/moringa, bhindi, beans, cluster beans, capsicum, cucumber,
   brinjal, zucchini, tindora. Limit starchy veg (potato, yam, corn, peas, arbi).
-- WEEKLY VEG SET: pick 2 leafy greens + 5-6 other vegetables from the list above
-  and build ALL of the week's lunches and dinners from only that set, plus the
-  always-available staples (onion, tomato, cucumber, ginger, garlic, green
-  chilli, coriander/curry leaves, lemon). Rotate the set from week to week —
-  variety comes across weeks, not from a huge single-week grocery list. Sides
-  may repeat across the week; only whole meals follow the 2-day rule.
+- WEEKLY VEG SET: pick exactly 5 vegetables from the list above (1-2 of them
+  leafy greens) and build ALL of the week's lunches and dinners from only those
+  5, plus the always-available staples (onion, tomato, cucumber, ginger, garlic,
+  green chilli, coriander/curry leaves, lemon). The 5 repeat freely across the
+  week; only whole meals follow the 2-day rule. Rotate the set from week to
+  week (work karela in regularly), so variety comes across weeks, not from a
+  huge single-week grocery list.
 - Normal Bangalore-kitchen ingredients; cook time up to ~1 hour is fine.
 
 PER SLOT:
@@ -124,7 +125,7 @@ failure rather than committing a bad file. Check all of:
   walnut days number exactly 3 and are not adjacent
 - every meal and fixed item has all four of en, hi, kn, te, none empty
 - grocery has exactly the keys Proteins, Veg & Greens, Grains, Fruit, Pantry
-- "Veg & Greens" has at most 14 lines (2 greens + 5-6 vegetables + staples)
+- "Veg & Greens" has at most 11 lines (the week's 5 vegetables + staples)
 - chicken meals <= 3; fish meals <= 2; the two fish meals are >= 2 days apart
 - no meal repeats within 2 days of its previous use
 - no meal appears in the previous week's plan
