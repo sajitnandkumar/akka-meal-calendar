@@ -1,0 +1,106 @@
+You maintain a weekly meal plan for a metabolic-health diet in the
+akka-meal-calendar repository, which is this task's working folder. Run the whole
+job end to end without asking questions.
+
+Before anything else, run `git pull` so you are working from the latest week.json.
+
+STEP 1 - Read the current week.json at the repo root. Note every meal used in it so
+the new plan respects the no-repeat-within-2-days rule below, and so the new week
+differs meaningfully from it.
+
+STEP 2 - Work out the date range. Check today's date with the `date` command, do not
+assume it. Then:
+- if today is Sunday, the plan is for tomorrow's Monday through the following Sunday
+- on any other day, the plan is for THIS week: the most recent Monday through the
+  coming Sunday
+This matters because a missed run catches up late. A run that fires on Tuesday
+because the laptop was shut must still plan the current week, not skip to the next.
+Use the Monday for meta.generatedFor ("Week of <DD Mon YYYY>") and for the commit
+message. If week.json already carries that exact generatedFor value, the week has
+already been planned: stop and say so rather than regenerating it.
+
+STEP 3 - Generate a NEW week.json. Output valid JSON in EXACTLY this schema (same
+keys, same nesting). Every meal and every fixed item is an object with all four
+languages: en, hi (Hindi), kn (Kannada), te (Telugu).
+
+{
+  "meta": { "generatedFor": "Week of <DD Mon YYYY>", "targets": "~2,300 kcal · ~210g protein" },
+  "fixed": {
+    "coffee":     { "en": "...", "hi": "...", "kn": "...", "te": "..." },
+    "midmorning": { "en": "...", "hi": "...", "kn": "...", "te": "..." },
+    "evening":    { "en": "...", "hi": "...", "kn": "...", "te": "..." }
+  },
+  "days": {
+    "mon": { "breakfast": {4 langs}, "lunch": {4 langs}, "dinner": {4 langs} },
+    "tue": {...}, "wed": {...}, "thu": {...}, "fri": {...}, "sat": {...}, "sun": {...}
+  },
+  "grocery": {
+    "Proteins": ["item (qty)", ...], "Veg & Greens": [...],
+    "Grains": [...], "Fruit": [...], "Pantry": [...]
+  }
+}
+
+Keep the fixed items the same each week:
+- coffee: Black coffee, no sugar
+- midmorning: 1 low-GI fruit + chia water + 8 almonds OR 2-3 walnut halves (favour walnuts ~3x/week)
+- evening: Milk + 1.5 scoop whey shake (no sugar)
+
+CONTENT RULES (every meal):
+- Daily total ~2,300 kcal, ~210g protein.
+- No added sugar, honey, jaggery, or juice; no maida; nothing deep-fried.
+- GRAINS: only small portions of millet / brown rice / quinoa / Kerala matta rice /
+  whole-grain sourdough (1-2 slices). NO white rice, NO maida, NO brown bread.
+- URIC-ACID SAFE: NO organ meat, prawns, shellfish, sardines, mackerel, surmai,
+  anchovies, tuna, true (Atlantic) salmon, barracuda/sheela.
+  Across the week: MAX 3 chicken meals + MAX 2 fish meals.
+  Fish must be seabass, red snapper, rawas (Indian salmon), white pomfret, or rohu
+  ONLY, grilled or steamed. Space the two fish meals at least 2 days apart.
+  Dairy and plant protein freely.
+- Low sodium.
+- VEGETABLES: build lunch and dinner around these - palak, methi, cabbage,
+  bottle/ridge/snake/ash gourd, bitter gourd (karela), cauliflower, broccoli,
+  amaranth, drumstick/moringa, bhindi, beans, cluster beans, capsicum, cucumber,
+  brinjal, zucchini, tindora. Limit starchy veg (potato, yam, corn, peas, arbi).
+- Normal Bangalore-kitchen ingredients; cook time up to ~1 hour is fine.
+
+PER SLOT:
+- breakfast ~40g protein, ALWAYS includes 150g hung curd or Greek yogurt.
+- lunch 150-200g protein, small or no grain.
+- dinner 150-200g protein, small grain, greens.
+
+VARIETY:
+- A meal MAY repeat within the week, but NOT within 2 days of its previous use
+  (never on consecutive days, and not with only one day between).
+- Must differ meaningfully from the previous week's plan (Step 1).
+- Rotate the main protein across the week: eggs, paneer, tofu, curd, whey, chana,
+  moong, soya, sattu, chicken; fish max 2.
+- Vary formats: chillas, bowls, parathas, stir-fries, curries, bakes, slow-cooked dishes.
+- FRUIT (rotate the fixed midmorning across): guava, apple, pear, plum, peach,
+  apricot, jamun, orange, mosambi, kiwi, papaya, pomegranate, berries.
+
+TRANSLATION: transliterate dish names (e.g. paneer bhurji -> పనీర్ భుర్జీ), translate
+the connecting words and portions ("no grain", "with", "sautéed"). Keep numbers
+and units (180g, 1/3 bowl) as-is.
+
+STEP 4 - Before committing, validate the generated file with a script and fix any
+failure rather than committing a bad file. Check all of:
+- JSON parses; top-level keys are exactly meta, fixed, days, grocery
+- days has mon,tue,wed,thu,fri,sat,sun in that order, each with breakfast,lunch,dinner
+- every meal and fixed item has all four of en, hi, kn, te, none empty
+- grocery has exactly the keys Proteins, Veg & Greens, Grains, Fruit, Pantry
+- chicken meals <= 3; fish meals <= 2; the two fish meals are >= 2 days apart
+- no meal repeats within 2 days of its previous use
+- no meal appears in the previous week's plan
+- every breakfast contains 150g hung curd or 150g Greek yogurt
+- no banned item appears: prawn, shellfish, sardine, mackerel, surmai, anchovy,
+  tuna, salmon (except rawas/Indian salmon), barracuda, sheela, organ meat, liver,
+  sugar, honey, jaggery, juice, maida, deep-fried, white rice, brown bread
+
+STEP 5 - Replace week.json at the repo root with the new file, commit on main, and
+push. Commit message: "Weekly meal plan: <DD Mon> - <DD Mon YYYY>".
+Do not commit anything other than week.json. If the push fails, say exactly what
+the error was and leave the commit in place rather than retrying blindly.
+
+STEP 6 - In your final message, confirm the commit hash and that the push
+succeeded, then show the 7-day plan as an English table (rows = days, columns =
+breakfast, lunch, dinner), plus a one-line note on what changed versus last week.
