@@ -19,19 +19,31 @@ Use the Monday for meta.generatedFor ("Week of <DD Mon YYYY>") and for the commi
 message. If week.json already carries that exact generatedFor value, the week has
 already been planned: stop and say so rather than regenerating it.
 
+TWO PEOPLE, ONE MENU: the plan feeds two people. Every meal is the SAME DISH for
+both (one cooking job), with different portions:
+- "s" (Sajit): the full portions all the rules below describe (~2,300 kcal,
+  ~210g protein/day).
+- "v" (Valentina): ~1,500 kcal, ~65-75g protein/day — roughly HALF the protein
+  anchor, egg and dairy portions, the same vegetables and salads, the same or a
+  slightly smaller grain. Whey 0.5 scoop in the evening shake; nuts 5 almonds
+  or 1-2 walnut halves. All the low-GI / low-sodium / no-sugar rules apply to
+  her portions too.
+Every meal object and fixed item except coffee is {"s": {4 langs}, "v": {4 langs}};
+coffee stays a single 4-language object (identical for both).
+
 STEP 3 - Generate a NEW week.json. Output valid JSON in EXACTLY this schema (same
-keys, same nesting). Every meal and every fixed item is an object with all four
-languages: en, hi (Hindi), kn (Kannada), te (Telugu).
+keys, same nesting). Every language object has all four languages: en, hi (Hindi),
+kn (Kannada), te (Telugu).
 
 {
-  "meta": { "generatedFor": "Week of <DD Mon YYYY>", "generatedAt": "<ISO 8601 timestamp with offset, from `date -Iseconds`>", "targets": "~2,300 kcal · ~210g protein" },
+  "meta": { "generatedFor": "Week of <DD Mon YYYY>", "generatedAt": "<ISO 8601 timestamp with offset, from `date -Iseconds`>", "targets": "S ~2,300 kcal · 210g protein — V ~1,500 kcal · 70g protein" },
   "fixed": {
     "coffee":     { "en": "...", "hi": "...", "kn": "...", "te": "..." },
-    "midmorning": { "en": "...", "hi": "...", "kn": "...", "te": "..." },
-    "evening":    { "en": "...", "hi": "...", "kn": "...", "te": "..." }
+    "midmorning": { "s": {4 langs}, "v": {4 langs} },
+    "evening":    { "s": {4 langs}, "v": {4 langs} }
   },
   "days": {
-    "mon": { "breakfast": {4 langs}, "midmorning": {4 langs}, "lunch": {4 langs}, "dinner": {4 langs} },
+    "mon": { "breakfast": {"s": {4 langs}, "v": {4 langs}}, "midmorning": {"s":..., "v":...}, "lunch": {"s":..., "v":...}, "dinner": {"s":..., "v":...} },
     "tue": {...}, "wed": {...}, "thu": {...}, "fri": {...}, "sat": {...}, "sun": {...}
   },
   "grocery": {
@@ -126,7 +138,11 @@ failure rather than committing a bad file. Check all of:
   breakfast,midmorning,lunch,dinner in that order
 - each day's midmorning names one fruit and either almonds or walnut halves;
   walnut days number exactly 3 and are not adjacent
-- every meal and fixed item has all four of en, hi, kn, te, none empty
+- every meal and fixed item (except coffee) has both "s" and "v"; every language
+  object has all four of en, hi, kn, te, none empty
+- all content checks below run on BOTH the "s" and "v" texts; "v" anchors are
+  roughly half of "s" (a smaller gram/egg quantity must be present)
+- grocery quantities cover BOTH people
 - grocery has exactly the keys Proteins, Veg & Greens, Grains, Fruit, Pantry
 - "Veg & Greens" has at most 11 lines (the week's 5 vegetables + staples)
 - chicken meals <= 3; fish meals <= 1

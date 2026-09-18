@@ -113,6 +113,16 @@
   @media (prefers-color-scheme: dark){ .gcat li.have .cb{ color:#10140f; } }
   .gcat li.have { color:var(--ink-faint); text-decoration:line-through; }
 
+  /* two-person lines */
+  .pline { display:flex; align-items:flex-start; gap:8px; }
+  .pline + .pline { margin-top:6px; }
+  .pname { flex:none; font-size:10px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--pine); background:var(--pine-soft); border-radius:6px; padding:2px 7px; margin-top:3px; }
+  .pline.p2 .pname { color:var(--dn); background:var(--dn-bg); }
+  .card .meal .pline { font-size:16px; }
+  .mini .txt .pline { font-size:13.5px; }
+  .wday .row .v .pline { font-size:13px; }
+  .wday .row .v .pline .pname { margin-top:2px; }
+
   .meta { text-align:center; font-size:12px; color:var(--ink-faint); margin-top:18px; }
   .hidden { display:none; }
 </style>
@@ -149,6 +159,7 @@ const T = {
        breakfast:"Breakfast", lunch:"Lunch", dinner:"Dinner",
        coffee:"On waking", midmorning:"Mid-morning", evening:"Evening · 4 PM",
        generated:"Last generated",
+       sajit:"Sajit", valentina:"Valentina",
        toorder:"To order", copylist:"Copy list", copied:"Copied ✓", clearmarks:"Reset",
        ghint:"Tick what is already at home — the rest is the order list",
        days:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
@@ -157,6 +168,7 @@ const T = {
        breakfast:"नाश्ता", lunch:"दोपहर का खाना", dinner:"रात का खाना",
        coffee:"उठने पर", midmorning:"दोपहर से पहले", evening:"शाम · 4 बजे",
        generated:"अंतिम बार बनाया गया",
+       sajit:"सजित", valentina:"वैलेंटिना",
        toorder:"मंगाना है", copylist:"लिस्ट कॉपी करें", copied:"कॉपी हो गया ✓", clearmarks:"रीसेट",
        ghint:"जो घर में है उसे टिक करें — बाकी ऑर्डर लिस्ट है",
        days:["रविवार","सोमवार","मंगलवार","बुधवार","गुरुवार","शुक्रवार","शनिवार"],
@@ -165,6 +177,7 @@ const T = {
        breakfast:"ಬೆಳಗಿನ ಉಪಾಹಾರ", lunch:"ಮಧ್ಯಾಹ್ನದ ಊಟ", dinner:"ರಾತ್ರಿ ಊಟ",
        coffee:"ಎದ್ದ ಮೇಲೆ", midmorning:"ಮಧ್ಯಾಹ್ನದ ಮೊದಲು", evening:"ಸಂಜೆ · 4 ಗಂಟೆ",
        generated:"ಕೊನೆಯದಾಗಿ ರಚಿಸಿದ್ದು",
+       sajit:"ಸಜಿತ್", valentina:"ವ್ಯಾಲೆಂಟಿನಾ",
        toorder:"ತರಿಸಬೇಕು", copylist:"ಪಟ್ಟಿ ನಕಲಿಸಿ", copied:"ನಕಲಾಯಿತು ✓", clearmarks:"ರೀಸೆಟ್",
        ghint:"ಮನೆಯಲ್ಲಿ ಇರುವುದನ್ನು ಟಿಕ್ ಮಾಡಿ — ಉಳಿದವು ಆರ್ಡರ್ ಪಟ್ಟಿ",
        days:["ಭಾನುವಾರ","ಸೋಮವಾರ","ಮಂಗಳವಾರ","ಬುಧವಾರ","ಗುರುವಾರ","ಶುಕ್ರವಾರ","ಶನಿವಾರ"],
@@ -173,6 +186,7 @@ const T = {
        breakfast:"అల్పాహారం", lunch:"మధ్యాహ్న భోజనం", dinner:"రాత్రి భోజనం",
        coffee:"లేచిన తర్వాత", midmorning:"మధ్యాహ్నానికి ముందు", evening:"సాయంత్రం · 4 గం",
        generated:"చివరిగా రూపొందించినది",
+       sajit:"సజిత్", valentina:"వాలెంటినా",
        toorder:"తెప్పించాలి", copylist:"జాబితా కాపీ", copied:"కాపీ అయింది ✓", clearmarks:"రీసెట్",
        ghint:"ఇంట్లో ఉన్నవి టిక్ చేయండి — మిగతావి ఆర్డర్ జాబితా",
        days:["ఆదివారం","సోమవారం","మంగళవారం","బుధవారం","గురువారం","శుక్రవారం","శనివారం"],
@@ -297,15 +311,22 @@ function render(){
   const f = DATA.fixed||{};
 
   // TODAY
+  // A slot may be split per person: {s: {langs}, v: {langs}} -> two labeled lines
+  const mb = m => {
+    if(!m) return "—";
+    if(m.s) return `<div class="pline"><span class="pname">${t.sajit}</span><span>${pick(m.s)}</span></div>`+
+                   `<div class="pline p2"><span class="pname">${t.valentina}</span><span>${pick(m.v)}</span></div>`;
+    return pick(m);
+  };
   const dateStr = now.toLocaleDateString(undefined,{day:"numeric",month:"long"});
   let html = `<div class="datehead">${dateStr}</div><div class="dayname">${t.days[now.getDay()]}</div>`;
   if(day){
-    html += mealCard("bf", t.breakfast, pick(day.breakfast));
-    html += `<div class="mini"><div class="lbl">${t.midmorning}</div><div class="txt">${pick(day.midmorning || f.midmorning)}</div></div>`;
-    html += mealCard("ln", t.lunch, pick(day.lunch));
-    html += `<div class="mini"><div class="lbl">${t.evening}</div><div class="txt">${pick(f.evening)}</div></div>`;
-    html += mealCard("dn", t.dinner, pick(day.dinner));
-    html += `<div class="mini"><div class="lbl">${t.coffee}</div><div class="txt">${pick(f.coffee)}</div></div>`;
+    html += mealCard("bf", t.breakfast, mb(day.breakfast));
+    html += `<div class="mini"><div class="lbl">${t.midmorning}</div><div class="txt">${mb(day.midmorning || f.midmorning)}</div></div>`;
+    html += mealCard("ln", t.lunch, mb(day.lunch));
+    html += `<div class="mini"><div class="lbl">${t.evening}</div><div class="txt">${mb(f.evening)}</div></div>`;
+    html += mealCard("dn", t.dinner, mb(day.dinner));
+    html += `<div class="mini"><div class="lbl">${t.coffee}</div><div class="txt">${mb(f.coffee)}</div></div>`;
   } else {
     html += `<div class="card"><div class="meal">—</div></div>`;
   }
@@ -318,10 +339,10 @@ function render(){
     if(!d) continue;
     const isToday = idx===now.getDay();
     w += `<div class="wday ${isToday?"today":""}"><h3>${t.days[idx]}</h3>`+
-         `<div class="row bf"><span class="k">${t.breakfast}</span><span class="v">${pick(d.breakfast)}</span></div>`+
-         (d.midmorning ? `<div class="row mm"><span class="k">${t.midmorning}</span><span class="v">${pick(d.midmorning)}</span></div>` : "")+
-         `<div class="row ln"><span class="k">${t.lunch}</span><span class="v">${pick(d.lunch)}</span></div>`+
-         `<div class="row dn"><span class="k">${t.dinner}</span><span class="v">${pick(d.dinner)}</span></div></div>`;
+         `<div class="row bf"><span class="k">${t.breakfast}</span><span class="v">${mb(d.breakfast)}</span></div>`+
+         (d.midmorning ? `<div class="row mm"><span class="k">${t.midmorning}</span><span class="v">${mb(d.midmorning)}</span></div>` : "")+
+         `<div class="row ln"><span class="k">${t.lunch}</span><span class="v">${mb(d.lunch)}</span></div>`+
+         `<div class="row dn"><span class="k">${t.dinner}</span><span class="v">${mb(d.dinner)}</span></div></div>`;
   }
   document.getElementById("view-week").innerHTML = w;
 
