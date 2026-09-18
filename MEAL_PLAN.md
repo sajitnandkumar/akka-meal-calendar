@@ -78,7 +78,9 @@ CONTENT RULES (every meal):
   NO brown bread.
 - URIC-ACID SAFE: NO organ meat, prawns, shellfish, sardines, mackerel, surmai,
   anchovies, tuna, true (Atlantic) salmon, barracuda/sheela.
-  Across the week: MAX 3 chicken meals + MAX 1 fish meal.
+  Across the week: MAX 3 chicken meals + MAX 2 fish meals — and both fish meals
+  must use the SAME fish (one variety, one purchase for the week), spaced at
+  least 2 days apart.
   Fish must be seabass, red snapper, rawas (Indian salmon), or white pomfret
   ONLY, steamed, ~180-200g. No basa (too little protein).
   Dairy and plant protein freely.
@@ -119,7 +121,7 @@ VARIETY:
   (never on consecutive days, and not with only one day between).
 - Must differ meaningfully from the previous week's plan (Step 1).
 - Rotate the main protein across the week: eggs, paneer, tofu, curd, whey, chana,
-  moong, soya, sattu, chicken; fish max 1.
+  moong, soya, sattu, chicken; fish max 2 (same fish both times).
 - WITHIN A DAY, no protein twice: breakfast, lunch and dinner must each use a
   DIFFERENT main protein (an egg breakfast rules out an egg dinner; a paneer
   component at breakfast rules out a paneer lunch). Only the constant dairy
@@ -151,7 +153,8 @@ failure rather than committing a bad file. Check all of:
 - grocery quantities cover BOTH people
 - grocery has exactly the keys Proteins, Veg & Greens, Grains, Fruit, Pantry
 - "Veg & Greens" has at most 11 lines (the week's 5 vegetables + staples)
-- chicken meals <= 3; fish meals <= 1
+- chicken meals <= 3; fish meals <= 2; both fish meals name the SAME fish and
+  are >= 2 days apart
 - within each day, no protein keyword (egg, paneer, tofu, soya, chicken, fish
   names, chana, rajma, lobia, moong, sattu) appears in more than one of the
   day's three meals (curd/yogurt/whey/milk exempt)
