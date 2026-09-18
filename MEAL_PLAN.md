@@ -91,8 +91,8 @@ CONTENT RULES (every meal):
   brinjal, zucchini, tindora. Limit starchy veg (potato, yam, corn, peas, arbi).
 - WEEKLY VEG SET: pick exactly 5 vegetables from the list above (1-2 of them
   leafy greens) and build ALL of the week's lunches and dinners from only those
-  5, plus the always-available staples (onion, tomato, cucumber, ginger, garlic,
-  green chilli, coriander/curry leaves, lemon). The 5 repeat freely across the
+  5, plus the always-available staples (onion, tomato, cucumber, carrot, ginger,
+  garlic, green chilli, coriander/curry leaves, lemon). The 5 repeat freely across the
   week; only whole meals follow the 2-day rule. Rotate the set from week to
   week (work karela in regularly), so variety comes across weeks, not from a
   huge single-week grocery list.
@@ -152,7 +152,7 @@ failure rather than committing a bad file. Check all of:
   roughly half of "s" (a smaller gram/egg quantity must be present)
 - grocery quantities cover BOTH people
 - grocery has exactly the keys Proteins, Veg & Greens, Grains, Fruit, Pantry
-- "Veg & Greens" has at most 11 lines (the week's 5 vegetables + staples)
+- "Veg & Greens" has at most 12 lines (the week's 5 vegetables + staples)
 - chicken meals <= 3; fish meals <= 2; both fish meals name the SAME fish and
   are >= 2 days apart
 - within each day, no protein keyword (egg, paneer, tofu, soya, chicken, fish
