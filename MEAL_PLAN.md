@@ -80,6 +80,11 @@ PER SLOT:
   moong) as the main dish itself. A thin dal, a small khichdi, or dal cooked
   into a grain dish is a side, NOT an anchor. Every lunch and dinner must name
   its anchor with a gram (or egg-count) quantity.
+- GRAVY NEEDS A CARRIER: any curry / gravy / stew / masala main must include a
+  grain carrier in the same meal (1 millet roti or ⅓ bowl of an allowed rice or
+  quinoa) — you cannot eat a gravy alone. Only dry or semi-dry mains (sukka,
+  pepper-fry, stir-fry, bhurji, kadai, keema, sundal, bowls, salads) may be
+  marked "(no grain)".
 
 VARIETY:
 - A meal MAY repeat within the week, but NOT within 2 days of its previous use
@@ -112,6 +117,8 @@ failure rather than committing a bad file. Check all of:
 - every breakfast contains 150g hung curd or 150g Greek yogurt
 - every lunch and dinner names a protein anchor with a quantity (a "g" amount or
   an egg count in its text)
+- every meal whose text contains "curry", "masala", "stew", or "gravy" also
+  names a grain carrier (roti, or a bowl fraction of rice/quinoa) in the same meal
 - the midmorning text names specific fruits and does not contain the word "rotate"
 - no banned item appears: prawn, shellfish, sardine, mackerel, surmai, anchovy,
   tuna, salmon (except rawas/Indian salmon), barracuda, sheela, rohu, basa,
