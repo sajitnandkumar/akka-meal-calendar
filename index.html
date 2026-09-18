@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="theme-color" content="#14503f">
+<title>Meal Plan</title>
+<link rel="manifest" href="./manifest.json">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+Kannada:wght@400;500;600&family=Noto+Sans+Telugu:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:#f3f1ea; --card:#fbfaf6; --ink:#16211d; --ink-soft:#4a544f; --ink-faint:#7d857f;
+    --line:#ddd8ca; --pine:#14503f; --pine-soft:#e2ece6; --accent:#2f7d54;
+    --bf:#b5761b; --bf-bg:#f6eeda; --ln:#2f7d54; --ln-bg:#e6f0e8; --dn:#3a5ca8; --dn-bg:#e5ebf5;
+    --shadow:0 1px 3px rgba(20,33,29,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper:#10140f; --card:#181d17; --ink:#eef0e9; --ink-soft:#b3b9ac; --ink-faint:#838a7d;
+      --line:#2b322a; --pine:#7dc9a6; --pine-soft:#1a2a22; --accent:#6fc192;
+      --bf:#d0a24c; --bf-bg:#2a2314; --ln:#6fc192; --ln-bg:#17281d; --dn:#8fa8dd; --dn-bg:#171d2b;
+      --shadow:0 1px 3px rgba(0,0,0,.3);
+    }
+  }
+  * { box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    background:var(--paper); color:var(--ink);
+    font-family:'Inter','Noto Sans Devanagari','Noto Sans Kannada','Noto Sans Telugu',system-ui,sans-serif;
+    line-height:1.5; font-size:16px; padding-bottom:40px; -webkit-font-smoothing:antialiased;
+    max-width:640px; margin:0 auto; min-height:100vh;
+  }
+  body.lang-hi, body.lang-kn, body.lang-te { font-family:'Noto Sans Devanagari','Noto Sans Kannada','Noto Sans Telugu','Inter',system-ui,sans-serif; }
+
+  /* header */
+  header { position:sticky; top:0; z-index:10; background:var(--paper); padding:16px 18px 12px; border-bottom:1px solid var(--line); }
+  .toprow { display:flex; justify-content:space-between; align-items:center; gap:10px; }
+  .brand { font-family:'Fraunces',serif; font-weight:600; font-size:22px; color:var(--pine); }
+  .langs { display:flex; gap:4px; }
+  .langs button {
+    font:inherit; font-size:13px; font-weight:600; border:1px solid var(--line); background:var(--card);
+    color:var(--ink-soft); border-radius:8px; padding:6px 9px; cursor:pointer; min-width:38px;
+  }
+  .langs button.on { background:var(--pine); color:#fff; border-color:var(--pine); }
+  @media (prefers-color-scheme: dark){ .langs button.on{ color:#10140f; } }
+
+  /* tabs */
+  .tabs { display:flex; gap:6px; margin-top:12px; }
+  .tabs button {
+    flex:1; font:inherit; font-size:14px; font-weight:600; padding:9px 0; border:none; cursor:pointer;
+    background:transparent; color:var(--ink-faint); border-radius:10px; position:relative;
+  }
+  .tabs button.on { background:var(--pine-soft); color:var(--pine); }
+
+  main { padding:16px 18px; }
+  .datehead { font-family:'Fraunces',serif; font-weight:600; font-size:15px; color:var(--ink-faint); margin-bottom:4px; }
+  .dayname { font-family:'Fraunces',serif; font-weight:600; font-size:30px; letter-spacing:-.01em; margin-bottom:18px; }
+
+  /* meal cards */
+  .card {
+    background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 18px;
+    margin-bottom:12px; box-shadow:var(--shadow); border-left:5px solid var(--accent);
+  }
+  .card.bf { border-left-color:var(--bf); }
+  .card.ln { border-left-color:var(--ln); }
+  .card.dn { border-left-color:var(--dn); }
+  .card .slot { display:flex; align-items:center; gap:8px; font-size:12.5px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; margin-bottom:8px; }
+  .card.bf .slot { color:var(--bf); }
+  .card.ln .slot { color:var(--ln); }
+  .card.dn .slot { color:var(--dn); }
+  .card .meal { font-size:18px; font-weight:600; line-height:1.4; color:var(--ink); }
+
+  .mini {
+    display:flex; gap:12px; align-items:flex-start; background:var(--card); border:1px solid var(--line);
+    border-radius:12px; padding:12px 14px; margin-bottom:10px;
+  }
+  .mini .lbl { font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--pine); min-width:88px; padding-top:2px; }
+  .mini .txt { font-size:14px; color:var(--ink-soft); flex:1; }
+
+  .divider { display:flex; align-items:center; gap:10px; margin:22px 2px 12px; color:var(--ink-faint); font-size:12px; font-weight:600; letter-spacing:.05em; text-transform:uppercase; }
+  .divider::before,.divider::after { content:""; height:1px; background:var(--line); flex:1; }
+
+  /* week table */
+  .wtbl { width:100%; border-collapse:separate; border-spacing:0 8px; font-size:13px; }
+  .wtbl th { text-align:left; font-size:11px; color:var(--ink-faint); font-weight:700; padding:0 8px 4px; text-transform:uppercase; letter-spacing:.04em; }
+  .wday { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; box-shadow:var(--shadow); margin-bottom:10px; }
+  .wday.today { border-color:var(--pine); border-width:2px; }
+  .wday h3 { font-family:'Fraunces',serif; font-weight:600; font-size:16px; padding:11px 14px 6px; color:var(--pine); }
+  .wday .row { display:flex; gap:10px; padding:6px 14px; font-size:13.5px; }
+  .wday .row:last-child { padding-bottom:12px; }
+  .wday .row .k { min-width:74px; font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:.03em; padding-top:2px; }
+  .wday .row.bf .k { color:var(--bf); } .wday .row.ln .k { color:var(--ln); } .wday .row.dn .k { color:var(--dn); }
+  .wday .row .v { color:var(--ink-soft); flex:1; }
+
+  /* grocery */
+  .gcat { margin-bottom:16px; }
+  .gcat h3 { font-family:'Fraunces',serif; font-weight:600; font-size:17px; color:var(--pine); margin-bottom:8px; }
+  .gcat ul { list-style:none; display:flex; flex-wrap:wrap; gap:7px; }
+  .gcat li { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:6px 13px; font-size:13.5px; color:var(--ink-soft); }
+
+  .meta { text-align:center; font-size:12px; color:var(--ink-faint); margin-top:18px; }
+  .hidden { display:none; }
+</style>
+</head>
+<body class="lang-en">
+
+<header>
+  <div class="toprow">
+    <div class="brand" id="brand">Meal Plan</div>
+    <div class="langs" id="langs">
+      <button data-l="en" class="on">EN</button>
+      <button data-l="hi">हिं</button>
+      <button data-l="kn">ಕನ್ನ</button>
+      <button data-l="te">తెలు</button>
+    </div>
+  </div>
+  <div class="tabs" id="tabs">
+    <button data-t="today" class="on">Today</button>
+    <button data-t="week">Week</button>
+    <button data-t="grocery">Grocery</button>
+  </div>
+</header>
+
+<main>
+  <div id="view-today"></div>
+  <div id="view-week" class="hidden"></div>
+  <div id="view-grocery" class="hidden"></div>
+  <div class="meta" id="meta"></div>
+</main>
+
+<script>
+const T = {
+  en:{ brand:"Meal Plan", today:"Today", week:"Week", grocery:"Grocery",
+       breakfast:"Breakfast", lunch:"Lunch", dinner:"Dinner",
+       coffee:"On waking", midmorning:"Mid-morning", evening:"Evening · 4 PM",
+       days:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+       dshort:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"] },
+  hi:{ brand:"भोजन योजना", today:"आज", week:"सप्ताह", grocery:"सामान",
+       breakfast:"नाश्ता", lunch:"दोपहर का खाना", dinner:"रात का खाना",
+       coffee:"उठने पर", midmorning:"दोपहर से पहले", evening:"शाम · 4 बजे",
+       days:["रविवार","सोमवार","मंगलवार","बुधवार","गुरुवार","शुक्रवार","शनिवार"],
+       dshort:["रवि","सोम","मंगल","बुध","गुरु","शुक्र","शनि"] },
+  kn:{ brand:"ಊಟದ ಯೋಜನೆ", today:"ಇಂದು", week:"ವಾರ", grocery:"ಸಾಮಾನು",
+       breakfast:"ಬೆಳಗಿನ ಉಪಾಹಾರ", lunch:"ಮಧ್ಯಾಹ್ನದ ಊಟ", dinner:"ರಾತ್ರಿ ಊಟ",
+       coffee:"ಎದ್ದ ಮೇಲೆ", midmorning:"ಮಧ್ಯಾಹ್ನದ ಮೊದಲು", evening:"ಸಂಜೆ · 4 ಗಂಟೆ",
+       days:["ಭಾನುವಾರ","ಸೋಮವಾರ","ಮಂಗಳವಾರ","ಬುಧವಾರ","ಗುರುವಾರ","ಶುಕ್ರವಾರ","ಶನಿವಾರ"],
+       dshort:["ಭಾನು","ಸೋಮ","ಮಂಗಳ","ಬುಧ","ಗುರು","ಶುಕ್ರ","ಶನಿ"] },
+  te:{ brand:"భోజన ప్రణాళిక", today:"ఈరోజు", week:"వారం", grocery:"సరుకులు",
+       breakfast:"అల్పాహారం", lunch:"మధ్యాహ్న భోజనం", dinner:"రాత్రి భోజనం",
+       coffee:"లేచిన తర్వాత", midmorning:"మధ్యాహ్నానికి ముందు", evening:"సాయంత్రం · 4 గం",
+       days:["ఆదివారం","సోమవారం","మంగళవారం","బుధవారం","గురువారం","శుక్రవారం","శనివారం"],
+       dshort:["ఆది","సోమ","మంగళ","బుధ","గురు","శుక్ర","శని"] }
+};
+const DAYKEYS = ["sun","mon","tue","wed","thu","fri","sat"];
+
+// Fallback data so the app works when opened directly (file://) or before week.json exists.
+const DEFAULT_WEEK = {
+  "meta": {
+    "generatedFor": "Week of 15 Sep 2026",
+    "targets": "~2,300 kcal · ~210g protein"
+  },
+  "fixed": {
+    "coffee": {
+      "en": "Black coffee, no sugar",
+      "hi": "ब्लैक कॉफ़ी, बिना चीनी",
+      "kn": "ಬ್ಲ್ಯಾಕ್ ಕಾಫಿ, ಸಕ್ಕರೆ ಇಲ್ಲ",
+      "te": "బ్లాక్ కాఫీ, చక్కెర లేకుండా"
+    },
+    "midmorning": {
+      "en": "1 low-GI fruit (guava/apple/pear/berries) + chia water + 6 almonds / 2 walnuts",
+      "hi": "1 कम-GI फल (अमरूद/सेब/नाशपाती/बेरी) + चिया पानी + 6 बादाम / 2 अखरोट",
+      "kn": "1 ಕಡಿಮೆ-GI ಹಣ್ಣು (ಸೀಬೆ/ಸೇಬು/ಪೇರಳೆ/ಬೆರ್ರಿ) + ಚಿಯಾ ನೀರು + 6 ಬಾದಾಮಿ / 2 ವಾಲ್‌ನಟ್",
+      "te": "1 తక్కువ-GI పండు (జామ/యాపిల్/బేరి) + చియా నీరు + 6 బాదం / 2 వాల్‌నట్‌లు"
+    },
+    "evening": {
+      "en": "Milk + 1.5 scoop whey shake (no sugar)",
+      "hi": "दूध + 1.5 स्कूप व्हे शेक (बिना चीनी)",
+      "kn": "ಹಾಲು + 1.5 ಸ್ಕೂಪ್ ವೇ ಶೇಕ್ (ಸಕ್ಕರೆ ಇಲ್ಲ)",
+      "te": "పాలు + 1.5 స్కూప్ వే షేక్ (చక్కెర లేకుండా)"
+    }
+  },
+  "days": {
+    "mon": {
+      "breakfast": {
+        "en": "3-egg + 3-white bhurji with spinach + 150g Greek yogurt",
+        "hi": "3 अंडे + 3 सफ़ेदी की भुर्जी, पालक के साथ + 150g ग्रीक दही",
+        "kn": "3 ಮೊಟ್ಟೆ + 3 ಬಿಳಿ ಭಾಗ ಭುರ್ಜಿ, ಪಾಲಕ್ ಜೊತೆ + 150g ಗ್ರೀಕ್ ಮೊಸರು",
+        "te": "3 గుడ్లు + 3 తెల్లసొన భుర్జీ, పాలకూరతో + 150g గ్రీక్ పెరుగు"
+      },
+      "lunch": {
+        "en": "Grilled chicken (180g) + big salad + moong dal (no grain)",
+        "hi": "ग्रिल्ड चिकन (180g) + बड़ा सलाद + मूंग दाल (बिना अनाज)",
+        "kn": "ಗ್ರಿಲ್ಡ್ ಚಿಕನ್ (180g) + ದೊಡ್ಡ ಸಲಾಡ್ + ಹೆಸರು ಬೇಳೆ (ಧಾನ್ಯ ಇಲ್ಲ)",
+        "te": "గ్రిల్డ్ చికెన్ (180g) + పెద్ద సలాడ్ + పెసర పప్పు (ధాన్యం లేకుండా)"
+      },
+      "dinner": {
+        "en": "Paneer (180g) + veg stir-fry + 1 millet roti",
+        "hi": "पनीर (180g) + सब्ज़ी स्टर-फ्राई + 1 मिलेट रोटी",
+        "kn": "ಪನೀರ್ (180g) + ತರಕಾರಿ ಸ್ಟರ್-ಫ್ರೈ + 1 ಸಿರಿಧಾನ್ಯ ರೊಟ್ಟಿ",
+        "te": "పనీర్ (180g) + కూరగాయల స్టిర్-ఫ్రై + 1 మిల్లెట్ రొట్టి"
+      }
+    },
+    "tue": {
+      "breakfast": { "en": "Moong chilla (2) with paneer stuffing + 150g curd" },
+      "lunch": { "en": "Rajma + ⅓ bowl brown rice + cabbage salad" },
+      "dinner": { "en": "Grilled fish (200g) + sautéed methi + clear dal" }
+    },
+    "wed": {
+      "breakfast": { "en": "Sattu drink (salt) + 2 boiled eggs + 150g curd" },
+      "lunch": { "en": "Paneer tikka (180g) + salad + raita" },
+      "dinner": { "en": "Small quinoa + chicken curry + palak" }
+    },
+    "thu": {
+      "breakfast": { "en": "Tofu bhurji (150g) + 1 millet roti + 150g curd" },
+      "lunch": { "en": "Moong khichdi (millet + moong) + curd + veg" },
+      "dinner": { "en": "Soya paratha (2, tawa) + curd + cucumber salad" }
+    },
+    "fri": {
+      "breakfast": { "en": "Besan chilla (2) with paneer + 150g Greek yogurt" },
+      "lunch": { "en": "Paneer (180g) salad bowl + moong dal (no grain)" },
+      "dinner": { "en": "Paneer bhurji (180g) + cabbage thoran + 1 millet roti" }
+    },
+    "sat": {
+      "breakfast": { "en": "Overnight oats + 1 scoop whey + berries + 2 boiled eggs" },
+      "lunch": { "en": "Chole + ⅓ bowl brown rice + methi salad" },
+      "dinner": { "en": "Grilled chicken (200g) + sautéed greens + clear dal (no grain)" }
+    },
+    "sun": {
+      "breakfast": { "en": "Paneer paratha (2, tawa) + 150g curd" },
+      "lunch": { "en": "Soya chunk curry (180g) + 1 millet roti + salad" },
+      "dinner": { "en": "Grilled fish (180g) + veg stir-fry + small quinoa" }
+    }
+  },
+  "grocery": {
+    "Proteins": ["Eggs (2 dozen)", "Chicken breast (600g)", "Fish (400g)", "Paneer (700g)", "Tofu (150g)", "Whey protein", "Greek/hung curd (1.5 kg)", "Milk (3–4 L)", "Rajma (1 cup)", "Chole (1 cup)", "Soya chunks (200g)", "Sattu (200g)", "Rolled oats (200g)"],
+    "Veg & Greens": ["Palak", "Methi", "Cabbage", "Cucumber", "Tomato", "Onion", "Capsicum", "Beans", "Broccoli", "Carrot", "Lemon", "Ginger-garlic"],
+    "Grains": ["Millet flour (jowar/ragi)", "Brown rice", "Quinoa", "Moong (dal + sprouts)", "Besan (gram flour)"],
+    "Fruit": ["Guava", "Apple", "Pear", "Berries", "Jamun (seasonal)"],
+    "Pantry": ["Almonds", "Walnuts", "Chia seeds", "Cooking/olive oil", "Stevia", "Green tea", "Coffee", "Spices"]
+  }
+};
+
+let DATA = DEFAULT_WEEK;
+let lang = localStorage.getItem("mealLang") || "en";
+let tab = "today";
+
+function pick(obj){ if(!obj) return ""; if(typeof obj==="string") return obj; return obj[lang] || obj.en || Object.values(obj)[0] || ""; }
+
+function render(){
+  const t = T[lang];
+  document.body.className = "lang-"+lang;
+  document.getElementById("brand").textContent = t.brand;
+  document.querySelectorAll("#langs button").forEach(b=>b.classList.toggle("on", b.dataset.l===lang));
+  const tb = document.querySelectorAll("#tabs button");
+  tb[0].textContent=t.today; tb[1].textContent=t.week; tb[2].textContent=t.grocery;
+  tb.forEach(b=>b.classList.toggle("on", b.dataset.t===tab));
+  document.getElementById("view-today").classList.toggle("hidden", tab!=="today");
+  document.getElementById("view-week").classList.toggle("hidden", tab!=="week");
+  document.getElementById("view-grocery").classList.toggle("hidden", tab!=="grocery");
+
+  const now = new Date();
+  const dk = DAYKEYS[now.getDay()];
+  const day = (DATA.days||{})[dk];
+  const f = DATA.fixed||{};
+
+  // TODAY
+  const dateStr = now.toLocaleDateString(undefined,{day:"numeric",month:"long"});
+  let html = `<div class="datehead">${dateStr}</div><div class="dayname">${t.days[now.getDay()]}</div>`;
+  if(day){
+    html += mealCard("bf", t.breakfast, pick(day.breakfast));
+    html += `<div class="mini"><div class="lbl">${t.midmorning}</div><div class="txt">${pick(f.midmorning)}</div></div>`;
+    html += mealCard("ln", t.lunch, pick(day.lunch));
+    html += `<div class="mini"><div class="lbl">${t.evening}</div><div class="txt">${pick(f.evening)}</div></div>`;
+    html += mealCard("dn", t.dinner, pick(day.dinner));
+    html += `<div class="mini"><div class="lbl">${t.coffee}</div><div class="txt">${pick(f.coffee)}</div></div>`;
+  } else {
+    html += `<div class="card"><div class="meal">—</div></div>`;
+  }
+  document.getElementById("view-today").innerHTML = html;
+
+  // WEEK
+  let w = "";
+  for(let i=1;i<=7;i++){
+    const idx=i%7; const key=DAYKEYS[idx]; const d=(DATA.days||{})[key];
+    if(!d) continue;
+    const isToday = idx===now.getDay();
+    w += `<div class="wday ${isToday?"today":""}"><h3>${t.days[idx]}</h3>`+
+         `<div class="row bf"><span class="k">${t.breakfast}</span><span class="v">${pick(d.breakfast)}</span></div>`+
+         `<div class="row ln"><span class="k">${t.lunch}</span><span class="v">${pick(d.lunch)}</span></div>`+
+         `<div class="row dn"><span class="k">${t.dinner}</span><span class="v">${pick(d.dinner)}</span></div></div>`;
+  }
+  document.getElementById("view-week").innerHTML = w;
+
+  // GROCERY
+  let g = "";
+  const groc = DATA.grocery||{};
+  for(const cat in groc){
+    g += `<div class="gcat"><h3>${cat}</h3><ul>`+groc[cat].map(x=>`<li>${x}</li>`).join("")+`</ul></div>`;
+  }
+  document.getElementById("view-grocery").innerHTML = g || "";
+
+  document.getElementById("meta").textContent = (DATA.meta && DATA.meta.generatedFor ? DATA.meta.generatedFor+" · " : "") + (DATA.meta && DATA.meta.targets ? DATA.meta.targets : "");
+}
+
+function mealCard(cls,label,text){
+  return `<div class="card ${cls}"><div class="slot">${label}</div><div class="meal">${text||"—"}</div></div>`;
+}
+
+document.getElementById("langs").addEventListener("click",e=>{
+  const b=e.target.closest("button"); if(!b) return;
+  lang=b.dataset.l; localStorage.setItem("mealLang",lang); render();
+});
+document.getElementById("tabs").addEventListener("click",e=>{
+  const b=e.target.closest("button"); if(!b) return; tab=b.dataset.t; render();
+});
+
+// Load live week.json if available (GitHub Pages), else keep fallback.
+fetch("./week.json",{cache:"no-store"})
+  .then(r=>{ if(!r.ok) throw 0; return r.json(); })
+  .then(j=>{ DATA=j; render(); })
+  .catch(()=>{ render(); });
+
+render();
+
+if("serviceWorker" in navigator){
+  window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));
+}
+</script>
+</body>
+</html>

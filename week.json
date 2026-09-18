@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "generatedFor": "Week of 15 Sep 2026",
+    "targets": "~2,300 kcal · ~210g protein"
+  },
+  "fixed": {
+    "coffee": {
+      "en": "Black coffee, no sugar",
+      "hi": "ब्लैक कॉफ़ी, बिना चीनी",
+      "kn": "ಬ್ಲ್ಯಾಕ್ ಕಾಫಿ, ಸಕ್ಕರೆ ಇಲ್ಲ",
+      "te": "బ్లాక్ కాఫీ, చక్కెర లేకుండా"
+    },
+    "midmorning": {
+      "en": "1 low-GI fruit (guava/apple/pear/berries) + chia water + 6 almonds / 2 walnuts",
+      "hi": "1 कम-GI फल (अमरूद/सेब/नाशपाती/बेरी) + चिया पानी + 6 बादाम / 2 अखरोट",
+      "kn": "1 ಕಡಿಮೆ-GI ಹಣ್ಣು (ಸೀಬೆ/ಸೇಬು/ಪೇರಳೆ/ಬೆರ್ರಿ) + ಚಿಯಾ ನೀರು + 6 ಬಾದಾಮಿ / 2 ವಾಲ್‌ನಟ್",
+      "te": "1 తక్కువ-GI పండు (జామ/యాపిల్/బేరి) + చియా నీరు + 6 బాదం / 2 వాల్‌నట్‌లు"
+    },
+    "evening": {
+      "en": "Milk + 1.5 scoop whey shake (no sugar)",
+      "hi": "दूध + 1.5 स्कूप व्हे शेक (बिना चीनी)",
+      "kn": "ಹಾಲು + 1.5 ಸ್ಕೂಪ್ ವೇ ಶೇಕ್ (ಸಕ್ಕರೆ ಇಲ್ಲ)",
+      "te": "పాలు + 1.5 స్కూప్ వే షేక్ (చక్కెర లేకుండా)"
+    }
+  },
+  "days": {
+    "mon": {
+      "breakfast": {
+        "en": "3-egg + 3-white bhurji with spinach + 150g Greek yogurt",
+        "hi": "3 अंडे + 3 सफ़ेदी की भुर्जी, पालक के साथ + 150g ग्रीक दही",
+        "kn": "3 ಮೊಟ್ಟೆ + 3 ಬಿಳಿ ಭಾಗ ಭುರ್ಜಿ, ಪಾಲಕ್ ಜೊತೆ + 150g ಗ್ರೀಕ್ ಮೊಸರು",
+        "te": "3 గుడ్లు + 3 తెల్లసొన భుర్జీ, పాలకూరతో + 150g గ్రీక్ పెరుగు"
+      },
+      "lunch": {
+        "en": "Grilled chicken (180g) + big salad + moong dal (no grain)",
+        "hi": "ग्रिल्ड चिकन (180g) + बड़ा सलाद + मूंग दाल (बिना अनाज)",
+        "kn": "ಗ್ರಿಲ್ಡ್ ಚಿಕನ್ (180g) + ದೊಡ್ಡ ಸಲಾಡ್ + ಹೆಸರು ಬೇಳೆ (ಧಾನ್ಯ ಇಲ್ಲ)",
+        "te": "గ్రిల్డ్ చికెన్ (180g) + పెద్ద సలాడ్ + పెసర పప్పు (ధాన్యం లేకుండా)"
+      },
+      "dinner": {
+        "en": "Paneer (180g) + veg stir-fry + 1 millet roti",
+        "hi": "पनीर (180g) + सब्ज़ी स्टर-फ्राई + 1 मिलेट रोटी",
+        "kn": "ಪನೀರ್ (180g) + ತರಕಾರಿ ಸ್ಟರ್-ಫ್ರೈ + 1 ಸಿರಿಧಾನ್ಯ ರೊಟ್ಟಿ",
+        "te": "పనీర్ (180g) + కూరగాయల స్టిర్-ఫ్రై + 1 మిల్లెట్ రొట్టి"
+      }
+    },
+    "tue": {
+      "breakfast": { "en": "Moong chilla (2) with paneer stuffing + 150g curd" },
+      "lunch": { "en": "Rajma + ⅓ bowl brown rice + cabbage salad" },
+      "dinner": { "en": "Grilled fish (200g) + sautéed methi + clear dal" }
+    },
+    "wed": {
+      "breakfast": { "en": "Sattu drink (salt) + 2 boiled eggs + 150g curd" },
+      "lunch": { "en": "Paneer tikka (180g) + salad + raita" },
+      "dinner": { "en": "Small quinoa + chicken curry + palak" }
+    },
+    "thu": {
+      "breakfast": { "en": "Tofu bhurji (150g) + 1 millet roti + 150g curd" },
+      "lunch": { "en": "Moong khichdi (millet + moong) + curd + veg" },
+      "dinner": { "en": "Soya paratha (2, tawa) + curd + cucumber salad" }
+    },
+    "fri": {
+      "breakfast": { "en": "Besan chilla (2) with paneer + 150g Greek yogurt" },
+      "lunch": { "en": "Paneer (180g) salad bowl + moong dal (no grain)" },
+      "dinner": { "en": "Paneer bhurji (180g) + cabbage thoran + 1 millet roti" }
+    },
+    "sat": {
+      "breakfast": { "en": "Overnight oats + 1 scoop whey + berries + 2 boiled eggs" },
+      "lunch": { "en": "Chole + ⅓ bowl brown rice + methi salad" },
+      "dinner": { "en": "Grilled chicken (200g) + sautéed greens + clear dal (no grain)" }
+    },
+    "sun": {
+      "breakfast": { "en": "Paneer paratha (2, tawa) + 150g curd" },
+      "lunch": { "en": "Soya chunk curry (180g) + 1 millet roti + salad" },
+      "dinner": { "en": "Grilled fish (180g) + veg stir-fry + small quinoa" }
+    }
+  },
+  "grocery": {
+    "Proteins": ["Eggs (2 dozen)", "Chicken breast (600g)", "Fish (400g)", "Paneer (700g)", "Tofu (150g)", "Whey protein", "Greek/hung curd (1.5 kg)", "Milk (3–4 L)", "Rajma (1 cup)", "Chole (1 cup)", "Soya chunks (200g)", "Sattu (200g)", "Rolled oats (200g)"],
+    "Veg & Greens": ["Palak", "Methi", "Cabbage", "Cucumber", "Tomato", "Onion", "Capsicum", "Beans", "Broccoli", "Carrot", "Lemon", "Ginger-garlic"],
+    "Grains": ["Millet flour (jowar/ragi)", "Brown rice", "Quinoa", "Moong (dal + sprouts)", "Besan (gram flour)"],
+    "Fruit": ["Guava", "Apple", "Pear", "Berries", "Jamun (seasonal)"],
+    "Pantry": ["Almonds", "Walnuts", "Chia seeds", "Cooking/olive oil", "Stevia", "Green tea", "Coffee", "Spices"]
+  }
+}
