@@ -3,30 +3,191 @@
     {
       "id": "breakfast",
       "items": [
-        { "name": { "en": "Mint-Paneer Spread (on sourdough)", "hi": "पुदीना-पनीर स्प्रेड", "kn": "ಪುದೀನ-ಪನೀರ್ ಸ್ಪ್ರೆಡ್", "te": "పుదీనా-పనీర్ స్ప్రెడ్" }, "video": "https://www.instagram.com/reel/Ddks0wiTqgz/" },
-        { "name": { "en": "Japanese Egg Sandwich", "hi": "जापानी अंडा सैंडविच", "kn": "ಜಪಾನೀಸ್ ಎಗ್ ಸ್ಯಾಂಡ್‌ವಿಚ್", "te": "జపనీస్ ఎగ్ శాండ్‌విచ్" }, "video": "https://www.instagram.com/reel/DZY5qjmTtoc/" }
+        {
+          "name": {
+            "en": "Mint-Paneer Spread (on sourdough)",
+            "hi": "पुदीना-पनीर स्प्रेड",
+            "kn": "ಪುದೀನ-ಪನೀರ್ ಸ್ಪ್ರೆಡ್",
+            "te": "పుదీనా-పనీర్ స్ప్రెడ్"
+          },
+          "video": "https://www.instagram.com/reel/Ddks0wiTqgz/"
+        },
+        {
+          "name": {
+            "en": "Japanese Egg Sandwich",
+            "hi": "जापानी अंडा सैंडविच",
+            "kn": "ಜಪಾನೀಸ್ ಎಗ್ ಸ್ಯಾಂಡ್‌ವಿಚ್",
+            "te": "జపనీస్ ఎగ్ శాండ్‌విచ్"
+          },
+          "video": "https://www.instagram.com/reel/DZY5qjmTtoc/"
+        }
       ]
     },
     {
       "id": "lunchdinner",
       "items": [
-        { "name": { "en": "Soya Chukauni", "hi": "सोया चुकौनी", "kn": "ಸೋಯಾ ಚುಕೌನಿ", "te": "సోయా చుకౌని" }, "video": "https://www.instagram.com/reel/DdtdgZHo2S4/" },
-        { "name": { "en": "Lemon Garlic Soya", "hi": "लेमन गार्लिक सोया", "kn": "ಲೆಮನ್ ಗಾರ್ಲಿಕ್ ಸೋಯಾ", "te": "లెమన్ గార్లిక్ సోయా" }, "video": "https://www.instagram.com/reel/DazE7k9z4at/" },
-        { "name": { "en": "Steamed Chicken & Veg Roll", "hi": "स्टीम्ड चिकन रोल", "kn": "ಸ್ಟೀಮ್ಡ್ ಚಿಕನ್ ರೋಲ್", "te": "స్టీమ్డ్ చికెన్ రోల్" }, "video": "https://www.instagram.com/reel/DdTMBGOxpzE/" },
-        { "name": { "en": "Zero-Oil Lemon Pepper Chicken", "hi": "ज़ीरो-ऑयल लेमन पेपर चिकन", "kn": "ಝೀರೋ-ಆಯಿಲ್ ಲೆಮನ್ ಪೆಪ್ಪರ್ ಚಿಕನ್", "te": "జీరో-ఆయిల్ లెమన్ పెప్పర్ చికెన్" }, "video": "https://www.instagram.com/reel/DddY5F7pp3H/" },
-        { "name": { "en": "Chicken & Egg Salad", "hi": "चिकन-अंडा सलाद", "kn": "ಚಿಕನ್-ಎಗ್ ಸಲಾಡ್", "te": "చికెన్-ఎగ్ సలాడ్" }, "video": "https://www.instagram.com/reel/Db7IxBsTOMz/" },
-        { "name": { "en": "Chicken Egg Rice", "hi": "चिकन अंडा राइस", "kn": "ಚಿಕನ್ ಎಗ್ ರೈಸ್", "te": "చికెన్ ఎగ్ రైస్" }, "video": "https://youtube.com/shorts/VDTLf8gyYyM" },
-        { "name": { "en": "Malai Chicken (tawa)", "hi": "मलाई चिकन (तवा)", "kn": "ಮಲಾಯಿ ಚಿಕನ್ (ತವಾ)", "te": "మలై చికెన్ (తవా)" }, "video": "https://www.instagram.com/reel/DYBV0ENTKUn/" },
-        { "name": { "en": "One-Pan Chicken Pizza (stovetop)", "hi": "वन-पैन चिकन पिज़्ज़ा", "kn": "ಒನ್-ಪ್ಯಾನ್ ಚಿಕನ್ ಪಿಜ್ಜಾ", "te": "వన్-ప్యాన్ చికెన్ పిజ్జా" }, "video": "https://www.instagram.com/reel/DcImR92zTef/" },
-        { "name": { "en": "Curd-Marinated Pan Chicken", "hi": "दही-मैरिनेट पैन चिकन", "kn": "ಮೊಸರು-ಮ್ಯಾರಿನೇಟ್ ಪ್ಯಾನ್ ಚಿಕನ್", "te": "పెరుగు-మ్యారినేట్ ప్యాన్ చికెన్" }, "video": "https://www.instagram.com/reel/DZcT8Unzkxi/" },
-        { "name": { "en": "Lemon Pepper Chicken + Yogurt Dip", "hi": "लेमन पेपर चिकन + दही डिप", "kn": "ಲೆಮನ್ ಪೆಪ್ಪರ್ ಚಿಕನ್ + ಮೊಸರು ಡಿಪ್", "te": "లెమన్ పెప్పర్ చికెన్ + పెరుగు డిప్" }, "video": "https://www.instagram.com/reel/Da-PdGiIzv4/" },
-        { "name": { "en": "Creamy Butter Garlic Chicken", "hi": "बटर गार्लिक चिकन", "kn": "ಬಟರ್ ಗಾರ್ಲಿಕ್ ಚಿಕನ್", "te": "బటర్ గార్లిక్ చికెన్" }, "video": "https://www.instagram.com/reel/DacEsgvp7Jm/" },
-        { "name": { "en": "Zero-Oil Chicken Fry", "hi": "ज़ीरो-ऑयल चिकन फ्राई", "kn": "ಝೀರೋ-ಆಯಿಲ್ ಚಿಕನ್ ಫ್ರೈ", "te": "జీరో-ఆయిల్ చికెన్ ఫ్రై" }, "video": "https://www.instagram.com/reel/DamqCajtQv7/" },
-        { "name": { "en": "Chicken Shami Kebab", "hi": "चिकन शामी कबाब", "kn": "ಚಿಕನ್ ಶಾಮಿ ಕಬಾಬ್", "te": "చికెన్ షామీ కబాబ్" }, "video": "https://www.instagram.com/reel/DcD6b-8pl_9/" },
-        { "name": { "en": "Kaala Masala Chicken", "hi": "काला मसाला चिकन", "kn": "ಕಾಲಾ ಮಸಾಲಾ ಚಿಕನ್", "te": "కాలా మసాలా చికెన్" }, "video": "https://youtube.com/shorts/6BkLRG0_DQE" },
-        { "name": { "en": "Chicken Pulao (home-style)", "hi": "चिकन पुलाव", "kn": "ಚಿಕನ್ ಪುಲಾವ್", "te": "చికెన్ పులావ్" }, "video": "https://youtube.com/shorts/wNWYLhaDSbk" },
-        { "name": { "en": "One-Pot Chicken Rice", "hi": "वन-पॉट चिकन राइस", "kn": "ಒನ್-ಪಾಟ್ ಚಿಕನ್ ರೈಸ್", "te": "వన్-పాట్ చికెన్ రైస్" }, "video": "https://youtu.be/KX6S8HYz5MI" },
-        { "name": { "en": "Bhuna Chicken Pulao", "hi": "भुना चिकन पुलाव", "kn": "ಭುನಾ ಚಿಕನ್ ಪುಲಾವ್", "te": "భునా చికెన్ పులావ్" }, "video": "https://youtube.com/shorts/fQ7ESaQH17Q" }
+        {
+          "name": {
+            "en": "Soya Chukauni",
+            "hi": "सोया चुकौनी",
+            "kn": "ಸೋಯಾ ಚುಕೌನಿ",
+            "te": "సోయా చుకౌని"
+          },
+          "video": "https://www.instagram.com/reel/DdtdgZHo2S4/"
+        },
+        {
+          "name": {
+            "en": "Lemon Garlic Soya",
+            "hi": "लेमन गार्लिक सोया",
+            "kn": "ಲೆಮನ್ ಗಾರ್ಲಿಕ್ ಸೋಯಾ",
+            "te": "లెమన్ గార్లిక్ సోయా"
+          },
+          "video": "https://www.instagram.com/reel/DazE7k9z4at/"
+        },
+        {
+          "name": {
+            "en": "Soya Afghani",
+            "hi": "सोया अफ़ग़ानी",
+            "kn": "ಸೋಯಾ ಅಫ್ಘಾನಿ",
+            "te": "సోయా అఫ్ఘానీ"
+          },
+          "video": "https://www.instagram.com/reel/DbF_BdnAIh3/"
+        },
+        {
+          "name": {
+            "en": "Steamed Chicken & Veg Roll",
+            "hi": "स्टीम्ड चिकन रोल",
+            "kn": "ಸ್ಟೀಮ್ಡ್ ಚಿಕನ್ ರೋಲ್",
+            "te": "స్టీమ్డ్ చికెన్ రోల్"
+          },
+          "video": "https://www.instagram.com/reel/DdTMBGOxpzE/"
+        },
+        {
+          "name": {
+            "en": "Zero-Oil Lemon Pepper Chicken",
+            "hi": "ज़ीरो-ऑयल लेमन पेपर चिकन",
+            "kn": "ಝೀರೋ-ಆಯಿಲ್ ಲೆಮನ್ ಪೆಪ್ಪರ್ ಚಿಕನ್",
+            "te": "జీరో-ఆయిల్ లెమన్ పెప్పర్ చికెన్"
+          },
+          "video": "https://www.instagram.com/reel/DddY5F7pp3H/"
+        },
+        {
+          "name": {
+            "en": "Chicken & Egg Salad",
+            "hi": "चिकन-अंडा सलाद",
+            "kn": "ಚಿಕನ್-ಎಗ್ ಸಲಾಡ್",
+            "te": "చికెన్-ఎగ్ సలాడ్"
+          },
+          "video": "https://www.instagram.com/reel/Db7IxBsTOMz/"
+        },
+        {
+          "name": {
+            "en": "Chicken Egg Rice",
+            "hi": "चिकन अंडा राइस",
+            "kn": "ಚಿಕನ್ ಎಗ್ ರೈಸ್",
+            "te": "చికెన్ ఎగ్ రైస్"
+          },
+          "video": "https://youtube.com/shorts/VDTLf8gyYyM"
+        },
+        {
+          "name": {
+            "en": "Malai Chicken (tawa)",
+            "hi": "मलाई चिकन (तवा)",
+            "kn": "ಮಲಾಯಿ ಚಿಕನ್ (ತವಾ)",
+            "te": "మలై చికెన్ (తవా)"
+          },
+          "video": "https://www.instagram.com/reel/DYBV0ENTKUn/"
+        },
+        {
+          "name": {
+            "en": "One-Pan Chicken Pizza (stovetop)",
+            "hi": "वन-पैन चिकन पिज़्ज़ा",
+            "kn": "ಒನ್-ಪ್ಯಾನ್ ಚಿಕನ್ ಪಿಜ್ಜಾ",
+            "te": "వన్-ప్యాన్ చికెన్ పిజ్జా"
+          },
+          "video": "https://www.instagram.com/reel/DcImR92zTef/"
+        },
+        {
+          "name": {
+            "en": "Curd-Marinated Pan Chicken",
+            "hi": "दही-मैरिनेट पैन चिकन",
+            "kn": "ಮೊಸರು-ಮ್ಯಾರಿನೇಟ್ ಪ್ಯಾನ್ ಚಿಕನ್",
+            "te": "పెరుగు-మ్యారినేట్ ప్యాన్ చికెన్"
+          },
+          "video": "https://www.instagram.com/reel/DZcT8Unzkxi/"
+        },
+        {
+          "name": {
+            "en": "Lemon Pepper Chicken + Yogurt Dip",
+            "hi": "लेमन पेपर चिकन + दही डिप",
+            "kn": "ಲೆಮನ್ ಪೆಪ್ಪರ್ ಚಿಕನ್ + ಮೊಸರು ಡಿಪ್",
+            "te": "లెమన్ పెప్పర్ చికెన్ + పెరుగు డిప్"
+          },
+          "video": "https://www.instagram.com/reel/Da-PdGiIzv4/"
+        },
+        {
+          "name": {
+            "en": "Creamy Butter Garlic Chicken",
+            "hi": "बटर गार्लिक चिकन",
+            "kn": "ಬಟರ್ ಗಾರ್ಲಿಕ್ ಚಿಕನ್",
+            "te": "బటర్ గార్లిక్ చికెన్"
+          },
+          "video": "https://www.instagram.com/reel/DacEsgvp7Jm/"
+        },
+        {
+          "name": {
+            "en": "Zero-Oil Chicken Fry",
+            "hi": "ज़ीरो-ऑयल चिकन फ्राई",
+            "kn": "ಝೀರೋ-ಆಯಿಲ್ ಚಿಕನ್ ಫ್ರೈ",
+            "te": "జీరో-ఆయిల్ చికెన్ ఫ్రై"
+          },
+          "video": "https://www.instagram.com/reel/DamqCajtQv7/"
+        },
+        {
+          "name": {
+            "en": "Chicken Shami Kebab",
+            "hi": "चिकन शामी कबाब",
+            "kn": "ಚಿಕನ್ ಶಾಮಿ ಕಬಾಬ್",
+            "te": "చికెన్ షామీ కబాబ్"
+          },
+          "video": "https://www.instagram.com/reel/DcD6b-8pl_9/"
+        },
+        {
+          "name": {
+            "en": "Kaala Masala Chicken",
+            "hi": "काला मसाला चिकन",
+            "kn": "ಕಾಲಾ ಮಸಾಲಾ ಚಿಕನ್",
+            "te": "కాలా మసాలా చికెన్"
+          },
+          "video": "https://youtube.com/shorts/6BkLRG0_DQE"
+        },
+        {
+          "name": {
+            "en": "Chicken Pulao (home-style)",
+            "hi": "चिकन पुलाव",
+            "kn": "ಚಿಕನ್ ಪುಲಾವ್",
+            "te": "చికెన్ పులావ్"
+          },
+          "video": "https://youtube.com/shorts/wNWYLhaDSbk"
+        },
+        {
+          "name": {
+            "en": "One-Pot Chicken Rice",
+            "hi": "वन-पॉट चिकन राइस",
+            "kn": "ಒನ್-ಪಾಟ್ ಚಿಕನ್ ರೈಸ್",
+            "te": "వన్-పాట్ చికెన్ రైస్"
+          },
+          "video": "https://youtu.be/KX6S8HYz5MI"
+        },
+        {
+          "name": {
+            "en": "Bhuna Chicken Pulao",
+            "hi": "भुना चिकन पुलाव",
+            "kn": "ಭುನಾ ಚಿಕನ್ ಪುಲಾವ್",
+            "te": "భునా చికెన్ పులావ్"
+          },
+          "video": "https://youtube.com/shorts/fQ7ESaQH17Q"
+        }
       ]
     }
   ]

@@ -25,6 +25,12 @@ twice in a day. Use a bank recipe at most once per week; rotate across weeks.
 - Adaptations: DROP the pinch of sugar in the boil; ghee + butter total ≤1 tbsp; salt 1.5 tsp → light; pan version only (skip the air-fryer option). Dry-coated dish → "(no grain)" allowed, or add a small grain at dinner.
 - Slot: lunch/dinner. Tag: soya.
 
+### 20. Soya Afghani (creamy kadai soya)
+- Source: instagram.com/reel/DbF_BdnAIh3 (@prasannaspalate_)
+- As posted: soaked soya chunks (75g dry) marinated in curd + a blended paste of sautéed garlic-ginger-onion-chilli-cashews-coriander with 75g paneer; cooked in a kadai with 1 tsp oil; finished with kasuri methi, 1 tbsp cream, ½ tsp pickle oil. ~430-480 kcal / 35-40g protein.
+- Adaptations: DROP the pickle oil entirely (pickle is banned — low sodium); cream ½ tbsp or skip (curd carries it); rest is compliant, kadai/stovetop ✓. Creamy semi-gravy → pair with a grain carrier or roti. Counts as soya + paneer for the day.
+- Slot: lunch/dinner. Tags: soya + paneer.
+
 ## Chicken (rotate — max 3 chicken meals/week)
 
 ### 2. Steamed Chicken & Veg Roll
