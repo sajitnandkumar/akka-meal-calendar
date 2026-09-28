@@ -383,14 +383,22 @@ function render(){
   }
   document.getElementById("view-grocery").innerHTML = g + gbody;
 
-  // FOOD LIST: recipe repository with video links
-  let fl = "";
-  for(const sec of (RECIPES.sections||[])){
-    const title = sec.id === "breakfast" ? t.breakfast : t.lunch + " / " + t.dinner;
-    fl += `<div class="gcat"><h3>${title}</h3><ul>` + sec.items.map(it =>
+  // FOOD LIST: recipe repository with video links, lunch/dinner grouped by protein
+  const fitems = items => `<ul>` + items.map(it =>
       `<li class="fitem"><span>${pick(it.name)}</span>` +
       (it.video ? `<a class="vlink" href="${it.video}" target="_blank" rel="noopener">▶ ${t.video}</a>` : "") +
-      `</li>`).join("") + `</ul></div>`;
+      `</li>`).join("") + `</ul>`;
+  let fl = "";
+  for(const sec of (RECIPES.sections||[])){
+    if(sec.id === "breakfast"){
+      fl += `<div class="gcat"><h3>${t.breakfast}</h3>${fitems(sec.items||[])}</div>`;
+    } else {
+      fl += `<div class="divider">${t.lunch} / ${t.dinner}</div>`;
+      for(const grp of (sec.groups||[])){
+        fl += `<div class="gcat"><h3>${pick(grp.title)}</h3>${fitems(grp.items||[])}</div>`;
+      }
+      if(sec.items) fl += `<div class="gcat">${fitems(sec.items)}</div>`;
+    }
   }
   document.getElementById("view-foodlist").innerHTML = fl;
 
