@@ -123,6 +123,12 @@ twice in a day. Use a bank recipe at most once per week; rotate across weeks.
 - Adaptations: matta/brown rice only, ⅓ bowl serving; bhuna the chicken in ≤1 tbsp oil; light salt.
 - Slot: dinner. Tag: chicken.
 
+### 21. Kerala-style Chicken Stew (coconut milk)
+- Source: youtube.com/watch?v=_P1n4KaU_rQ (Spice Eats) — submitted via the app, 28 Sep 2026
+- As posted: chicken (500g curry cut) marinated in salt-pepper; onions, green/red chillies, ginger-garlic, tomatoes, diced potatoes, 200ml coconut milk, lemon, coriander; 4 tbsp oil, kadai.
+- Adaptations: oil 4 tbsp → 1 tbsp; coconut milk 200ml → 100ml thin (or half coconut + half low-fat milk — saturated fat); potatoes mostly swapped for bottle gourd/carrot (a few cubes at most — starchy-veg limit); salt light. Stew = gravy → always with ⅓ bowl matta/brown rice or a millet roti.
+- Slot: lunch/dinner. Tag: chicken.
+
 NOTE: #5 and #15-18 are all chicken + rice formats — treat them as ONE family and
 use at most one per week (they also count toward the 3-chicken cap).
 
