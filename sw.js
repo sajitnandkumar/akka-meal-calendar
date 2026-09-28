@@ -1,4 +1,4 @@
-const CACHE = "mealplan-v9";
+const CACHE = "mealplan-v10";
 const SHELL = ["./", "./index.html", "./manifest.json", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", e => {
@@ -15,7 +15,7 @@ self.addEventListener("activate", e => {
 self.addEventListener("fetch", e => {
   const url = new URL(e.request.url);
   // Always try network first for the weekly data, fall back to cache.
-  if (url.pathname.endsWith("week.json")) {
+  if (url.pathname.endsWith("week.json") || url.pathname.endsWith("recipes.json")) {
     e.respondWith(
       fetch(e.request).then(r => {
         const copy = r.clone();

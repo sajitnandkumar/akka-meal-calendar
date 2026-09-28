@@ -137,4 +137,6 @@ use at most one per week (they also count toward the 3-chicken cap).
 ---
 
 Adding recipes: append an entry in this format (source, as-posted, adaptations,
-slot, protein tags). The Sunday generator reads this file every week.
+slot, protein tags) AND add the dish to recipes.json (name in 4 languages +
+video URL) — that file drives the app's Food List tab. The Sunday generator
+reads this file every week.
