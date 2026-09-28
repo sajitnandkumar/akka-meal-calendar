@@ -113,6 +113,7 @@
   @media (prefers-color-scheme: dark){ .gcat li.have .cb{ color:#10140f; } }
   .gcat li.have { color:var(--ink-faint); text-decoration:line-through; }
 
+  .vlink.vsm { float:right; margin-left:8px; margin-bottom:2px; font-size:10px; padding:1px 7px; }
   .vlink { margin-left:auto; font-size:11px; font-weight:700; letter-spacing:.02em; color:var(--accent); text-decoration:none; border:1px solid var(--line); border-radius:8px; padding:2px 9px; background:var(--paper); white-space:nowrap; }
 
   /* two-person lines */
@@ -342,15 +343,16 @@ function render(){
   let w = "";
   const anySplit = Object.values(DATA.days||{}).some(x=>x.breakfast && x.breakfast.s);
   if(anySplit) w += legend;
+  const vchip = m => m && m.video ? `<a class="vlink vsm" href="${m.video}" target="_blank" rel="noopener">▶ ${t.video}</a>` : "";
   for(let i=1;i<=7;i++){
     const idx=i%7; const key=DAYKEYS[idx]; const d=(DATA.days||{})[key];
     if(!d) continue;
     const isToday = idx===now.getDay();
     w += `<div class="wday ${isToday?"today":""}"><h3>${t.days[idx]}</h3>`+
-         `<div class="row bf"><span class="k">${t.breakfast}</span><span class="v">${mb(d.breakfast)}</span></div>`+
+         `<div class="row bf"><span class="k">${t.breakfast}</span><span class="v">${vchip(d.breakfast)}${mb(d.breakfast)}</span></div>`+
          (d.midmorning ? `<div class="row mm"><span class="k">${t.midmorning}</span><span class="v">${mb(d.midmorning)}</span></div>` : "")+
-         `<div class="row ln"><span class="k">${t.lunch}</span><span class="v">${mb(d.lunch)}</span></div>`+
-         `<div class="row dn"><span class="k">${t.dinner}</span><span class="v">${mb(d.dinner)}</span></div></div>`;
+         `<div class="row ln"><span class="k">${t.lunch}</span><span class="v">${vchip(d.lunch)}${mb(d.lunch)}</span></div>`+
+         `<div class="row dn"><span class="k">${t.dinner}</span><span class="v">${vchip(d.dinner)}${mb(d.dinner)}</span></div></div>`;
   }
   document.getElementById("view-week").innerHTML = w;
 
