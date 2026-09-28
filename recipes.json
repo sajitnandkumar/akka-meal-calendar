@@ -20,6 +20,42 @@
             "te": "జపనీస్ ఎగ్ శాండ్‌విచ్"
           },
           "video": "https://www.instagram.com/reel/DZY5qjmTtoc/"
+        },
+        {
+          "name": {
+            "en": "Kala Chana Paratha",
+            "hi": "काला चना पराठा",
+            "kn": "ಕಪ್ಪು ಕಡಲೆ ಪರೋಟ",
+            "te": "నల్ల శనగ పరాఠా"
+          },
+          "video": "https://www.youtube.com/shorts/ZRlVHpgcrmI"
+        },
+        {
+          "name": {
+            "en": "Bread Chilla (sourdough)",
+            "hi": "ब्रेड चीला",
+            "kn": "ಬ್ರೆಡ್ ಚೀಲಾ",
+            "te": "బ్రెడ్ చీలా"
+          },
+          "video": "https://www.youtube.com/shorts/GQbEaWKI1tk"
+        },
+        {
+          "name": {
+            "en": "Paneer Oats Balls",
+            "hi": "पनीर ओट्स बॉल्स",
+            "kn": "ಪನೀರ್ ಓಟ್ಸ್ ಬಾಲ್ಸ್",
+            "te": "పనీర్ ఓట్స్ బాల్స్"
+          },
+          "video": "https://www.youtube.com/shorts/YFORT3rCvFk"
+        },
+        {
+          "name": {
+            "en": "Paneer Chilla",
+            "hi": "पनीर चीला",
+            "kn": "ಪನೀರ್ ಚೀಲಾ",
+            "te": "పనీర్ చీలా"
+          },
+          "video": "https://www.youtube.com/shorts/ACzsQTsaZiA"
         }
       ]
     },
@@ -60,6 +96,25 @@
                 "te": "సోయా అఫ్ఘానీ"
               },
               "video": "https://www.instagram.com/reel/DbF_BdnAIh3/"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Paneer",
+            "hi": "पनीर",
+            "kn": "ಪನೀರ್",
+            "te": "పనీర్"
+          },
+          "items": [
+            {
+              "name": {
+                "en": "Paneer Pulao",
+                "hi": "पनीर पुलाव",
+                "kn": "ಪನೀರ್ ಪುಲಾವ್",
+                "te": "పనీర్ పులావ్"
+              },
+              "video": "https://www.youtube.com/shorts/C7YYGHnrASs"
             }
           ]
         },

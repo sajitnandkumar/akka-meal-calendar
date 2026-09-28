@@ -31,6 +31,11 @@ twice in a day. Use a bank recipe at most once per week; rotate across weeks.
 - Adaptations: DROP the pickle oil entirely (pickle is banned — low sodium); cream ½ tbsp or skip (curd carries it); rest is compliant, kadai/stovetop ✓. Creamy semi-gravy → pair with a grain carrier or roti. Counts as soya + paneer for the day.
 - Slot: lunch/dinner. Tags: soya + paneer.
 
+### 22. Kala Chana Paratha (stuffed)
+- Source: youtube.com/shorts/ZRlVHpgcrmI (Cook with Dillifoodies) — app submission. No recipe in description; details in video.
+- Concept: paratha stuffed with spiced kala chana. Adaptations: whole-wheat/millet atta only (never maida), tawa with minimal oil/ghee, serve with the mandatory 150g hung curd.
+- Slot: breakfast. Tag: chana.
+
 ## Chicken (rotate — max 3 chicken meals/week)
 
 ### 2. Steamed Chicken & Veg Roll
@@ -133,6 +138,28 @@ NOTE: #5 and #15-18 are all chicken + rice formats — treat them as ONE family 
 use at most one per week (they also count toward the 3-chicken cap).
 
 ## Paneer & egg
+
+### 23. Bread Chilla (sourdough)
+- Source: youtube.com/shorts/GQbEaWKI1tk (The Wonder Kitchen) — app submission.
+- As posted: bread slices dipped in a besan batter mixed with 50-75g paneer or tofu, onion, capsicum, chilli, spices; tawa-crisped.
+- Adaptations: bread MUST be whole-grain sourdough (regular/brown bread is banned); light oil on tawa; bump paneer to 75-100g for protein; serve with hung curd/Greek yogurt side.
+- Slot: breakfast. Tag: paneer (or tofu — whichever is used).
+
+### 24. Paneer Oats Balls
+- Source: youtube.com/shorts/YFORT3rCvFk (Food and Frolic) — app submission.
+- As posted: powdered oats + paneer + grated carrot + boiled potato + peas + spices, shaped into balls.
+- Adaptations: NEVER deep-fried — cook in an appe pan or on a tawa with 1 tsp oil; cut the potato/peas to a token amount (starchy-veg limit) and add more paneer instead; rolled oats only.
+- Slot: breakfast (with curd side). Tag: paneer.
+
+### 25. Paneer Chilla
+- Source: youtube.com/shorts/ACzsQTsaZiA (Yum) — app submission. No recipe in description; details in video.
+- Concept: besan chilla with paneer. Adaptations: standard chilla rules — tawa, light oil, serve with 150g hung curd.
+- Slot: breakfast. Tag: paneer.
+
+### 26. Paneer Pulao
+- Source: youtube.com/shorts/C7YYGHnrASs (Ammis foodblog) — app submission. No recipe in description; details in video.
+- Concept: one-pot paneer pulao. Adaptations: Kerala matta or brown rice ONLY, small grain share (⅓ bowl serving) with paneer increased to 200g S / 100g V; light salt/oil.
+- Slot: lunch/dinner (grain built in). Tag: paneer.
 
 ### 13. Mint-Paneer Spread
 - Source: instagram.com/reel/Ddks0wiTqgz (@ral.livezy / @homechefalison)
