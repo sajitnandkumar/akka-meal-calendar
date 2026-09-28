@@ -43,6 +43,10 @@ two proteins (e.g. chicken + egg) occupy BOTH protein tags for that day. Fill th
 remaining slots with standard dishes obeying every rule, and rotate which bank
 recipes appear week to week. When the user adds recipes to RECIPES.md, they enter
 the rotation automatically.
+When a meal comes from the bank, add its source video URL to the meal object as
+an extra "video" key ({"s": ..., "v": ..., "video": "<url>"}) — the app shows a
+▶ Video chip on that meal in the Today tab so the cook can watch the method.
+Meals without a bank source simply omit the key.
 
 {
   "meta": { "generatedFor": "Week of <DD Mon YYYY>", "generatedAt": "<ISO 8601 timestamp with offset, from `date -Iseconds`>", "targets": "S ~2,300 kcal · 210g protein — V ~1,500 kcal · 70g protein" },

@@ -40,7 +40,7 @@ twice in a day. Use a bank recipe at most once per week; rotate across weeks.
 - Slot: lunch (no grain). Tags: chicken + egg.
 
 ### 5. Chicken Egg Rice (one-pot)
-- Source: instagram.com/reel/DdOcfouBzuz (@raishan.eats)
+- Source: instagram.com/reel/DdOcfouBzuz (@raishan.eats); video also at youtube.com/shorts/VDTLf8gyYyM (@ral.livezy)
 - As posted: pressure-cooked rice + chicken (200g) + 2 eggs + onion, garlic, spices, ghee.
 - Adaptations: basmati → Kerala matta or brown rice, SMALL portion (⅓ bowl serving); ghee+oil 2 tbsp → 1 tbsp total. Counts as chicken + egg.
 - Slot: dinner (grain built in). Tags: chicken + egg.
@@ -86,6 +86,33 @@ twice in a day. Use a bank recipe at most once per week; rotate across weeks.
 - As posted: melt-in-mouth high-protein chicken shami kebabs (chicken + chana dal + spices, shaped and shallow-cooked on a pan).
 - Adaptations: tawa with 1 tsp oil, NOT deep-fried; write as "chicken-chana dal shami patties" in week.json ("kebab" is fine, "tikka" is not). Counts as chicken + chana.
 - Slot: lunch/dinner. Tags: chicken + chana.
+
+### 15. Kaala Masala Chicken (Maharashtrian)
+- Source: youtube.com/shorts/6BkLRG0_DQE
+- As posted: chicken in Maharashtrian kaala (black) masala gravy — roasted dry coconut, onion, garam spices.
+- Adaptations: it's a gravy → always pair with a grain carrier (roti / ⅓ bowl matta rice); go light on the dry coconut (saturated fat) and salt; kadai/stovetop ✓.
+- Slot: lunch/dinner. Tag: chicken.
+
+### 16. Home-style Chicken Pulao (Telugu)
+- Source: youtube.com/shorts/wNWYLhaDSbk (@AllInOneMadhaviVlogs)
+- As posted: one-pot chicken pulao, Telugu home style.
+- Adaptations: rice must be Kerala matta or brown, SMALL portion (⅓ bowl serving) with the chicken share increased (180g S / 90g V); light salt, no fried onion garnish.
+- Slot: dinner (grain built in). Tag: chicken.
+
+### 17. One-pot Chicken Rice
+- Source: youtu.be/KX6S8HYz5MI (Banglar Rannaghor)
+- As posted: easy one-pot chicken and rice.
+- Adaptations: same as #16 — matta/brown rice only, small grain share, more chicken, light salt/oil.
+- Slot: dinner. Tag: chicken.
+
+### 18. Bhuna Chicken Pulao (one-pot)
+- Source: youtube.com/shorts/fQ7ESaQH17Q
+- As posted: bhuna (well-sautéed) chicken folded into a fluffy pulao; spicy, slightly tangy.
+- Adaptations: matta/brown rice only, ⅓ bowl serving; bhuna the chicken in ≤1 tbsp oil; light salt.
+- Slot: dinner. Tag: chicken.
+
+NOTE: #5 and #15-18 are all chicken + rice formats — treat them as ONE family and
+use at most one per week (they also count toward the 3-chicken cap).
 
 ## Paneer & egg
 
