@@ -19,6 +19,12 @@ twice in a day. Use a bank recipe at most once per week; rotate across weeks.
 - Adaptations: tadka oil 3 tbsp → 1 tbsp; salt light; pair with ⅓ bowl matta/brown rice (never white). Off-flame yogurt mixing keeps it creamy.
 - Slot: lunch or dinner. Protein tag: soya (+ curd base).
 
+### 19. Lemon Garlic Soya (crispy)
+- Source: instagram.com/reel/DazE7k9z4at (@ral.livezy / @feastlyfit)
+- As posted: soya chunks boiled with ginger-garlic, squeezed, tossed in cornflour + chilli + coriander powder + ghee, pan-crisped ~12 min; then coated in a sauce of ghee/butter, 10 minced garlic, green chilli, cornflour slurry, lemon juice. 742 kcal / 57g protein (whole).
+- Adaptations: DROP the pinch of sugar in the boil; ghee + butter total ≤1 tbsp; salt 1.5 tsp → light; pan version only (skip the air-fryer option). Dry-coated dish → "(no grain)" allowed, or add a small grain at dinner.
+- Slot: lunch/dinner. Tag: soya.
+
 ## Chicken (rotate — max 3 chicken meals/week)
 
 ### 2. Steamed Chicken & Veg Roll
