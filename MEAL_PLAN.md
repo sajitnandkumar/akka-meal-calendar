@@ -35,6 +35,15 @@ STEP 3 - Generate a NEW week.json. Output valid JSON in EXACTLY this schema (sam
 keys, same nesting). Every language object has all four languages: en, hi (Hindi),
 kn (Kannada), te (Telugu).
 
+RECIPE BANK - READ RECIPES.md AT THE REPO ROOT FIRST. It holds the user's curated
+recipes (from their saved reels) and is the PRIMARY source of meals: aim for 4-6
+bank dishes per week, each used at most once, always in the ADAPTED form the bank
+entry specifies (portions, no air-fryer, low salt, etc.). Bank entries tagged with
+two proteins (e.g. chicken + egg) occupy BOTH protein tags for that day. Fill the
+remaining slots with standard dishes obeying every rule, and rotate which bank
+recipes appear week to week. When the user adds recipes to RECIPES.md, they enter
+the rotation automatically.
+
 {
   "meta": { "generatedFor": "Week of <DD Mon YYYY>", "generatedAt": "<ISO 8601 timestamp with offset, from `date -Iseconds`>", "targets": "S ~2,300 kcal · 210g protein — V ~1,500 kcal · 70g protein" },
   "fixed": {
