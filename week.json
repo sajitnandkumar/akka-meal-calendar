@@ -1,7 +1,7 @@
 {
   "meta": {
     "generatedFor": "Week of 28 Sep 2026",
-    "generatedAt": "2026-09-28T18:47:12+05:30",
+    "generatedAt": "2026-09-28T19:42:49+05:30",
     "targets": "S ~2,300 kcal · 210g protein — V ~1,500 kcal · 70g protein"
   },
   "fixed": {
@@ -324,17 +324,18 @@
       },
       "dinner": {
         "s": {
-          "en": "Soya keema (180g) with onions + bhindi sabzi + 1 ragi roti",
-          "hi": "सोया कीमा (180g) प्याज़ के साथ + भिंडी सब्ज़ी + 1 रागी रोटी",
-          "kn": "ಸೋಯಾ ಕೀಮಾ (180g) ಈರುಳ್ಳಿ ಜೊತೆ + ಬೆಂಡೆಕಾಯಿ ಪಲ್ಯ + 1 ರಾಗಿ ರೊಟ್ಟಿ",
-          "te": "సోయా కీమా (180g) ఉల్లిపాయలతో + బెండకాయ కూర + 1 రాగి రొట్టె"
+          "en": "Lemon garlic soya (180g, crispy, dry) + bhindi sabzi + 1 ragi roti",
+          "hi": "लेमन गार्लिक सोया (180g, क्रिस्पी, सूखा) + भिंडी सब्ज़ी + 1 रागी रोटी",
+          "kn": "ಲೆಮನ್ ಗಾರ್ಲಿಕ್ ಸೋಯಾ (180g, ಕ್ರಿಸ್ಪಿ, ಒಣ) + ಬೆಂಡೆಕಾಯಿ ಪಲ್ಯ + 1 ರಾಗಿ ರೊಟ್ಟಿ",
+          "te": "లెమన్ గార్లిక్ సోయా (180g, క్రిస్పీ, డ్రై) + బెండకాయ కూర + 1 రాగి రొట్టె"
         },
         "v": {
-          "en": "Soya keema (90g) with onions + bhindi sabzi + 1 ragi roti",
-          "hi": "सोया कीमा (90g) प्याज़ के साथ + भिंडी सब्ज़ी + 1 रागी रोटी",
-          "kn": "ಸೋಯಾ ಕೀಮಾ (90g) ಈರುಳ್ಳಿ ಜೊತೆ + ಬೆಂಡೆಕಾಯಿ ಪಲ್ಯ + 1 ರಾಗಿ ರೊಟ್ಟಿ",
-          "te": "సోయా కీమా (90g) ఉల్లిపాయలతో + బెండకాయ కూర + 1 రాగి రొట్టె"
-        }
+          "en": "Lemon garlic soya (90g, crispy, dry) + bhindi sabzi + 1 ragi roti",
+          "hi": "लेमन गार्लिक सोया (90g, क्रिस्पी, सूखा) + भिंडी सब्ज़ी + 1 रागी रोटी",
+          "kn": "ಲೆಮನ್ ಗಾರ್ಲಿಕ್ ಸೋಯಾ (90g, ಕ್ರಿಸ್ಪಿ, ಒಣ) + ಬೆಂಡೆಕಾಯಿ ಪಲ್ಯ + 1 ರಾಗಿ ರೊಟ್ಟಿ",
+          "te": "లెమన్ గార్లిక్ సోయా (90g, క్రిస్పీ, డ్రై) + బెండకాయ కూర + 1 రాగి రొట్టె"
+        },
+        "video": "https://www.instagram.com/reel/DazE7k9z4at/"
       }
     },
     "sat": {
@@ -508,6 +509,7 @@
       "Walnuts (150g)",
       "Black coffee (unsweetened)",
       "Cold-pressed groundnut/mustard oil",
+      "Cornflour (small pack, for soya coating)",
       "Besan (200g, for cheela binding)",
       "Whole spices & masalas (jeera, haldi, dhania, garam masala, pepper, kasuri methi, oregano)",
       "Rock salt (use sparingly - low sodium)"
