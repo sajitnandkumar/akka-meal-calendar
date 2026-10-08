@@ -36,6 +36,31 @@ twice in a day. Use a bank recipe at most once per week; rotate across weeks.
 - Concept: paratha stuffed with spiced kala chana. Adaptations: whole-wheat/millet atta only (never maida), tawa with minimal oil/ghee, serve with the mandatory 150g hung curd.
 - Slot: breakfast. Tag: chana.
 
+### 27. Chana Palak Masala
+- Source: instagram.com/reel/DeGJgeOzBgE (@ral.livezy) — app submission. Recipe in video.
+- Concept: chickpea-spinach masala. Adaptations: 1 tbsp oil max, light salt; gravy → always with a roti or ⅓ bowl matta/brown rice. ~200g cooked chana as anchor.
+- Slot: lunch/dinner. Tag: chana.
+
+### 28. Restaurant-Style Soya Masala
+- Source: instagram.com/reel/DdBx_I2zzJL (@ral.livezy) — app submission. Recipe in video.
+- Concept: soya chunks in masala gravy. Adaptations: 1 tbsp oil, light salt, no cream (curd instead); gravy → carrier required. 180g anchor.
+- Slot: lunch/dinner. Tag: soya.
+
+### 29. Hariyali Soya Rice
+- Source: instagram.com/reel/Dc7uZfKTk1s (@ral.livezy) — app submission. Recipe in video.
+- Concept: green-masala (coriander-mint-palak) soya rice, one pot. Adaptations: Kerala matta or brown rice ONLY, ⅓ bowl grain share with soya raised to 180g S / 90g V; light salt.
+- Slot: lunch/dinner (grain built in). Tag: soya.
+
+### 30. Pepper Egg Chops
+- Source: instagram.com/reel/Ddp4GzeMOCZ (@ral.livezy) — app submission. Recipe in video.
+- Concept: peppered egg cutlets. Adaptations: NEVER deep-fried — tawa or appe pan with 1 tsp oil; if the binding uses potato, keep it token and prefer besan/paneer.
+- Slot: lunch/dinner (or breakfast side). Tag: egg.
+
+### 31. Creamy Butter Garlic Eggs
+- Source: instagram.com/reel/DbDTYhtTLm0 (@ral.livezy) — app submission. Recipe in video.
+- Concept: boiled eggs in a light butter-garlic sauce (sibling of their butter garlic chicken). Adaptations: light butter ≤1 tbsp, low-sodium soy if any, cornflour slurry ok; serve with greens + small grain at dinner.
+- Slot: lunch/dinner. Tag: egg.
+
 ## Chicken (rotate — max 3 chicken meals/week)
 
 ### 2. Steamed Chicken & Veg Roll
@@ -138,6 +163,16 @@ NOTE: #5 and #15-18 are all chicken + rice formats — treat them as ONE family 
 use at most one per week (they also count toward the 3-chicken cap).
 
 ## Paneer & egg
+
+### 32. Creamy Paneer Sandwich (sourdough)
+- Source: instagram.com/reel/Dd71wH4zVYr (@ral.livezy) — app submission. Recipe in video.
+- Concept: high-protein creamy paneer filling in a sandwich. Adaptations: whole-grain sourdough ONLY (never other bread); curd/hung-curd base for the creaminess, no mayo; ~100g paneer S / 50g V; tawa-toasted.
+- Slot: breakfast (with Greek yogurt side to hit protein). Tag: paneer.
+
+### 33. Paneer Butter Garlic
+- Source: instagram.com/reel/DeMKqRyT1O6 (@ral.livezy) — app submission. Recipe in video.
+- Concept: paneer in light butter-garlic sauce. Adaptations: light butter ≤1 tbsp, no cream (curd if needed), low-sodium; 200g S / 100g V; greens + small grain at dinner.
+- Slot: lunch/dinner. Tag: paneer.
 
 ### 23. Bread Chilla (sourdough)
 - Source: youtube.com/shorts/GQbEaWKI1tk (The Wonder Kitchen) — app submission.

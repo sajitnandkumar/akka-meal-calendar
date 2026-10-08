@@ -56,6 +56,15 @@
             "te": "పనీర్ చీలా"
           },
           "video": "https://www.youtube.com/shorts/ACzsQTsaZiA"
+        },
+        {
+          "name": {
+            "en": "Creamy Paneer Sandwich (sourdough)",
+            "hi": "क्रीमी पनीर सैंडविच",
+            "kn": "ಕ್ರೀಮಿ ಪನೀರ್ ಸ್ಯಾಂಡ್‌ವಿಚ್",
+            "te": "క్రీమీ పనీర్ శాండ్‌విచ్"
+          },
+          "video": "https://www.instagram.com/reel/Dd71wH4zVYr/"
         }
       ]
     },
@@ -96,6 +105,24 @@
                 "te": "సోయా అఫ్ఘానీ"
               },
               "video": "https://www.instagram.com/reel/DbF_BdnAIh3/"
+            },
+            {
+              "name": {
+                "en": "Restaurant-Style Soya Masala",
+                "hi": "सोया मसाला",
+                "kn": "ಸೋಯಾ ಮಸಾಲಾ",
+                "te": "సోయా మసాలా"
+              },
+              "video": "https://www.instagram.com/reel/DdBx_I2zzJL/"
+            },
+            {
+              "name": {
+                "en": "Hariyali Soya Rice",
+                "hi": "हरियाली सोया राइस",
+                "kn": "ಹರಿಯಾಲಿ ಸೋಯಾ ರೈಸ್",
+                "te": "హరియాలీ సోయా రైస్"
+              },
+              "video": "https://www.instagram.com/reel/Dc7uZfKTk1s/"
             }
           ]
         },
@@ -115,6 +142,62 @@
                 "te": "పనీర్ పులావ్"
               },
               "video": "https://www.youtube.com/shorts/C7YYGHnrASs"
+            },
+            {
+              "name": {
+                "en": "Paneer Butter Garlic",
+                "hi": "पनीर बटर गार्लिक",
+                "kn": "ಪನೀರ್ ಬಟರ್ ಗಾರ್ಲಿಕ್",
+                "te": "పనీర్ బటర్ గార్లిక్"
+              },
+              "video": "https://www.instagram.com/reel/DeMKqRyT1O6/"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Egg",
+            "hi": "अंडा",
+            "kn": "ಮೊಟ್ಟೆ",
+            "te": "గుడ్డు"
+          },
+          "items": [
+            {
+              "name": {
+                "en": "Pepper Egg Chops",
+                "hi": "पेपर एग चॉप्स",
+                "kn": "ಪೆಪ್ಪರ್ ಎಗ್ ಚಾಪ್ಸ್",
+                "te": "పెప్పర్ ఎగ్ చాప్స్"
+              },
+              "video": "https://www.instagram.com/reel/Ddp4GzeMOCZ/"
+            },
+            {
+              "name": {
+                "en": "Creamy Butter Garlic Eggs",
+                "hi": "बटर गार्लिक एग्स",
+                "kn": "ಬಟರ್ ಗಾರ್ಲಿಕ್ ಎಗ್ಸ್",
+                "te": "బటర్ గార్లిక్ ఎగ్స్"
+              },
+              "video": "https://www.instagram.com/reel/DbDTYhtTLm0/"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Chana & Dal",
+            "hi": "चना-दाल",
+            "kn": "ಕಡಲೆ-ದಾಲ್",
+            "te": "శనగ-పప్పు"
+          },
+          "items": [
+            {
+              "name": {
+                "en": "Chana Palak Masala",
+                "hi": "चना पालक मसाला",
+                "kn": "ಚನಾ ಪಾಲಕ್ ಮಸಾಲಾ",
+                "te": "చనా పాలక్ మసాలా"
+              },
+              "video": "https://www.instagram.com/reel/DeGJgeOzBgE/"
             }
           ]
         },
