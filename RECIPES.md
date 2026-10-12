@@ -208,6 +208,12 @@ use at most one per week (they also count toward the 3-chicken cap).
 - Adaptations: whole-grain sourdough only; salt light. S: 2 eggs + 4 whites / V: 1 egg + 2 whites.
 - Slot: breakfast (add hung curd side to hit 150g/100g rule). Tag: egg.
 
+### 34. One-Pot Egg Biryani (pressure cooker)
+- Source: youtube.com/shorts/X07twtFxYB0 (Abhinaya Voruganti) — app submission, 12 Oct 2026. Full recipe in description.
+- As posted (serves 5): 2 glasses basmati soaked 30-45 min, 3 glasses water; 5 boiled eggs rubbed with chilli/turmeric/salt and shallow-fried; 3 onions (half deep-fried for birista); masala base of oil + 1 tbsp butter, whole spices (cardamom, cloves, cinnamon, shahi jeera, star anise, bay leaf), onion, 4 green chillies, ginger-garlic paste, 2 tomatoes, chilli/coriander/garam/biryani masala, turmeric, 1 cup curd; mint, coriander, kasuri methi; rice + boiling water, eggs and fried onions on top; pressure cook 2 whistles, rest 15 min. Served with raita, onion, lemon.
+- Adaptations: basmati → Kerala matta or brown rice ONLY, SMALL grain share (⅓ bowl serving each) with eggs raised to 4 S / 2 V as the anchor (as posted it is 1 egg a head — too little protein); DROP the fried-onion birista (oil-fried garnish) — soften all the onion in the masala instead; eggs not shallow-fried — toss the boiled eggs in the spices and sear 1 min on the tawa with a few drops of oil, or add them plain; oil + butter total ≤1 tbsp; salt light (ignore the "slightly salty" cue); curd ✓ (use low-fat). Pressure cooker ✓. Serve with hung-curd raita + cucumber/onion salad + lemon; add a side of greens (palak/cabbage poriyal) at dinner.
+- Slot: lunch/dinner (grain built in). Tag: egg.
+
 ---
 
 Adding recipes: append an entry in this format (source, as-posted, adaptations,
