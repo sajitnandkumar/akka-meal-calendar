@@ -232,3 +232,13 @@ Adding recipes: append an entry in this format (source, as-posted, adaptations,
 slot, protein tags) AND add the dish to recipes.json (name in 4 languages +
 video URL) — that file drives the app's Food List tab. The Sunday generator
 reads this file every week.
+
+## Fish (house preparations)
+
+The four allowed fish — seabass, rawas (Indian salmon), red snapper, white
+pomfret — always STEAMED (~180g S / 90g V), listed in the app's Recipes tab as a
+Fish group. House flavourings: ginger-garlic, lemon-pepper, curry leaves &
+pepper, green chutney. Constraints: max 2 fish meals/week, both the SAME fish
+(one purchase), ≥2 days apart; no other fish or seafood, ever (uric acid). When
+the user submits a fish recipe video, add it to this group — but only if it uses
+an allowed fish and can be made steamed.
