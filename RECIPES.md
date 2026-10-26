@@ -214,6 +214,18 @@ use at most one per week (they also count toward the 3-chicken cap).
 - Adaptations: basmati → Kerala matta or brown rice ONLY, SMALL grain share (⅓ bowl serving each) with eggs raised to 4 S / 2 V as the anchor (as posted it is 1 egg a head — too little protein); DROP the fried-onion birista (oil-fried garnish) — soften all the onion in the masala instead; eggs not shallow-fried — toss the boiled eggs in the spices and sear 1 min on the tawa with a few drops of oil, or add them plain; oil + butter total ≤1 tbsp; salt light (ignore the "slightly salty" cue); curd ✓ (use low-fat). Pressure cooker ✓. Serve with hung-curd raita + cucumber/onion salad + lemon; add a side of greens (palak/cabbage poriyal) at dinner.
 - Slot: lunch/dinner (grain built in). Tag: egg.
 
+### 35. Paneer Yakhni (Kashmiri curd gravy)
+- Source: instagram.com/reel/DNAA2pkzanI (@shameemskitchenrecipe) — app submission, 26 Oct 2026. Caption gives only the dish name; details in video.
+- Concept: paneer simmered in a whisked-curd (yakhni) gravy with fennel, dry ginger, cardamom and cloves — a white, tomato-free gravy.
+- Adaptations: paneer NOT fried first (traditionally shallow/deep-fried) — add it raw or sear 1 min on a tawa with a few drops of oil; ghee/oil ≤1 tbsp; curd low-fat (hung curd thinned with water keeps it from splitting); salt light; no cream. Gravy → always with 1 millet roti or ⅓ bowl matta/brown rice. 200g S / 100g V.
+- Slot: lunch/dinner. Tag: paneer.
+
+### 36. High-Protein Chicken Sandwich
+- Source: instagram.com/reel/DXrPkSkDebo (@gskcooks2k23) — app submission, 26 Oct 2026. Caption: "An easy high protein chicken sandwich"; details in video.
+- Concept: shredded boiled/pan-cooked chicken breast in a curd-based creamy filling with onion, capsicum, chilli, pepper; sandwiched and tawa-toasted.
+- Adaptations: bread MUST be whole-grain sourdough (1-2 slices; never other bread); filling bound with hung curd/Greek yogurt, NO mayo or cheese; chicken 180g S / 90g V; light salt, ½ tsp oil on the tawa. Counts toward the 3-chicken cap.
+- Slot: lunch (dry, grain built in) or breakfast (with hung curd side). Tag: chicken.
+
 ---
 
 Adding recipes: append an entry in this format (source, as-posted, adaptations,
