@@ -159,6 +159,12 @@ twice in a day. Use a bank recipe at most once per week; rotate across weeks.
 - Adaptations: oil 4 tbsp → 1 tbsp; coconut milk 200ml → 100ml thin (or half coconut + half low-fat milk — saturated fat); potatoes mostly swapped for bottle gourd/carrot (a few cubes at most — starchy-veg limit); salt light. Stew = gravy → always with ⅓ bowl matta/brown rice or a millet roti.
 - Slot: lunch/dinner. Tag: chicken.
 
+### 37. Chicken Mappas (Kerala coconut-milk chicken)
+- Source: youtube.com/shorts/2KIMzJDpeZk (Chef Arun Vijayan) — app submission, 26 Oct 2026. Title only; recipe in video.
+- Concept: Kerala-Christian "mappas" — chicken simmered with onion, ginger-garlic, green chilli, curry leaves, whole spices (cardamom, cloves, cinnamon, pepper), turmeric and coriander powder, finished with thick coconut milk and a curry-leaf tadka in coconut oil. A sibling of #21 chicken stew, usually with a touch more masala.
+- Adaptations: coconut oil 3-4 tbsp → 1 tbsp (saturated fat); thick coconut milk → ~100ml thin, or half coconut + half low-fat milk; skip any potato or keep a few cubes (starchy-veg limit); salt light; no fried-onion garnish. Gravy → always with ⅓ bowl matta/brown rice or 1 millet roti. 180g S / 90g V skinless. Counts toward the 3-chicken cap; #21 and #37 are the same family — use at most one per week.
+- Slot: lunch/dinner. Tag: chicken.
+
 NOTE: #5 and #15-18 are all chicken + rice formats — treat them as ONE family and
 use at most one per week (they also count toward the 3-chicken cap).
 
@@ -242,3 +248,21 @@ pepper, green chutney. Constraints: max 2 fish meals/week, both the SAME fish
 (one purchase), ≥2 days apart; no other fish or seafood, ever (uric acid). When
 the user submits a fish recipe video, add it to this group — but only if it uses
 an allowed fish and can be made steamed.
+
+### 38. Steamed Pomfret in Goan Green Masala
+- Source: youtu.be/iTmHSjAPO8s (Florency Dias, "Goan Pomfret Fry in Green Masala") — app submission, 26 Oct 2026. Full recipe in description.
+- As posted: a large white pomfret rubbed with 1 tsp salt for 10 min and rinsed; green masala paste (no water) of a handful of coriander, ½ tsp cumin, ¼ tsp turmeric, 10 peppercorns, ½ inch ginger, 3 garlic, 2 large mild green chillies, ½ tsp salt, 1 tbsp white vinegar; applied 10 min, then shallow-fried in oil (optional rava coating); leftover paste cooked into a gravy with a pinch of sugar + ⅓ cup water.
+- Adaptations: NOT fried — steam the marinated pomfret (slashed, paste inside and out) ~12-15 min; no rava coating; drop the sugar from the gravy and simmer the leftover paste in ⅓ cup water with ½ tsp oil as a spoon-over sauce; skip the 1 tsp pre-salt rub (use only the ½ tsp in the paste, or less); vinegar ✓ (keeps it sour without lime). White pomfret ✓ (allowed fish). 180-200g S / 90g V. Dry-ish → "(no grain)" at lunch, small grain + greens at dinner.
+- Slot: lunch/dinner. Tag: fish (white pomfret).
+
+### 39. Kudampuli Fish Curry (Kerala, steamed-fish version)
+- Source: youtube.com/shorts/pcz1H_iK308 (Manjus Kitchen Lab) — app submission, 26 Oct 2026. Title only; recipe in video.
+- Concept: Kerala-style fish curry soured with kudampuli (Malabar tamarind / gambooge): fish pieces simmered in a red chilli–coriander–turmeric gravy with shallots, ginger-garlic, curry leaves, fenugreek and kudampuli, finished with a coconut-oil tadka. The video does not name the fish.
+- Adaptations: fish MUST be one of seabass / red snapper / rawas / white pomfret (never seer, mackerel, sardine or any other fish); steam the fish separately (~180-200g S / 90g V) and spoon the kudampuli gravy over it rather than frying or long-simmering it; coconut oil 3 tbsp → 1 tbsp; salt light (kudampuli carries the punch); no coconut-paste thickening. Gravy → always with ⅓ bowl matta/brown rice (the classic pairing). Counts as one of the max-2 fish meals (same fish as the week's other fish meal, ≥2 days apart).
+- Slot: lunch/dinner. Tag: fish.
+
+### 40. Fish Nirvana (Chef Pillai style, steamed version)
+- Source: youtube.com/shorts/U-JYQW-QxyQ (5s creations) — app submission, 26 Oct 2026. Title only; recipe in video.
+- Concept: Chef Pillai's signature — a marinated fish fillet (restaurants use seer/kingfish) pan-seared in butter and served in a creamy garlic-butter sauce with a kick of pepper and lemon.
+- Adaptations: NO seer/kingfish (surmai is banned — uric acid) — use seabass or rawas fillet; NOT pan-fried in butter — steam the marinated fillet (ginger-garlic, pepper, turmeric, lemon, light salt) ~10-12 min; sauce = hung curd / Greek yogurt whisked with sautéed garlic (½ tsp butter or oil), crushed pepper, lemon and coriander, warmed off the flame — no cream, no butter sauce; low-sodium, no soy. 180-200g S / 90g V. Dry → "(no grain)" at lunch; small grain + greens at dinner.
+- Slot: lunch/dinner. Tag: fish.
